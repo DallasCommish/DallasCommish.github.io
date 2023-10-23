@@ -1,0 +1,219 @@
+* {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin:0px;
+}
+
+html {
+    height: 100%;
+}
+
+.davidHeader {
+    height: 131px;
+    width:100%;
+    border-bottom: 1px solid silver;
+    background-color: white;
+    background-image: url("../images/fans.gif");
+    margin-bottom:20px;
+    margin-left:0px;
+    margin-top:5px;
+    z-index: 2;
+}
+
+/* h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: -125px;
+    margin-top: 350px;
+    color:Teal;
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+*/
+
+#pages_menu {
+    position: fixed;
+    top:150px;
+    left: 45px;
+    width: 175px;
+}
+
+#pages_menu li {
+    list-style: none;
+}
+
+#pages_menu li a {
+    display: block;
+    font-size: 0.75em;
+    text-decoration: none;
+    padding: 7px 5px 7px 5px;
+    color:Navy;
+}
+/*
+
+#pages_menu li a:visited {
+    color:Navy;
+}
+
+#pages_menu li a:hover {
+    color: silver;
+    background: navy;
+}
+*/
+
+#visualization {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 60px;
+    width: 1050px;
+    height: 500px;
+    z-index: 1;
+}
+
+#visualization table {
+    border-collapse: separate;
+    border: groove grey 2px;
+}
+
+#visualization th {
+    border: 1px solid black;
+    text-align:center;
+    padding: 0px 2px;
+    font-weight:bold;
+    background-color: #008B8B;
+    color: white;
+}
+
+#visualization td {
+    border:1px solid black;
+    padding:0px 5px;
+}
+
+#visualization td.colTitle {
+    font-weight:bold;
+    text-align:center;
+    padding:0px 2px;
+}
+
+#visualization td.colTitleTemp {
+    font-weight:bold;
+    text-align:center;
+    padding:0px 2px;
+    background-color:yellow;
+}
+
+#visualization td.team {
+    text-align:center;
+    white-space:nowrap;
+}
+
+#visualization td.linethrough {
+  text-align: center;
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+
+#visualization td.points {
+    text-align:right;
+    padding:1px 10px;
+}
+
+#visualization td.pointsHL {
+    text-align:right;
+    padding:1px 10px;
+    background-color:yellow;
+}
+
+#visualization td.pick {
+    padding: 5px;
+    text-align: center;
+}
+
+#visualization td.pickHL {
+    padding: 5px;
+    text-align:center;
+    background-color: yellow;
+}
+
+#visualization h1.AFC {
+    color: orange;
+    background-color: navy;
+    font-weight: bold;
+    text-align: center;
+    width: 95%;
+}
+
+#visualization h1.NFC {
+    color: deepskyblue;
+    background-color: black;
+    display: block;
+    position: absolute;
+    margin-left: -250px;
+    margin-top: 125px;
+    width: 400px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    clear: both;
+    /* margin-top: 0px; */
+    height: 60px;
+    border-top: 1px dotted silver;
+    z-index: 2;
+}
+
+footer p {
+    line-height: 60px;
+    margin-left: 50px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+footer a {
+    font-size:inherit;
+    color: silver;
+}
+
+footer a:hover {
+    color: teal;
+}
+
+table#prizePair table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#prizePair table, tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table#prizePair thead {
+    font-weight: bold;
+    background-color: #00e;
+    color: #fff;
+}
+
+table#prizePair tr:nth-child(even) {
+    background-color: #eee;
+}
