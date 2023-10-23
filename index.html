@@ -80,7 +80,7 @@
                                     <li class="divider"></li>
                                     <li><a href="#" id="ALFinances">AL Finances</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="ALConstitutionBootstrap.html" id="ALRules">AL Rules</a></li>
+                                    <li><a href="ALConstitutionBootstrap.html">AL Rules</a></li>
                                 </ul>
                             </div>
                             <div class="btn-group">
@@ -174,10 +174,6 @@
             // };
             document.getElementById("ALFinances").onclick=function() {
                 document.getElementById("dataVis").innerHTML=ALFinances();
-            };
-            document.getElementById("ALRules").onclick=function() {
-                document.getElementById("dataVisHref").removeAttribute("href");
-                document.getElementById("dataVisHref").setAttribute("href", "AmericanLeagueRules.html");
             };
             document.getElementById("NLFinances").onclick=function() {
                 document.getElementById("dataVis").innerHTML=NLFinances();
