@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/homePage.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="scripts/homePage.js"></script>
+
+        <link type="text/css" media="screen" rel="stylesheet" href="css/responsive-tables.css" />
+        <script type="text/javascript" src="scripts/responsive-tables.js"></script>
+        <script>
+            function showTeam(strTeam, strLeague) {
+                if (strTeam === "") {
+                    document.getElementById("dataVis").innerHTML = "";
+                    return;
+                } else {
+                    xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                            document.getElementById("dataVis").innerHTML = xmlhttp.responseText;
+                        }
+                    };
+                    xmlhttp.open("GET", "scripts/FaabTransactions.php?t=" + strTeam + "&l=" + strLeague, true);
+                    xmlhttp.send();
+                }
+            }
+
+            function showFinances() {
+                xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        document.getElementById("dataVis").innerHTML = xmlhttp.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "scripts/CactusExpenses.php", true);
+                xmlhttp.send();
+            }
+        </script>
+        <title>The Commish's Database</title>
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand"><img src="images/fanssmall.gif" alt="The Commish's Database"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <div class="btn-group">
+                            <button id="Finish" class="btn btn-success" role="button">2023 Finish</button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                American <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#" id="ALMinors22">2022 Minors Draft</a></li>
+                                    <li><a href="#" id="ALReserves22">2022 Reserves Draft</a></li>
+                                    <li><a href="#" id="ALMinors23">2023 Minors Draft</a></li>
+                                    <li><a href="#" id="ALReserves23">2023 Reserves Draft</a></li>
+                                    <li><a href="#" id="ALMinors24">2024 Minors Draft</a></li>
+                                    <li><a href="#" id="ALReserves24">2024 Reserves Draft</a></li>
+                                    <li><a href="#" id="ALMinors25">2025 Minors Draft</a></li>
+                                    <li><a href="#" id="ALMinors26">2026 Minors Draft</a></li>
+                                    <li class="divider"></li>
+                                    <!--<li><a href="#" id="ALFAABold">FAAB Balances</a></li>-->
+                                    <!--<li><a href="#" id="ALFAABalt">FAAB Balances</a></li>-->
+                                    <li><a href="#" id="MaxCategory">Category Maximum</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" id="ALFinances">AL Finances</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="ALConstitutionBootstrap.html" id="ALRules">AL Rules</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                National <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="Menu">
+                                    <li><a href="#" id="NLReserves22">2022 Reserves Draft</a></li>
+                                    <li><a href="#" id="NLReserves23">2023 Reserves Draft</a></li>
+                                    <li><a href="#" id="NLReserves24">2024 Reserves Draft</a></li>
+                                    <li class="divider"></li>
+                                    <!--<li><a href="#" id="NLFAABold">FAAB Balances</a></li>-->
+                                    <!--<li><a href="#" id="NLFAABalt">FAAB Balances</a></li>-->
+                                    <!--<li class="divider"></li>-->
+                                    <li><a href="#" id="NLFinances">NL Finances</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="NLConstitutionBootstrap.html">NL Rules</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <section id="visualization">
+                <div id="dataVis">
+                </div>
+                </section>
+            </div>
+        </div>
+
+<!--        <footer>
+            <p><span style="font-style:italic;font-weight:normal;font-size:1.0em;">Instructions: </span>Click on a button. All tables are sortable. Recent changes can be found on the <a href="http://www.the-commish.org/wordpress" target="_blank" id="Blog">History</a> page.<span style="float:right;padding-right:25px;padding-top:20px;"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactForm">Change Request</button></span></p>
+        </footer>
+-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactForm" tab-index="-1" role="dialog" aria-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="contactFormLabel">Contact Form</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" value="<?php echo $_POST['name']; ?>" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email:</label>
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" value="<?php echo $_POST['email']; ?>" />
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Your Comment:</label>
+                                <textarea class="form-control" name="comment"><?php echo $_POST['comment']; ?></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="verification">Enter the two character state abbreviation of the draft location: </label>
+                                <input type=-"text" name="verification" class="form-control" placeholder="WA" />
+                            </div>
+                            <input type="submit" name="submit" class="btn btn-success btn-lg" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="instructions" tab-index="-1" role="dialog" arai-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="instructionsLabel">Questions and Answers</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Click on a button along the top row. Responsive design is used, which means you may get three bars if you are using a small enough screen. Some buttons will also display a sub-menu.</p>
+                        <p>Some tables are sortable unless they are sorted by rank or previous year's finish.</p>
+                        <p>Recent changes can be found on the blog page.</p>
+                        <p>Requests for changes are welcome and should be sent via the Change Request button.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <footer class="page-footer">
+        <div class="container">
+            <a href="https://www.ecowebhosting.co.uk/" alt="Planting trees every month with Eco Web Hosting" rel="noopener">
+            <img src="https://eco-cdn.co.uk/eco-badge-1.svg" alt="Planting trees every month with Eco Web Hosting">
+            </a>
+        </div>
+        </footer> -->
+
+        <script>
+            document.getElementById("MaxCategory").onclick=function() {
+                document.getElementById("dataVis").innerHTML=maxCategory2023();
+                $("#MaxCategory tbody").sortable();
+                $("#MaxCategory tbody").disableSelection();
+            };
+            document.getElementById("Finish").onclick=function() {
+                document.getElementById("dataVis").innerHTML=showFinish2023();
+                $("#BaseballFinish tbody").sortable();
+                $("#BaseballFinish tbody").disableSelection();
+            };
+            document.getElementById("Cactus").onclick=function() {
+                document.getElementById("dataVis").innerHTML=financesCactus();
+                $("#CactusFinances tbody").sortable();
+                $("#CactusFinances tbody").disableSelection();
+            };
+            document.getElementById("Squares").onclick=function() {
+                document.getElementById("dataVis").innerHTML=SBSquares();
+            };
+            document.getElementById("Keepers").onclick=function() {
+                // document.getElementById("dataVisHref").removeAttribute("href");
+                document.getElementById("dataVisHref").setAttribute("href", "Keepers2023.html");
+            };
+            document.getElementById("NLReserves22").onclick=function() {
+                document.getElementById("dataVis").innerHTML=NLReserves22();
+            };
+            document.getElementById("ALMinors22").onclick=function() {
+              document.getElementById("dataVis").innerHTML=ALMinors22();
+            };
+            document.getElementById("ALReserves22").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALReserves22();
+            };
+            document.getElementById("ALMinors23").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALMinors23();
+            };
+            document.getElementById("ALReserves23").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALReserves23();
+            };
+            document.getElementById("NLReserves23").onclick=function() {
+                document.getElementById("dataVis").innerHTML=NLReserves23();
+            };
+            document.getElementById("ALMinors24").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALMinors24();
+            };
+            document.getElementById("ALReserves24").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALReserves24();
+            };
+            document.getElementById("NLReserves24").onclick=function() {
+                document.getElementById("dataVis").innerHTML=NLReserves24();
+            };
+            document.getElementById("ALMinors25").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALMinors25();
+            };
+            document.getElementById("ALMinors26").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALMinors26();
+            };
+            //document.getElementById("ALFAABold").onclick=function() {
+            //    document.getElementById("dataVis").innerHTML=ALFaab();
+            //}
+            //document.getElementById("NLFAABold").onclick=function() {
+            //    document.getElementById("dataVis").innerHTML=NLFaab();
+            //}
+            // document.getElementById("ALFAABalt").onclick=function() {
+            //     document.getElementById("dataVis").innerHTML=ALFaab2019();
+            // };
+            // document.getElementById("NLFAABalt").onclick=function() {
+            //     document.getElementById("dataVis").innerHTML=NLFaab2019();
+            // };
+            document.getElementById("ALFinances").onclick=function() {
+                document.getElementById("dataVis").innerHTML=ALFinances();
+            };
+            document.getElementById("ALRules").onclick=function() {
+                document.getElementById("dataVisHref").removeAttribute("href");
+                document.getElementById("dataVisHref").setAttribute("href", "AmericanLeagueRules.html");
+            };
+            document.getElementById("NLFinances").onclick=function() {
+                document.getElementById("dataVis").innerHTML=NLFinances();
+            };
+
+        </script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
