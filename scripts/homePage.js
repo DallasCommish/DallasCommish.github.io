@@ -6,9 +6,9 @@ function showFinish2023() {
     var teamPointsAL = [102, 91, 88.5, 86, 78, 57, 51.5, 50, 49, 45, 41, 41];
     var teamOrderNL = ["Wichita Sox Monkees", "Matty Bos", "Leonard Peltier's Army",
                        "Donner Party", "Dread Pirate Roberts", "Seattle Stackers",
-                       "The Cream and the Clear", "P-Funk All-Stars", "Liberty Lunch",
-                       "A McNickle for Farm Fresh Gregs", "NWA Redbirds", ''];
-    var teamPointsNL = [72, 69, 58, 57, 53, 49, 44, 43, 38, 34, 11, 0];
+                       "P-Funk All-Stars", "A McNickle for Farm Fresh Gregs", "Liberty Lunch",
+                       "The Cream and the Clear", "NWA Redbirds", ''];
+    var teamPointsNL = [72, 71, 61, 58, 54, 53, 46, 36, 30, 26, 11, 0];
   
     var htmlCode = "<table id='BaseballFinish' class='responsive'><thead><th colspan='5'>2023 Finish</th></thead>";
     htmlCode += "<tr><td class='colTitle'>American League</td>";
