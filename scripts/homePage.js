@@ -1430,48 +1430,48 @@ function ALReserves24() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Kelly", "David I", "Greg", "Jon", "Randall", "Brent",
-    "Marty", "Jeremy", "Greg", "David M", "Rich", "Glenn");
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "TBA", "Jon", "David", "Glenn", "Rich", "Greg");
     superScript.push("0","0","0","0","0","0",
-                     "0","0","2","0","0","0");
+                     "0","0","0","0","0","2");
 
     // second round
-    pick.push("Kelly", "David I", "David M", "Jon", "Randall", "Brent",
-    "Marty", "Jeremy", "Jordan", "David M", "Rich", "Glenn");
-    superScript.push("0","0","1","0","0","0",
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "David",
+    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
+    superScript.push("0","0","0","0","0","1",
                      "0","0","0","0","0","0");
 
     // third round
-    pick.push("Kelly", "David I", "Greg", "Jon", "Randall", "Brent",
-    "Marty", "Jeremy", "Jordan", "Greg", "Rich", "Glenn");
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "TBA", "Jon", "Greg", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
-                     "0","0","0","1","0","0");
+                     "0","0","1","0","0","0");
 
     // fourth round
-    pick.push("Kelly", "David I", "Greg", "Jon", "Randall", "Brent",
-    "Marty", "Jeremy", "Jordan", "David M", "Rich", "Glenn");
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // fifth round
-    pick.push("Kelly", "David I", "Greg", "Jon", "Randall", "Brent",
-    "Marty", "Jeremy", "Jordan", "David M", "Rich", "Glenn");
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // sixth round
-    pick.push("Kelly", "David I", "Greg", "Jon", "Randall", "Brent",
-    "Marty", "Jeremy", "Jordan", "David M", "Rich", "Glenn");
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // seventh round
-    pick.push("Kelly", "David I", "Greg", "Jon", "Randall", "Brent",
-    "Marty", "Jeremy", "Jordan", "David M", "Rich", "Glenn");
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2024 American League Reserves Roster Draft (Un-Ordered)</th></thead>';
+    htmlCode = '<table class="responsive"><thead><th colspan="8">2024 American League Reserves Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
 
     for (i = 0; i <12; i++) {
