@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/keepers.css">
+
+        <title>2024 AL FAAB</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- This will have a table of current FAAB balances -->
+                    <h4>Table of Current FAAB Balances</h4>
+                    <table class="table table-hover">
+                        <tr>
+                            <th>Team</th>
+                            <th>Balance</th>
+                        </tr>
+                        <tr>
+                            <td>Banoaster Republic</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>David's 5 & Dime</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>Flower Children</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>Hradek Hrams</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Jak of Diamonds</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>Kelly S*M*A*S*H</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Kirk's Enterprise</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>The Blossoms</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>The Patsy Killjoys</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>The Shohei Kid</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Wichita TinMen</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>TBA</td>
+                            <td>103</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-6">
+                    <!-- This will have a collapsible list of teams and transactions -->
+                    <h4>By Team List of Transactions</h4>
+                    <ul id="myUL">
+                        <li>
+                            <span class="caret">Banoaster Republic</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">David's 5 & Dime</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for 2023 season high in Wins</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Flower Children</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for 2023 season high in Runs</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Hradek Hrams</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Jak of Diamonds</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for season high in Stolen Bases</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Kelly S*M*A*S*H</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Kirk's Enterprise</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for 2023 season low in WHIP</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">The Blossoms</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for 2023 season high in K</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">The Patsy Killjoys</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for 2023 season high in S</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">The Shohei Kid</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Wichita TinMen</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for 2023 season high in HR</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">TBA</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                                <li>$1 for 2023 season high in BA</li>
+                                <li>$1 for 2023 season high in RBI</li>
+                                <li>$1 for 2023 season low in ERA</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var toggler = document.getElementsByClassName("caret");
+            var i;
+            for (i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click", function() {
+                    this.parentElement.querySelector(".nested").classList.toggle("active");
+                    this.classList.toggle("caret-down");
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -46,6 +46,7 @@
                                     <li class="divider"></li>
                                     <li><a href="#" id="MaxCategory">Category Maximum</a></li>
                                     <li class="divider"></li>
+                                    <li><a href="#" id="ALFAAB">AL FAAB Balances</a></li>
                                     <li><a href="#" id="ALFinances">AL Finances</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="ALboot">AL Rules</a></li>
@@ -57,6 +58,7 @@
                                 <ul class="dropdown-menu" role="Menu">
                                     <li><a href="#" id="NLReserves24">2024 Reserves Draft</a></li>
                                     <li class="divider"></li>
+                                    <li><a href="#" id="NLFAAB">NL FAAB Balances</a></li>
                                     <li><a href="#" id="NLFinances">NL Finances</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="NLboot">NL Rules</a></li>
@@ -80,12 +82,17 @@
                 <iframe id="Rules" style="border:none;width:100%;height:800px;" title="Frame for the League Rules">                    
                 </iframe>
             </div> 
+            <div class="row" id="divFAAB">
+                <iframe id="FAAB" style="border:none;width:100%;height:800px;" title="Frame for the FAAB pages">
+                </iframe>
+            </div>
         </div>
 
 
         <script>
             document.getElementById("MaxCategory").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=maxCategory2023();
                 $("#MaxCategory tbody").sortable();
@@ -93,6 +100,7 @@
             };
             document.getElementById("Finish").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=showFinish2023();
                 $("#BaseballFinish tbody").sortable();
@@ -100,48 +108,69 @@
             };
             document.getElementById("ALMinors24").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors24();
             };
             document.getElementById("ALReserves24").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALReserves24();
             };
             document.getElementById("NLReserves24").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=NLReserves24();
             };
             document.getElementById("ALMinors25").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors25();
             };
             document.getElementById("ALMinors26").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors26();
             };
             document.getElementById("ALFinances").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALFinances();
             };
             document.getElementById("NLFinances").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=NLFinances();
             };
             document.getElementById("ALboot").onclick=function() {
                 document.getElementById("divVis").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divRules").style.display = "block";
                 document.getElementById("Rules").src="ALConstitutionBootstrap.html";
             };
             document.getElementById("NLboot").onclick=function() {
                 document.getElementById("divVis").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divRules").style.display = "block";
                 document.getElementById("Rules").src="NLConstitutionBootstrap.html";
+            };
+            document.getElementById("ALFAAB").onclick=function() {
+                document.getElementById("divVis").style.display = "none";
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "block";
+                document.getElementById("FAAB").src="ALFAAB.html";
+            };
+            document.getElementById("NLFAAB").onclick=function() {
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "block";
+                document.getElementById("FAAB").src="NLFAAB.html";
             };
         </script>
         <!-- Latest compiled and minified JavaScript -->

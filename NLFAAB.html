@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, chrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/keepers.css">
+
+        <title>2024 NL FAAB</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- This will have a table of current FAAB balances -->
+                    <h4>Table of Current FAAB Balances</h4>
+                    <table class="table table-hover">
+                        <tr>
+                            <th>Team</th>
+                            <td>Balance</td>
+                        </tr>
+                        <tr>
+                            <td>A McNickle for Farm Fresh Gregs</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Donner Party</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Dread Pirate Roberts</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Leonard Peltier's Army</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Liberty Lunch</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Matty Bos</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>TBA</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>P-Funk All-Stars</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Seattle Stackers</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>The Cream and the Clear</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Wichita Sox Monkees</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-6">
+                    <!-- This will have a collapsible list of teams and transactions -->
+                    <ul id="myUL">
+                        <li>
+                            <span class="caret">A McNickle for Farm Fresh Gregs</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Donner Party</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Dread Pirate Roberts</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Leonard Peltier's Army</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Liberty Lunch</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Matty Bos</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">TBA</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">P-Funk All-Stars</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Seattle Stackers</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">The Cream and the Clear</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="caret">Wichita Sox Monkees</span>
+                            <ul class="nested">
+                                <li>$100 opening balance</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var toggler = document.getElementById("caret");
+            var i;
+            for(i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click", function() {
+                    this.parentElement.querySelector(".nested").classList.toggle("active");
+                    this.classList.toggle("caret-down");
+                });
+            }
+        </script>
+    </body>
+</html>
