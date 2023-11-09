@@ -1884,7 +1884,7 @@ function ALFinances() {
                     0, 0, 210.35];
 
     var payment = [0, 0, 0, 
-                   0, 0, 0, 
+                   0, 0, 108, 
                    0, 0, 0, 
                    0, 0, 0];
     htmlCode = '<table class="responsive"><thead><th colspan="8">2023 American League Finances</th></thead>';
