@@ -2121,7 +2121,7 @@ function ALFinances() {
 }
 
 function NLFinances() {
-    // repeat the code for 2022
+    // repeat the code for 2023
     var teamList = ["A McNickle for Farm Fresh Gregs", "Donner Party", "Dread Pirate Roberts", 
                     "Leonard Peltier's Army", "Liberty Lunch", "Matty Bos", 
                     "NWA Redbirds", "P-Funk All-Stars", "Seattle Stackers",
@@ -2147,10 +2147,10 @@ function NLFinances() {
                     -62.5, -119.2, -55.5,
                     -35.8, -182.6];
 
-    var winnings = [0, 136.05, 29.4,
-                    204.08, 0, 340.13,
+    var winnings = [0, 340.13, 204.08,
                     0, 0, 0,
-                    0, 680.25];
+                    0, 0, 136.05,
+                    29.40, 680.25];
 
     var payment = [0, 0, 0,
                    0, 0, 0,
