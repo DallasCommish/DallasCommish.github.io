@@ -2210,7 +2210,7 @@ function NLFinances() {
                    0, 0, 0,
                    117, 0, 0,
                    0, -700];
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2022 National League Finances</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2022 National League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
