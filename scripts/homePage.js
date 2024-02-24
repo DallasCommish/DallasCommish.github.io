@@ -1514,32 +1514,32 @@ function NLReserves24() {
     var pick = [];
     var superScript = [];
     // FYPD first round
-     pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+     pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
                "Matt R", "Rich", "Glenn");
      superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // FYPD second round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // FYPD third round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // FYPD fourth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // post-auction first round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // post-auction second round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
@@ -1549,42 +1549,42 @@ function NLReserves24() {
     superScript.push("0","1","0","0","0","2","0","0","0","0","0");
 
     // post-auction fourth round
-    pick.push("Matt A", "Jon", "Marc", "Tom", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Jeffrey", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","2","0","0","0","0","0","0","0");
 
     // post-auction fifth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // post-auction sixth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // post-auction seventh round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // online first round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // online second round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // online third round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // online fourth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Tom", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
@@ -1689,7 +1689,7 @@ function NLReserves24() {
     // 2
     htmlCode += '<li>8/30/2023: <strong>Greg</strong> trades <em>Jun-Seok Shim</em>, ';
     htmlCode += '<em>Colin Holderman</em>, <em>George Soriano</em>, and a 2024 4th round ';
-    htmlCode += 'reserve pick to <strong>Tom</strong> for <em>Victor Caratini</em>, ';
+    htmlCode += 'reserve pick to <strong>Jeffrey</strong> for <em>Victor Caratini</em>, ';
     htmlCode += '<em>Josh Harrison</em>, and a 2024 3rd round reserve pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
