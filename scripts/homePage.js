@@ -1322,7 +1322,7 @@ function ALMinors24() {
     // first round
     pick.push("Brent", "Brent", "Kelly", 
               "Randall", "Kelly", "Greg", 
-              "TBA", "Greg", "Jon", 
+              "Chris", "Greg", "Jon", 
               "Brent", "Brent", "Randall");
     superScript.push("0","9","7",
               "1 and 8","0","0",
@@ -1332,7 +1332,7 @@ function ALMinors24() {
     // second round
     pick.push("Brent", "Marty", "Jeremy", 
               "Randall", "Kelly", "Greg", 
-              "TBA", "Jon", "David", 
+              "Chris", "Jon", "David", 
               "Glenn", "Marty", "Jordan");
     superScript.push("0","0","0",
               "0","0","0",
@@ -1342,7 +1342,7 @@ function ALMinors24() {
     // third round
     pick.push("Brent", "Marty", "Jeremy", 
               "Randall", "Kelly", "Greg", 
-              "TBA", "Jon", "David", 
+              "Chris", "Jon", "David", 
               "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0",
                      "0","0","0",
@@ -1352,7 +1352,7 @@ function ALMinors24() {
     // fourth round
     pick.push("Brent", "Marty", "Jeremy", 
               "Randall", "Kelly", "Greg", 
-              "TBA", "Jon", "David", 
+              "Chris", "Jon", "David", 
               "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0",
                      "0","0","0",
@@ -1431,43 +1431,43 @@ function ALReserves24() {
     var superScript = [];
     // first round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
-    "TBA", "Jon", "David", "Glenn", "Rich", "Greg");
+    "Chris", "Jon", "David", "Glenn", "Rich", "Greg");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","2");
 
     // second round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "David",
-    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","1",
                      "0","0","0","0","0","0");
 
     // third round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
-    "TBA", "Jon", "Greg", "Glenn", "Rich", "Jordan");
+    "Chris", "Jon", "Greg", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","1","0","0","0");
 
     // fourth round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
-    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // fifth round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
-    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // sixth round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
-    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // seventh round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
-    "TBA", "Jon", "David", "Glenn", "Rich", "Jordan");
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
@@ -1701,7 +1701,7 @@ function ALMinors25() {
     var superScript = [];
     // first round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "Brent", 
+              "Chris", "Jordan", "Brent", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
@@ -1711,7 +1711,7 @@ function ALMinors25() {
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "Jon", 
+              "Chris", "Jordan", "Jon", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
@@ -1721,7 +1721,7 @@ function ALMinors25() {
 
     // third round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "David M", 
+              "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
@@ -1731,7 +1731,7 @@ function ALMinors25() {
 
     // fourth round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "David M", 
+              "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
@@ -1778,7 +1778,7 @@ function ALMinors26() {
     var superScript = [];
     // first round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "Marty", 
+              "Chris", "Jordan", "Marty", 
               "Rich", "Kelly", "Brent", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
@@ -1788,7 +1788,7 @@ function ALMinors26() {
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "David M", 
+              "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
@@ -1798,7 +1798,7 @@ function ALMinors26() {
 
     // third round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "David M", 
+              "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
@@ -1808,7 +1808,7 @@ function ALMinors26() {
 
     // fourth round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "David I", "Jordan", "David M", 
+              "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
