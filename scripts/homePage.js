@@ -1693,7 +1693,7 @@ function NLReserves24() {
     htmlCode += '<em>Josh Harrison</em>, and a 2024 3rd round reserve pick.</li>';
     // 3
     htmlCode += '<li>3/4/2024: <strong>Greg</strong> trades a 2nd round pick in the 2024 FYPD ';
-    htmlCode += '<strong>Jeffrey</strong> for a 3rd round pick in the 2025 FYPD.</li>';
+    htmlCode += 'to <strong>Jeffrey</strong> for a 3rd round pick in the 2025 FYPD.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 
@@ -1787,7 +1787,7 @@ function NLReserves25() {
     // FYPD second round
     pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","1","0","0","0","0","0","0","0");
+    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // FYPD third round
     pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Greg", "Doug", "David",
@@ -1950,7 +1950,7 @@ function NLReserves25() {
     htmlCode += '<ol>';
     // 1
     htmlCode += '<li>3/4/2024: <strong>Greg</strong> trades a 2nd round pick in the 2024 FYPD ';
-    htmlCode += '<strong>Jeffrey</strong> for a 3rd round pick in the 2025 FYPD.</li>';
+    htmlCode += 'to <strong>Jeffrey</strong> for a 3rd round pick in the 2025 FYPD.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 
