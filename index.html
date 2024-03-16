@@ -57,6 +57,7 @@
                                 National <span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="Menu">
                                     <li><a href="#" id="NLReserves24">2024 Reserves Draft</a></li>
+                                    <li><a href="#" id="NLReserves25">2025 Reserves Draft</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="NLFAAB">NL FAAB Balances</a></li>
                                     <li><a href="#" id="NLFinances">NL Finances</a></li>
@@ -129,6 +130,12 @@
                 document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors25();
+            };
+            document.getElementById("NLReserves25").onclick=function() {
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
+                document.getElementById("divViz").style.display = "block";
+                document.getElementById("dataVis").innerHTML=NLReserves25();
             };
             document.getElementById("ALMinors26").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
