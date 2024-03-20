@@ -1321,11 +1321,11 @@ function ALMinors24() {
     var superScript = [];
     // first round
     pick.push("Brent", "Brent", "Kelly", 
-              "Randall", "Kelly", "Greg", 
+              "Jeremy", "Kelly", "Greg", 
               "Chris", "Greg", "Jon", 
               "Brent", "Brent", "Randall");
     superScript.push("0","9","7",
-              "1 and 8","0","0",
+              "1, 8, and 11","0","0",
               "0","2","6",
               "3","4","5");
 
@@ -1422,6 +1422,10 @@ function ALMinors24() {
     htmlCode += "<li>8/7/2023: <strong>Rich</strong> trades <em>Tyler Wells</em>, <em>John Means</em>, ";
     htmlCode += "and a 2024 2nd round minor league pick to <strong>Marty</strong> for ";
     htmlCode += "<em>Justin Verlander</em> and <em>Randy Arozarena</em>.</li>";
+    // 11
+    htmlCode += '<li>3/15/2024: <strong>Randall</strong> trades <em>Jonah Heim</em>, a 2024 1st round ML pick, and ';
+    htmlCode += 'a 2024 1st round reserve pick to <strong>Jeremy</strong> for <em>Nestor Cortes</em>, <em>Brooks Lee</em>, ';
+    htmlCode += 'and a 2024 1st round reserve pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1430,9 +1434,9 @@ function ALReserves24() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    pick.push("Brent", "Marty", "Randall", "Jeremy", "Kelly", "Greg",
     "Chris", "Jon", "David", "Glenn", "Rich", "Greg");
-    superScript.push("0","0","0","0","0","0",
+    superScript.push("0","0","3","3","0","0",
                      "0","0","0","0","0","2");
 
     // second round
@@ -1506,6 +1510,10 @@ function ALReserves24() {
     // 2
     htmlCode += '<li>6/14/2023: <strong>Greg</strong> trades <em>Garrett Whitlock</em> to ';
     htmlCode += '<strong>Jordan</strong> for a 2024 1st round reserve pick.</li>';
+    // 3
+    htmlCode += '<li>3/15/2024: <strong>Randall</strong> trades <em>Jonah Heim</em>, a 2024 1st round ML pick, and ';
+    htmlCode += 'a 2024 1st round reserve pick to <strong>Jeremy</strong> for <em>Nestor Cortes</em>, <em>Brooks Lee</em>, ';
+    htmlCode += 'and a 2024 1st round reserve pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 }
