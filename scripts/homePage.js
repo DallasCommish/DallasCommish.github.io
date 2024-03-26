@@ -1321,12 +1321,12 @@ function ALMinors24() {
     var superScript = [];
     // first round
     pick.push("Brent", "Brent", "Kelly", 
-              "Jeremy", "Kelly", "Greg", 
-              "Chris", "Greg", "Jon", 
+              "Jeremy", "Kelly", "Randall", 
+              "Chris", "David", "Jon", 
               "Brent", "Brent", "Randall");
     superScript.push("0","9","7",
-              "1, 8, and 11","0","0",
-              "0","2","6",
+              "1, 8, and 11","0","12",
+              "0","2 and 13","6",
               "3","4","5");
 
     // second round
@@ -1426,6 +1426,12 @@ function ALMinors24() {
     htmlCode += '<li>3/15/2024: <strong>Randall</strong> trades <em>Jonah Heim</em>, a 2024 1st round ML pick, and ';
     htmlCode += 'a 2024 1st round reserve pick to <strong>Jeremy</strong> for <em>Nestor Cortes</em>, <em>Brooks Lee</em>, ';
     htmlCode += 'and a 2024 1st round reserve pick.</li>';
+    // 12
+    htmlCode += "<li>3/25/2024: <strong>Greg</strong> trades a 2024 1st round minors pick to ";
+    htmlCode += "<strong>Randall</strong> for a 2025 1st round minors pick.</li>";
+    // 13
+    htmlCode += "<li>3/25/2024: <strong>Greg</strong> trades a 2024 1st round minors pick to ";
+    htmlCode += "<strong>David</strong> for a 2024 1st round reserve pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1435,9 +1441,9 @@ function ALReserves24() {
     var superScript = [];
     // first round
     pick.push("Brent", "Marty", "Randall", "Jeremy", "Kelly", "Greg",
-    "Chris", "Jon", "David", "Glenn", "Rich", "Greg");
+    "Chris", "Jon", "Greg", "Glenn", "Rich", "Greg");
     superScript.push("0","0","3","3","0","0",
-                     "0","0","0","0","0","2");
+                     "0","0","4","0","0","2");
 
     // second round
     pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "David",
@@ -1514,6 +1520,9 @@ function ALReserves24() {
     htmlCode += '<li>3/15/2024: <strong>Randall</strong> trades <em>Jonah Heim</em>, a 2024 1st round ML pick, and ';
     htmlCode += 'a 2024 1st round reserve pick to <strong>Jeremy</strong> for <em>Nestor Cortes</em>, <em>Brooks Lee</em>, ';
     htmlCode += 'and a 2024 1st round reserve pick.</li>';
+    // 4
+    htmlCode += "<li>3/25/2024: <strong>Greg</strong> trades a 2024 1st round minors pick to ";
+    htmlCode += "<strong>David</strong> for a 2024 1st round reserve pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1714,11 +1723,11 @@ function ALMinors25() {
     pick.push("Glenn", "Jeremy", "Greg", 
               "Chris", "Jordan", "Brent", 
               "Rich", "Kelly", "Marty", 
-              "Jon", "Brent", "Randall");
+              "Jon", "Brent", "Greg");
     superScript.push("0","0","0",
                      "0","0","2",
                      "0","0","0",
-                     "0","0","0");
+                     "0","0","3");
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
@@ -1780,6 +1789,9 @@ function ALMinors25() {
     // 2
     htmlCode += '<li>3/23/2023: <strong>Brent</strong> trades a 2nd round 2023 minor league ';
     htmlCode += 'pick to <strong>David</strong> for a 1st round 2025 minor league pick.</li>';
+    // 3
+    htmlCode += "<li>3/25/2024: <strong>Greg</strong> trades a 2024 1st round minors pick to ";
+    htmlCode += "<strong>Randall</strong> for a 2025 1st round minors pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
