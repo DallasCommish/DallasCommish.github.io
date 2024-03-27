@@ -1320,11 +1320,11 @@ function ALMinors24() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Brent", "Brent", "Kelly", 
+    pick.push("Greg", "Brent", "Kelly", 
               "Jeremy", "Kelly", "Randall", 
               "Chris", "David", "Jon", 
               "Brent", "Brent", "Randall");
-    superScript.push("0","9","7",
+    superScript.push("14","9","7",
               "1, 8, and 11","0","12",
               "0","2 and 13","6",
               "3","4","5");
@@ -1432,6 +1432,9 @@ function ALMinors24() {
     // 13
     htmlCode += "<li>3/25/2024: <strong>Greg</strong> trades a 2024 1st round minors pick to ";
     htmlCode += "<strong>David</strong> for a 2024 1st round reserve pick.</li>";
+    // 14
+    htmlCode += "<li>3/26/2024: <strong>Greg</strong> trades <em>Wilyer Abreu</em> and <em>Erik Swanson</em> ";
+    htmlCode += "to <strong>Brent</strong> for a 1st round 2024 minors pick.";
     htmlCode += '</ol>';
     return htmlCode;
 }
