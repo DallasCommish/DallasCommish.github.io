@@ -1323,18 +1323,18 @@ function ALMinors24() {
     pick.push("Greg", "Brent", "Kelly", 
               "Jeremy", "Kelly", "Randall", 
               "Chris", "David", "Jon", 
-              "Brent", "Brent", "Randall");
+              "Brent", "Jeremy", "Randall");
     superScript.push("14","9","7",
               "1, 8, and 11","0","12",
               "0","2 and 13","6",
-              "3","4","5");
+              "3","4 and 16","5");
 
     // second round
-    pick.push("Brent", "Marty", "Jeremy", 
+    pick.push("David", "Marty", "Jeremy", 
               "Randall", "Kelly", "Greg", 
               "Chris", "Jon", "David", 
               "Glenn", "Marty", "Jordan");
-    superScript.push("0","0","0",
+    superScript.push("15","0","0",
               "0","0","0",
               "0","0","0",
               "0","10","0");
@@ -1435,6 +1435,12 @@ function ALMinors24() {
     // 14
     htmlCode += "<li>3/26/2024: <strong>Greg</strong> trades <em>Wilyer Abreu</em> and <em>Erik Swanson</em> ";
     htmlCode += "to <strong>Brent</strong> for a 1st round 2024 minors pick.";
+    // 15
+    htmlCode += '<li>3/28/2024: <strong>Brent</strong> trades a 2nd round 2024 ML pick to ';
+    htmlCode += '<strong>David</strong> for a 2027 1st round ML pick.</li>';
+    // 16
+    htmlCode += "<li>3/28/2024: <strong>Jeremy</strong> trades a 1st round 2025 ML pick to ";
+    htmlCode += "<strong>Brent</strong> for a 1st round 2024 ML pick (originally Rich).";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1554,14 +1560,14 @@ function NLReserves24() {
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // post-auction first round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
+    pick.push("Matt A", "Greg", "Marc", "Jon", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    superScript.push("0","4","0","4","0","0","0","0","0","0","0");
 
     // post-auction second round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
+    pick.push("Matt A", "Jon", "Marc", "Jon", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    superScript.push("0","0","0","4","0","0","0","0","0","0","0");
 
     // post-auction third round
     pick.push("Matt A", "Greg", "Marc", "Greg", "Ken", "Greg", "Doug", "David",
@@ -1714,6 +1720,9 @@ function NLReserves24() {
     // 3
     htmlCode += '<li>3/4/2024: <strong>Greg</strong> trades a 2nd round pick in the 2024 FYPD ';
     htmlCode += 'to <strong>Jeffrey</strong> for a 3rd round pick in the 2025 FYPD.</li>';
+    // 4
+    htmlCode += "<li>3/28/2024: <strong>Greg</strong> trades a 2024 1st round pick and a 2024 2nd ";
+    htmlCode += "round pick to <strong>Jon</strong> for a 2024 1st round pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 
@@ -1723,11 +1732,11 @@ function ALMinors25() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Glenn", "Jeremy", "Greg", 
+    pick.push("Glenn", "Brent", "Greg", 
               "Chris", "Jordan", "Brent", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Greg");
-    superScript.push("0","0","0",
+    superScript.push("0","4","0",
                      "0","0","2",
                      "0","0","0",
                      "0","0","3");
@@ -1795,6 +1804,9 @@ function ALMinors25() {
     // 3
     htmlCode += "<li>3/25/2024: <strong>Greg</strong> trades a 2024 1st round minors pick to ";
     htmlCode += "<strong>Randall</strong> for a 2025 1st round minors pick.</li>";
+    // 4
+    htmlCode += "<li>3/28/2024: <strong>Jeremy</strong> trades a 1st round 2025 ML pick to ";
+    htmlCode += "<strong>Brent</strong> for a 1st round 2024 ML pick (originally Rich).";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -2052,6 +2064,79 @@ function ALMinors26() {
     // 2
     htmlCode += '<li>8/7/2023: <strong>Marty</strong> trandes <em>Teoscar Hernandez</em> and <em>Bailey Ober</em> ';
     htmlCode += 'to <strong>David</strong> for <em>Connor Norby</em> and a 2026 1st round ML pick.</li>';
+    htmlCode += '</ol>';
+    return htmlCode;
+}
+
+function ALMinors27() {
+    var pick = [];
+    var superScript = [];
+    // first round
+    pick.push("Glenn", "Jeremy", "Greg", 
+              "Chris", "Jordan", "Brent", 
+              "Rich", "Kelly", "Marty", 
+              "Jon", "Brent", "Randall");
+    superScript.push("0","0","0",
+                     "0","0","1",
+                     "0","0","0",
+                     "0","0","0");
+
+    // second round
+    pick.push("Glenn", "Jeremy", "Greg", 
+              "Chris", "Jordan", "David M", 
+              "Rich", "Kelly", "Marty", 
+              "Jon", "Brent", "Randall");
+    superScript.push("0","0","0",
+                     "0","0","0",
+                     "0","0","0",
+                     "0","0","0");
+
+    // third round
+    pick.push("Glenn", "Jeremy", "Greg", 
+              "Chris", "Jordan", "David M", 
+              "Rich", "Kelly", "Marty", 
+              "Jon", "Brent", "Randall");
+    superScript.push("0","0","0",
+                     "0","0","0",
+                     "0","0","0",
+                     "0","0","0");
+
+    // fourth round
+    pick.push("Glenn", "Jeremy", "Greg", 
+              "Chris", "Jordan", "David M", 
+              "Rich", "Kelly", "Marty", 
+              "Jon", "Brent", "Randall");
+    superScript.push("0","0","0",
+                     "0","0","0",
+                     "0","0","0",
+                     "0","0","0");
+
+    htmlCode = '<table class="responsive"><thead><th colspan="5">2027 American League Minors Roster Draft (Unordered)</th></thead>';
+    htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
+
+    for (i = 0; i <12; i++) {
+        htmlCode += '<tr><td class="points">';
+        htmlCode += (i + 1).toString();
+        htmlCode += '</td>';
+        for (j = 0; j < 4; j++) {
+            htmlCode += '<td class="team">';
+            htmlCode += pick[j * 12 + i];
+            if (superScript[j * 12 + i] != "0") {
+                htmlCode += '<sup>' + superScript[j * 12 + i] + '</sup>';
+            }
+            htmlCode += '</td>';
+        }
+        htmlCode += '</tr>';
+    }
+
+    htmlCode += '</table>';
+
+    // include the footnotes of the trade details
+    htmlCode += '<br /><h3>Trade Details</h3>';
+    htmlCode += '<ol>';
+    // 1
+    htmlCode += '<li>3/28/2024: <strong>Brent</strong> trades a 2nd round 2024 ML pick to ';
+    htmlCode += '<strong>David</strong> for a 2027 1st round ML pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -2327,6 +2412,60 @@ function ALFinances() {
 }
 
 function NLFinances() {
+    // repeat the code for 2024
+    var teamList = ["A McNickle for Farm Fresh Gregs", "Donner Party", "Dread Pirate Roberts", 
+                    "Leonard Peltier's Army", "Liberty Lunch", "Matty Bos", 
+                    "Gobekli Tepe Fluffy Bunnies", "P-Funk All-Stars", "Seattle Stackers",
+                    "The Cream and the Clear", "Wichita Sox Monkees"];
+
+    var beginning = [92.78, 1022.24, -170.52, 
+                     130.74, 69.06, -221.22,
+                     0, -203.18, 136.05,
+                     -168.33, 667.88];
+
+    var paid = [0, 0, 0,
+                0, 0, 0,
+                0, 0, 0,
+                0, 0];
+
+    var draft = [0, 0, 0,
+                 0, 0, 0,
+                 0, 0, 0,
+                 0, 0];
+
+    var expenses = [0, 0, 0,
+                    0, 0, 0,
+                    0, 0, 0,
+                    0, 0];
+
+    var winnings = [0, 0, 0,
+                    0, 0, 0,
+                    0, 0, 0,
+                    0, 0];
+
+    var payment = [0, 0, 0,
+                   0, 0, 0,
+                   0, 0, 0,
+                   0, 0];
+    htmlCode = '<table class="responsive"><thead><th colspan="8">2024 National League Finances</th></thead>';
+    htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
+    htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
+    htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
+
+    for (i = 0; i < 11; i++) {
+        htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
+        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
+    }
+
+    htmlCode += '</table>';
+    htmlCode += "<br />";
+
     // repeat the code for 2023
     var teamList = ["A McNickle for Farm Fresh Gregs", "Donner Party", "Dread Pirate Roberts", 
                     "Leonard Peltier's Army", "Liberty Lunch", "Matty Bos", 
@@ -2361,8 +2500,8 @@ function NLFinances() {
     var payment = [0, 0, 0,
                    0, 0, 0,
                    78.5, 0, 83,
-                   0, 0];
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2023 National League Finances</th></thead>';
+                   0, -300];
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2023 National League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
