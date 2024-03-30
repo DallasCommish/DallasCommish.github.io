@@ -1321,23 +1321,23 @@ function ALMinors24() {
     var superScript = [];
     // first round
     pick.push("Greg", "Brent", "Kelly", 
-              "Jeremy", "Kelly", "Randall", 
+              "Jeremy", "Kelly", "Chris", 
               "Chris", "David", "Jon", 
               "Brent", "Jeremy", "Randall");
     superScript.push("14","9","7",
-              "1, 8, and 11","0","12",
+              "1, 8, and 11","0","12 and 18",
               "0","2 and 13","6",
               "3","4 and 16","5");
 
     // second round
-    pick.push("David", "Marty", "Jeremy", 
-              "Randall", "Kelly", "Greg", 
+    pick.push("David", "Marty", "Jordan", 
+              "Randall", "Jordan", "Greg", 
               "Chris", "Jon", "David", 
-              "Glenn", "Marty", "Jordan");
-    superScript.push("15","0","0",
+              "Glenn", "Marty", "Chris");
+    superScript.push("15","0","17",
+              "0","19","0",
               "0","0","0",
-              "0","0","0",
-              "0","10","0");
+              "0","10","20");
 
     // third round
     pick.push("Brent", "Marty", "Jeremy", 
@@ -1441,6 +1441,20 @@ function ALMinors24() {
     // 16
     htmlCode += "<li>3/28/2024: <strong>Jeremy</strong> trades a 1st round 2025 ML pick to ";
     htmlCode += "<strong>Brent</strong> for a 1st round 2024 ML pick (originally Rich).";
+    // 17
+    htmlCode += "<li>3/28/2024: <strong>Jeremy</strong> trasdes <em>Will Smith</em>, ";
+    htmlCode += "<em>Pablo Lopez</em>, and a 2nd round 2024 ML pick to <strong>Jordan</strong> ";
+    htmlCode += "for <em>Carlos Estevez</em> and <em>Travis Jankowski</em>.</li>";
+    // 18
+    htmlCode += "<li>3/29/2024: <strong>Randall</strong> trades <em>J.P. France</em>, ";
+    htmlCode += "<em>Jason Foley</em>, and a 1st round 2024 ML pick to ";
+    htmlCode += "<strong>Chris</strong> for <em>Esteury Ruiz</em>.</li>";
+    // 19
+    htmlCode += "<li>3/29/2024: <strong>Kelly</strong> trades a 2nd round 2024 ML pick to ";
+    htmlCode += "<strong>Jordan</strong> for a 2nd round 2025 ML pick.</li>";
+    // 20
+    htmlCode += "<li>3/29/2024: <strong>Chris</strong> trades <em>Nick Pivetta</em> to ";
+    htmlCode += "<strong>Jordan</strong> for <em>Logan T. Allen</em> and a 2nd round 2024 ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1560,9 +1574,10 @@ function NLReserves24() {
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // post-auction first round
-    pick.push("Matt A", "Greg", "Marc", "Jon", "Ken", "Jeffrey", "Doug", "David",
+    pick.push("Greg", "Matt A", "Marc", "Jon", "Ken", "Jeffrey", "Doug", "David",
               "Matt R", "Rich", "Glenn");
-    superScript.push("0","4","0","4","0","0","0","0","0","0","0");
+    superScript.push("5","4 and 5","0","4","0","0","0","0",
+                     "0","0","0");
 
     // post-auction second round
     pick.push("Matt A", "Jon", "Marc", "Jon", "Ken", "Jeffrey", "Doug", "David",
@@ -1723,6 +1738,9 @@ function NLReserves24() {
     // 4
     htmlCode += "<li>3/28/2024: <strong>Greg</strong> trades a 2024 1st round pick and a 2024 2nd ";
     htmlCode += "round pick to <strong>Jon</strong> for a 2024 1st round pick.</li>";
+    // 5
+    htmlCode += "<li>3/29/2024: <strong>Greg</strong> trades a 2024 1st round pick to ";
+    htmlCode += "<strong>Matt A</strong> for a 2024 1st round pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 
@@ -1743,11 +1761,11 @@ function ALMinors25() {
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "Chris", "Jordan", "Jon", 
+              "Chris", "Kelly", "Jon", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
     superScript.push("0","0","0",
-                     "0","0","1",
+                     "0","5","1",
                      "0","0","0",
                      "0","0","0");
 
@@ -1807,6 +1825,9 @@ function ALMinors25() {
     // 4
     htmlCode += "<li>3/28/2024: <strong>Jeremy</strong> trades a 1st round 2025 ML pick to ";
     htmlCode += "<strong>Brent</strong> for a 1st round 2024 ML pick (originally Rich).";
+    // 5
+    htmlCode += "<li>3/29/2024: <strong>Kelly</strong> trades a 2nd round 2024 ML pick to ";
+    htmlCode += "<strong>Jordan</strong> for a 2nd round 2025 ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
