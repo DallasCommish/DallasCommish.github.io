@@ -47,6 +47,8 @@
                                     <li class="divider"></li>
                                     <li><a href="#" id="MaxCategory">Category Maximum</a></li>
                                     <li class="divider"></li>
+                                    <li><a href="#" id="DataStudy">2024 Data Study</a></li>
+                                    <li class="divider"></li>
                                     <li><a href="#" id="ALFAAB">AL FAAB Balances</a></li>
                                     <li><a href="#" id="ALFinances">AL Finances</a></li>
                                     <li class="divider"></li>
@@ -173,6 +175,12 @@
                 document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divRules").style.display = "block";
                 document.getElementById("Rules").src="NLConstitutionBootstrap.html";
+            };
+            document.getElementById("DataStudy").onclick=function() {
+                document.getElementById("divVis").style.display = "none";
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "block";
+                document.getElementById("FAAB").src="AL2024DataStudy.html";
             };
             document.getElementById("ALFAAB").onclick=function() {
                 document.getElementById("divVis").style.display = "none";
