@@ -1844,11 +1844,11 @@ function ALMinors25() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Glenn", "Brent", "Greg", 
+    pick.push("Glenn", "Brent", "Jordan", 
               "Chris", "Jordan", "Brent", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Greg");
-    superScript.push("0","4","0",
+    superScript.push("0","4","6",
                      "0","0","2",
                      "0","0","0",
                      "0","0","3");
@@ -1922,6 +1922,10 @@ function ALMinors25() {
     // 5
     htmlCode += "<li>3/29/2024: <strong>Kelly</strong> trades a 2nd round 2024 ML pick to ";
     htmlCode += "<strong>Jordan</strong> for a 2nd round 2025 ML pick.</li>";
+    // 6
+    htmlCode += "<li>7/23/2024: <strong>Jordan</strong> trades <em>Nick Pivetta</em>, <em>Yordan Alvarez</em>, ";
+    htmlCode += "<em>Nate Lowe</em>, and <em>Andres Gimenez</em> to <strong>Greg</strong> for <em>Wenceel Perez</em>, ";
+    htmlCode += "<em>Taylor Ward</em>, <em>Bryan Woo</em>, a 1st round 2025 ML pick, and a 1st round 2026 ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -2113,14 +2117,14 @@ function ALMinors26() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Glenn", "Jeremy", "Greg", 
+    pick.push("Glenn", "Jeremy", "Jordan", 
               "Chris", "Jordan", "Marty", 
               "Rich", "Kelly", "Brent", 
-              "Jon", "Brent", "Randall");
-    superScript.push("0","0","0",
+              "Jon", "Brent", "Marty");
+    superScript.push("0","0","3",
                      "0","0","2",
                      "0","0","1",
-                     "0","0","0");
+                     "0","0","4");
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
@@ -2180,8 +2184,15 @@ function ALMinors26() {
     htmlCode += 'and <em>Enrique Hernandez</em> to <strong>Marty</strong> for a 2024 1st round minor ';
     htmlCode += 'pick and a 2026 1st round minor league pick.</li>';
     // 2
-    htmlCode += '<li>8/7/2023: <strong>Marty</strong> trandes <em>Teoscar Hernandez</em> and <em>Bailey Ober</em> ';
+    htmlCode += '<li>8/7/2023: <strong>Marty</strong> trades <em>Teoscar Hernandez</em> and <em>Bailey Ober</em> ';
     htmlCode += 'to <strong>David</strong> for <em>Connor Norby</em> and a 2026 1st round ML pick.</li>';
+    // 3
+    htmlCode += "<li>7/23/2024: <strong>Jordan</strong> trades <em>Nick Pivetta</em>, <em>Yordan Alvarez</em>, ";
+    htmlCode += "<em>Nate Lowe</em>, and <em>Andres Gimenez</em> to <strong>Greg</strong> for <em>Wenceel Perez</em>, ";
+    htmlCode += "<em>Taylor Ward</em>, <em>Bryan Woo</em>, a 1st round 2025 ML pick, and a 1st round 2026 ML pick.</li>";
+    // 4
+    htmlCode += "<li>7/28/2024: <strong>Marty</strong> trades <em>Joe Ryan</em> and <em>Randy Arozarena</em> to ";
+    htmlCode += "<strong>Randall</strong> for <em>Eduoard Julien</em>, <em>Tyler O'Neill</em>, and a 1st round 2026 ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
