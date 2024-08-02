@@ -1847,11 +1847,11 @@ function ALMinors25() {
     pick.push("Glenn", "Brent", "Jordan", 
               "Chris", "Jordan", "Brent", 
               "Rich", "Kelly", "Marty", 
-              "Jon", "Brent", "Greg");
+              "Jon", "Brent", "Chris");
     superScript.push("0","4","6",
                      "0","0","2",
                      "0","0","0",
-                     "0","0","3");
+                     "0","0","3 and 7");
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
@@ -1926,6 +1926,90 @@ function ALMinors25() {
     htmlCode += "<li>7/23/2024: <strong>Jordan</strong> trades <em>Nick Pivetta</em>, <em>Yordan Alvarez</em>, ";
     htmlCode += "<em>Nate Lowe</em>, and <em>Andres Gimenez</em> to <strong>Greg</strong> for <em>Wenceel Perez</em>, ";
     htmlCode += "<em>Taylor Ward</em>, <em>Bryan Woo</em>, a 1st round 2025 ML pick, and a 1st round 2026 ML pick.</li>";
+    // 7
+    htmlCode += "<li>7/31/2024: <strong>Chris</strong> trades <em>Chad Green</em> to <strong>Greg</strong> for ";
+    htmlCode += "<em>Jake Meyers</em> and a 1st round 2025 ML pick.</li>";
+    htmlCode += '</ol>';
+    return htmlCode;
+}
+
+function ALReserves25() {
+    var pick = [];
+    var superScript = [];
+    // first round
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+        "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
+        superScript.push("0","0","0","0","0","0",
+                         "0","0","0","0","0","0");
+    
+    // second round
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+        "Chris", "Greg", "David", "Glenn", "Rich", "Jordan");
+        superScript.push("0","0","0","0","0","0",
+                         "0","1","0","0","0","0");
+    
+    // third round
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Jon",
+        "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
+        superScript.push("0","0","0","0","0","1",
+                         "0","0","0","0","0","0");
+    
+    // fourth round
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // fifth round
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // sixth round
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // seventh round
+    pick.push("Brent", "Marty", "Jeremy", "Randall", "Kelly", "Greg",
+    "Chris", "Jon", "David", "Glenn", "Rich", "Jordan");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Reserves Roster Draft (Un-ordered)</th></thead>';
+    htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
+
+    for (i = 0; i <12; i++) {
+        htmlCode += '<tr><td class="points">';
+        htmlCode += (i + 1).toString();
+        htmlCode += '</td>';
+        for (j = 0; j < 7; j++) {
+            htmlCode += '<td class="team">';
+            htmlCode += pick[j * 12 + i];
+            if (superScript[j * 12 + i] != "0") {
+                htmlCode += '<sup>' + superScript[j * 12 + i] + '</sup>';
+            }
+            htmlCode += '</td>';
+        }
+        htmlCode += '</tr>';
+    }
+
+    htmlCode += '</table>';
+
+    // Include salaries for each round
+    htmlCode += '<br /><h3>Salaries by Round</h3>';
+    htmlCode += '<ul><li>$1.5 for Rounds 1 - 3</li>';
+    htmlCode += '<li>$1.0 for Rounds 4 - 5</li>';
+    htmlCode += '<li>$0.5 for Rounds 6 - 7</li></ul>';
+
+    // include the footnotes of the trade details
+    htmlCode += '<br /><h3>Trade Details</h3>';
+    htmlCode += '<ol>';
+    // 1
+    htmlCode += "<li>8/1/2024: <strong>Greg</strong> trades <em>Yariel Rodriguez</em> and a 3rd round 2025 reserve pick ";
+    htmlCode += "to <strong>Jon</strong> for a 2nd round 2025 reserve pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }

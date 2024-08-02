@@ -42,6 +42,7 @@
                                     <li><a href="#" id="ALMinors24">2024 Minors Draft</a></li>
                                     <li><a href="#" id="ALReserves24">2024 Reserves Draft</a></li>
                                     <li><a href="#" id="ALMinors25">2025 Minors Draft</a></li>
+                                    <li><a href="#" id="ALReserves25">2025 Reserves Draft</a></li>
                                     <li><a href="#" id="ALMinors26">2026 Minors Draft</a></li>
                                     <li><a href="#" id="ALMinors27">2027 Minors Draft</a></li>
                                     <li class="divider"></li>
@@ -133,6 +134,12 @@
                 document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors25();
+            };
+            document.getElementById("ALReserves25").onclick=function() {
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
+                document.getElementById("divVis").style.display = "block";
+                document.getElementById("dataVis").innerHTML=ALReserves25();
             };
             document.getElementById("NLReserves25").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
