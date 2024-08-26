@@ -2018,14 +2018,20 @@ function NLReserves25() {
     var pick = [];
     var superScript = [];
     // FYPD first round
-     pick.push("Matt A", "Marc", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
+     pick.push("Matt A", "Marc", "Marc", "Matt R", 
+               "Ken", "Jeffrey", "Doug", "David",
                "Matt R", "Rich", "Glenn");
-     superScript.push("0","2","0","0","0","0","0","0","0","0","0");
+     superScript.push("0","2","0","3",
+                      "0","0","0","0",
+                      "0","0","0");
 
     // FYPD second round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Matt A", "Jon", "Marc", "Greg", 
+              "Ken", "Jeffrey", "Doug", "David",
+              "Greg", "Rich", "Glenn");
+    superScript.push("0","0","0","0",
+                     "0","0","0","0",
+                     "3","0","0");
 
     // FYPD third round
     pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Greg", "Doug", "David",
@@ -2195,6 +2201,9 @@ function NLReserves25() {
     // 2
     htmlCode += "<li>8/8/2024: <strong>Marc</strong> trades <em>Rowdy Tellez</em> to ";
     htmlCode += "<strong>Jon</strong> for a 2025 1st round FYPD pick.</li>";
+    // 3
+    htmlCode += "<li>8/25/2024: <strong>Greg</strong> trades a 2025 1st round FYPD pick to ";
+    htmlCode += "<strong>Matt R</strong> for <em>Michael Conforto</em> and a 2025 2nd round FYPD pick.</li>';"
     htmlCode += '</ol>';
     return htmlCode;
 
