@@ -2203,7 +2203,7 @@ function NLReserves25() {
     htmlCode += "<strong>Jon</strong> for a 2025 1st round FYPD pick.</li>";
     // 3
     htmlCode += "<li>8/25/2024: <strong>Greg</strong> trades a 2025 1st round FYPD pick to ";
-    htmlCode += "<strong>Matt R</strong> for <em>Michael Conforto</em> and a 2025 2nd round FYPD pick.</li>';"
+    htmlCode += "<strong>Matt R</strong> for <em>Michael Conforto</em> and a 2025 2nd round FYPD pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 
