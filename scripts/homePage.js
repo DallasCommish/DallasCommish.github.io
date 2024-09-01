@@ -1854,11 +1854,11 @@ function ALMinors25() {
                      "0","0","3 and 7");
 
     // second round
-    pick.push("Glenn", "Jeremy", "Greg", 
+    pick.push("Greg", "Jeremy", "Greg", 
               "Chris", "Kelly", "Jon", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
-    superScript.push("0","0","0",
+    superScript.push("8","0","0",
                      "0","5","1",
                      "0","0","0",
                      "0","0","0");
@@ -1929,6 +1929,10 @@ function ALMinors25() {
     // 7
     htmlCode += "<li>7/31/2024: <strong>Chris</strong> trades <em>Chad Green</em> to <strong>Greg</strong> for ";
     htmlCode += "<em>Jake Meyers</em> and a 1st round 2025 ML pick.</li>";
+    // 8
+    htmlCode += "<li>8/31/2024: <strong>Greg</strong> trades <em>Miguel Andujar</em>, <em>Tarik Skubal</em>, ";
+    htmlCode += "and <em>Dylan Carlson</em> to <strong>Glenn</strong> for <em>Kevin Gausman</em>, <em>Rafael Devers</em>, ";
+    htmlCode += "<em>Riley Greene</em>, and a 2025 2nd round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
