@@ -2444,19 +2444,19 @@ function ALFinances() {
                  -26.9, -25.2, -27.0, 
                  -27.1, -25.8, -27.1];
 
-    var expenses = [0, 0, 0, 
-                    0, 0, 0,
-                    0, 0, 0, 
-                    0, 0, 0];
+    var expenses = [-51.9, -54.2, -76.1, 
+                    -50.2, -77.2, -71.5,
+                    -181.8, -81.1, -67.6, 
+                    -59.7, -194.5, -122.9];
 
-    var winnings = [0, 0, 0,
-                    0, 0, 0,
-                    0, 0, 0,
-                    0, 0, 0];
+    var winnings = [27.1, 0, 0,
+                    0, 138.26, 0,
+                    345.65, 0, 0,
+                    0, 691.3, 207.39];
 
     var payment = [0, 0, 0, 
                    0, 0, 0, 
-                   0, 0, 0, 
+                   0, 106.3, 0, 
                    0, 0, 0];
     htmlCode = '<table class="responsive"><thead><th colspan="8">2024 American League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
