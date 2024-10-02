@@ -4,11 +4,11 @@ function showFinish2024() {
                        "David's 5 & Dime", "Hradek Hrams", "The Patsy Killjoys",
                        "The Blossoms", "Non-Zero Chance", "Kelly S*M*A*S*H"];
     var teamPointsAL = [105, 99, 87, 77, 69, 68, 58, 56, 43, 41, 40, 37];
-    var teamOrderNL = ["Wichita Sox Monkees", "Matty Bos", "Leonard Peltier's Army",
-                       "Donner Party", "Dread Pirate Roberts", "Seattle Stackers",
-                       "P-Funk All-Stars", "A McNickle for Farm Fresh Gregs", "Liberty Lunch",
-                       "The Cream and the Clear", "NWA Redbirds", ''];
-    var teamPointsNL = [72, 71, 61, 58, 54, 53, 46, 36, 30, 26, 11, 0];
+    var teamOrderNL = ["Matty Bos", "A McNickle for Farm Fresh Gregs", "Wichita Sox Monkees",
+                       "Leonard Peltier's Army", "Donner Party", "P-Funk All-Stars",
+                       "Dread Pirate Roberts", "Seattle Stackers", "Liberty Lunch",
+                       "The Cream and the Clear", "Gobekli Tepe Fluffy Bunnies", ''];
+    var teamPointsNL = [78, 73.5, 66, 61, 49.5, 41.5, 39.5, 37.5, 31, 24, 20.5, 0];
   
     var htmlCode = "<table id='BaseballFinish' class='responsive'><thead><th colspan='5'>2024 Finish</th></thead>";
     htmlCode += "<tr><td class='colTitle'>American League</td>";
@@ -25,25 +25,22 @@ function showFinish2024() {
       htmlCode += "<td class='points'>" + teamPointsNL[i].toFixed(1) + "</td></tr>";
     }
   
-    htmlCode += "</tbody></table>";
-    htmlCode += "<p>The Shohei Kid wins the tie-breaker 8,292 - 7,829";
-
     htmlCode += "<table id='prizePair'>";
     htmlCode += "<caption>Final Prize Pair Selections</caption>";
     htmlCode += "<thead>";
     htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
     htmlCode += "</thead>";
-    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>Glenn</td></tr>";
-    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>Rich</td></tr>";
-    htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>Matt R</td></tr>";
-    htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>David</td></tr>";
-    htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>Doug</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>Matt A</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>Jon</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>Marc</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>Greg</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>Ken</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>Tom</td></tr>";
+    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "</table>";
 
     return htmlCode;
