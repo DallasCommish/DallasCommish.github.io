@@ -30,7 +30,7 @@ function showFinish2024() {
     htmlCode += "<thead>";
     htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
     htmlCode += "</thead>";
-    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>Matty Bos</td></tr>";
     htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>&nbsp;</td></tr>";
@@ -2764,19 +2764,19 @@ function NLFinances() {
                  -29.4, -27.9, -27.1,
                  -29.4, -29.0];
 
-    var expenses = [0, 0, 0,
-                    0, 0, 0,
-                    0, 0, 0,
-                    0, 0];
+    var expenses = [-288.7, -86.2, -102.7,
+                    -92, -46.2, -209.5,
+                    -61.4, -112.3, -74,
+                    -57, -140];
 
     var winnings = [0, 0, 0,
-                    0, 0, 0,
+                    0, 0, 778.15,
                     0, 0, 0,
                     0, 0];
 
     var payment = [0, 0, 0,
                    0, 0, 0,
-                   0, 0, 0,
+                   90.8, 0, 0,
                    0, 0];
     htmlCode = '<table class="responsive"><thead><th colspan="8">2024 National League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
