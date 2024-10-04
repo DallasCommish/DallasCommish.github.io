@@ -35,7 +35,7 @@ function showFinish2024() {
     htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>Wichita Sox Monkees</td></tr>";
     htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>&nbsp;</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>Leonard Peltier's Army</td></tr>";
     htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>&nbsp;</td></tr>";
