@@ -31,7 +31,7 @@ function showFinish2024() {
     htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
     htmlCode += "</thead>";
     htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>Matty Bos</td></tr>";
-    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>A McNickle for Farm Fresh Gregs</td></tr>";
     htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>&nbsp;</td></tr>";
@@ -2769,7 +2769,7 @@ function NLFinances() {
                     -61.4, -112.3, -74,
                     -57, -140];
 
-    var winnings = [0, 0, 0,
+    var winnings = [389.08, 0, 0,
                     0, 0, 778.15,
                     0, 0, 0,
                     0, 0];
