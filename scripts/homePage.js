@@ -34,13 +34,13 @@ function showFinish2024() {
     htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>A McNickle for Farm Fresh Gregs</td></tr>";
     htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>Wichita Sox Monkees</td></tr>";
     htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>Seattle Stackers</td></tr>";
-    htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>Liberty Lunch</td></tr>";
     htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>Leonard Peltier's Army</td></tr>";
     htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>Donner Party</td></tr>";
     htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>P-Funk All-Stars</td></tr>";
     htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>Dread Pirate Roberts</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>&nbsp;</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>The Cream and the Clear</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>Gobekli Tepe Fluffy Bunnies</td></tr>";
     htmlCode += "</table>";
 
     return htmlCode;
@@ -2770,7 +2770,7 @@ function NLFinances() {
                     -57, -140];
 
     var winnings = [389.08, 0, 0,
-                    0, 0, 778.15,
+                    0, 29.4, 778.15,
                     0, 0, 155.63,
                     0, 233.45];
 
