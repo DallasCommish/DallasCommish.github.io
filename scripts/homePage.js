@@ -97,158 +97,6 @@ function showFinish2023() {
     return htmlCode;
   }
   
-function showFinish2022() {
-    var teamOrderAL = ["Wichita TinMen", "Flower Children", "David's 5 & Dime",
-                       "Banoaster Republic", "Jak of Diamonds", "Kelly S*M*A*S*H",
-                       "David's Disappointments", "The Shohei Kid", "The Patsy Killjoys",
-                       "Kirk's Enterprise", "Hradek Hrams", "The Blossoms"];
-    var teamPointsAL = [101, 101, 93.5, 89, 77, 54, 50, 50, 47.5, 41, 38.5, 37.5];
-    var teamOrderNL = ["Wichita Sox Monkees", "A McNickle for Farm Fresh Gregs", "Leonard Peltier's Army",
-                       "P-Funk All-Stars", "Dread Pirate Roberts", "Matty Bos",
-                       "Seattle Stackers", "Donner Party", "The Cream and the Clear",
-                       "Liberty Lunch", "Irby's Embarrassments", ''];
-    var teamPointsNL = [78.5, 78, 59, 56, 50.5, 39.5, 39, 35.5, 31, 23, 18, 0];
-  
-    var htmlCode = "<table id='BaseballFinish' class='responsive'><thead><th colspan='5'>2022 Finish</th></thead>";
-    htmlCode += "<tr><td class='colTitle'>American League</td>";
-    htmlCode += "<td class='colTitle'>Points</td>";
-    htmlCode += "<td class='colTitle'>Place</td>";
-    htmlCode += "<td class='colTitle'>National League</td>";
-    htmlCode += "<td class='colTitle'>Points</td></tr><tbody>";
-  
-    for (var i = 0; i < 12; i++) {
-      htmlCode += "<tr><td class='team'>" + teamOrderAL[i] + "</td>";
-      htmlCode += "<td class='points'>" + teamPointsAL[i].toFixed(1) + "</td>";
-      htmlCode += "<td class='points'>" + (i + 1) + "</td>";
-      htmlCode += "<td class='team'>" + teamOrderNL[i] + "</td>";
-      htmlCode += "<td class='points'>" + teamPointsNL[i].toFixed(1) + "</td></tr>";
-    }
-  
-    htmlCode += "</tbody></table>";
-    htmlCode += "<p>Wichita TinMen wins the tie-breaker 6 - 4";
-    htmlCode += "<br />David's Diappointments wins the tie-breaker 5.5 - 4.5</p>";
-
-    htmlCode += "<table id='prizePair'>";
-    htmlCode += "<caption>Final Prize Pair Selections</caption>";
-    htmlCode += "<thead>";
-    htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
-    htmlCode += "</thead>";
-    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>Wichita TinMen</td></tr>";
-    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>A McNickle for Farm Fresh Gregs</td></tr>";
-    htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>Leonard Peltier's Army</td></tr>";
-    htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>P-Funk All-Stars</td></tr>";
-    htmlCode += "<tr><td>$26</td><td>7<sup>th</sup></td><td>Seattle Stackers</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>Dread Pirate Roberts</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>Matty Bos</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>Donner Party</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>The Cream and the Clear</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>Liberty Lunch</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>Irby's Embarrassments</td></tr>";
-    htmlCode += "</table>";
-
-    return htmlCode;
-  }
-  
-function showFinish2021() {
-    var teamOrderAL = ["Kirk's Enterprise", "The Patsy Killjoys", "Jak of Diamonds",
-                       "Flower Children", "Wichita TinMen", "Hradek Hrams",
-                       "David's 5 & Dime", "Kelly S*M*A*S*H", "Covid relief pitchers",
-                       "The Blossoms", "The Shohei Kid", "Banoaster Republic"];
-    var teamPointsAL = [79, 71, 71, 69.5, 65, 55, 44, 37.5, 37.5, 33.5, 30, 25];
-    var teamOrderNL = ["Never Gonna Give Yu Up", "Leonard Peltier's Army", "Wichita Sox Monkees",
-                       "Matty Bos", "Cheeseburgers in Paradise", "Dread Pirate Roberts",
-                       "Seattle Stackers", "Donner Party", "Liberty Lunch",
-                       "A McNickle for Farm Fresh Gregs", "The Cream and the Clear", ''];
-    var teamPointsNL = [68, 66, 63.5, 58, 47, 45.5, 44, 43, 41, 30, 15, 0];
-  
-    var htmlCode = "<table id='BaseballFinish' class='responsive'><thead><th colspan='5'>2021 Finish</th></thead>";
-    htmlCode += "<tr><td class='colTitle'>American League</td>";
-    htmlCode += "<td class='colTitle'>Points</td>";
-    htmlCode += "<td class='colTitle'>Place</td>";
-    htmlCode += "<td class='colTitle'>National League</td>";
-    htmlCode += "<td class='colTitle'>Points</td></tr><tbody>";
-  
-    for (var i = 0; i < 12; i++) {
-      htmlCode += "<tr><td class='team'>" + teamOrderAL[i] + "</td>";
-      htmlCode += "<td class='points'>" + teamPointsAL[i].toFixed(1) + "</td>";
-      htmlCode += "<td class='points'>" + (i + 1) + "</td>";
-      htmlCode += "<td class='team'>" + teamOrderNL[i] + "</td>";
-      htmlCode += "<td class='points'>" + teamPointsNL[i].toFixed(1) + "</td></tr>";
-    }
-  
-    htmlCode += "</tbody></table>";
-    htmlCode += "<p>The Patsy Killjoys wins the tie-breaker 5 - 3";
-    htmlCode += "<br />Kelly S*M*A*S*H wins the second tie-breaker 8,814 - 8,239</p>";
-
-    htmlCode += "<table id='prizePair'>";
-    htmlCode += "<caption>Final Prize Pair Selections</caption>";
-    htmlCode += "<thead>";
-    htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
-    htmlCode += "</thead>";
-    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>David I</td></tr>";
-    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>Jon</td></tr>";
-    htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>Glenn</td></tr>";
-    htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>Don</td></tr>";
-    htmlCode += "<tr><td>$26</td><td>7<sup>th</sup></td><td>David</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>Matt A</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>Matt R</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>Rich</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>Ken</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>Greg</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>Doug</td></tr>";
-    htmlCode += "</table>";
-
-    return htmlCode;
-  }
-  
-function showFinish2019() {
-    var teamOrderAL = ["The Patsy Killjoys", "The Shohei Kid", "Wichita TinMen", "Kelly S*M*A*S*H",
-                       "The Blossoms", "Kirk's Enterprise", "Jak of Diamonds", "changin' names",
-                       "David's 5 & Dime", "Flower Children", "Banoaster Republic", "Hradek Hrams"];
-    var teamPointsAL = [86, 83, 74, 64, 60.5, 54, 52, 28.5, 28.5, 27, 24.5, 22];
-    var teamOrderNL = ["Donner Party", "Matty Bos", "Wichita Sox Monkees", "Seattle Stackers",
-                       "Liberty Lunch", "Leonard Peltier's Army", "The Cream and The Clear",
-                       "Sons of Pitches", "A McNickle for Farm Fresh Gregs", "Cheeseburgers in Paradise", '', ''];
-    var teamPointsNL = [57, 55, 51.5, 48, 45, 44, 39, 38, 35, 27.5, 0, 0];
-  
-    var htmlCode = "<table id='BaseballFinish' class='responsive'><thead><th colspan='5'>2019 Finish</th></thead>";
-    htmlCode += "<tr><td class='colTitle'>American League</td>";
-    htmlCode += "<td class='colTitle'>Points</td>";
-    htmlCode += "<td class='colTitle'>Place</td>";
-    htmlCode += "<td class='colTitle'>National League</td>";
-    htmlCode += "<td class='colTitle'>Points</td></tr><tbody>";
-  
-    for (var i = 0; i < 12; i++) {
-      htmlCode += "<tr><td class='team'>" + teamOrderAL[i] + "</td>";
-      htmlCode += "<td class='points'>" + teamPointsAL[i].toFixed(1) + "</td>";
-      htmlCode += "<td class='points'>" + (i + 1) + "</td>";
-      htmlCode += "<td class='team'>" + teamOrderNL[i] + "</td>";
-      htmlCode += "<td class='points'>" + teamPointsNL[i].toFixed(1) + "</td></tr>";
-    }
-  
-    htmlCode += "</tbody></table>";
-    htmlCode += "<p>changin' names wins the tie-breaker 4.5 - 3.5</p>";
-
-    htmlCode += "<table id='prizePair'>";
-    htmlCode += "<caption>Final Prize Pair Selections</caption>";
-    htmlCode += "<thead>";
-    htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
-    htmlCode += "</thead>";
-    htmlCode += "<tr><td>50%</td><td>10<sup>th</sup></td><td>Rich</td></tr>";
-    htmlCode += "<tr><td>25%</td><td>9<sup>th</sup></td><td>Glenn</td></tr>";
-    htmlCode += "<tr><td>15%</td><td>8<sup>th</sup></td><td>Ken</td></tr>";
-    htmlCode += "<tr><td>10%</td><td>7<sup>th</sup></td><td>Jon</td></tr>";
-    htmlCode += "<tr><td>$26</td><td>6<sup>th</sup></td><td>Greg</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>Matt</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>David</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>Doug</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>Jason</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>Don</td></tr>";
-    htmlCode += "</table>";
-
-    return htmlCode;
-  }
-  
 function ALFaab2019() {
     var teamList = ["Banoaster Republic", "Flower Children", "Hradek Hrams", "Jak of Diamonds", "Kelly S*M*A*S*H", "Kirk's Enterprise", "David's 5 & Dime", "The Blossoms", "The Patsy Killjoys", "changin' names", "Wichita TinMen", "The Shohei Kid"];
 
@@ -311,174 +159,6 @@ function NLFaab2019() {
     htmlCode += '<option value="Wichita SoxMonkees">Wichita SoxMonkees</option>';
     htmlCode += '</select></form>';
 
-    return htmlCode;
-}
-
-function maxCategory2021() {
-    var teamList = ['Banoaster Republic', "David's 5 &amp; Dime", 'Flower Children', 'Hradek Hrams', 
-                    'Jak of Diamonds', 'Kelly S*M*A*S*H', "Kirk's Enterprise", 'The Blossoms',
-                    'The Patsy Killjoys', 'The Shohei Kid', 'Wichita TinMen', 'Covid relief pitchers'];
-
-    var BA = [0.3095, 0.2926, 0.3244, 0.3085, 0.3268, 0.293, 0.3019, 0.3131, 0.3112, 0.2892, 0.3041, 0.3138];
-    var HR = [15.0, 14.0, 14.0, 13.0, 20.0, 15.0, 16.0, 12.0, 11.0, 13.0, 13.0, 17.0];
-    var RBI = [48.0, 44.0, 47.0, 38.0, 58.0, 47.0, 47.0, 40.0, 46.0, 41.0, 46.0, 49.0];
-    var SB = [3.0, 8.0, 7.0, 5.0, 7.0, 6.0, 12.0, 6.0, 7.0, 12.0, 9.0, 6.0];
-    var ERA = [1.612, 2.901, 2.48, 1.025, 1.912, 2.0, 0.947, 2.1, 1.835, 2.318, 1.884, 1.949];
-    var S = [6.0, 2.0, 5.0, 6.0, 5.0, 4.0, 7.0, 6.0, 3.0, 2.0, 7.0, 5.0];
-    var W = [4.0, 5.0, 7.0, 8.0, 5.0, 5.0, 5.0, 6.0, 6.0, 5.0, 6.0, 4.0];
-    var WHIP = [0.7612, 1.0352, 1.053, 0.7975, 0.8496, 1.0067, 0.9153, 1.0296, 0.7385, 1.0152, 0.8837, 0.9796];
-                                                                                                                                                                                                                            
-    var maxBA = maximum(BA);
-    var maxHR = maximum(HR);
-    var maxRBI = maximum(RBI);
-    var maxSB = maximum(SB);
-    var maxW = maximum(W);
-    var maxS = maximum(S);
-    var minERA = minimum(ERA);
-    var minWHIP = minimum(WHIP);
-
-    var htmlCode = "<table id='MaxCategory' class='responsive'><thead><th colspan='9'>2021 Maximum Category</th></thead>";
-    htmlCode += "<tr><td class='colTitle'>Team Name</td><td class='colTitle'>BA</td><td class='colTitle'>HR</td><td class='colTitle'>RBI</td><td class='colTitle'>SB</td><td class='colTitle'>W</td><td class='colTitle'>S</td><td class='colTitle'>ERA</td><td class='colTitle'>WHIP</td></tr><tbody>";
-
-    for (var i = 0; i < 12; i++) {
-        htmlCode += "<tr><td class='team'>" + teamList[i] + "</td>";
-        if (BA[i] == maxBA) {
-            htmlCode += "<td class='pointsHL'>" + BA[i].toFixed(4) + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + BA[i].toFixed(4) + "</td>";
-        }
-        if (HR[i] == maxHR) {
-            htmlCode += "<td class='pointsHL'>" + HR[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + HR[i] + "</td>";
-        }
-        if (RBI[i] == maxRBI) {
-            htmlCode += "<td class='pointsHL'>" + RBI[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + RBI[i] + "</td>";
-        }
-        if (SB[i] == maxSB) {
-            htmlCode += "<td class='pointsHL'>" + SB[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + SB[i] + "</td>";
-        }
-        if (W[i] == maxW) {
-            htmlCode += "<td class='pointsHL'>" + W[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + W[i] + "</td>";
-        }
-        if (S[i] == maxS) {
-            htmlCode += "<td class='pointsHL'>" + S[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + S[i] + "</td>";
-        }
-        if (ERA[i] == minERA) {
-            htmlCode += "<td class='pointsHL'>" + ERA[i].toFixed(3) + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + ERA[i].toFixed(3) + "</td>";
-        }
-        if (WHIP[i] == minWHIP) {
-            htmlCode += "<td class='pointsHL'>" + WHIP[i].toFixed(4) + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + WHIP[i].toFixed(4) + "</td></tr>";
-        }
-    }
-    htmlCode += "</tbody></table>";
-    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 9/6/2021</p>';
-    return htmlCode;
-}
-
-function maxCategory2022() {
-    var teamList = ['Banoaster Republic', "David's 5 &amp; Dime", 'Flower Children', 'Hradek Hrams', 
-                    'Jak of Diamonds', 'Kelly S*M*A*S*H', "Kirk's Enterprise", 'The Blossoms',
-                    'The Patsy Killjoys', 'The Shohei Kid', 'Wichita TinMen', 'Multiverse of Mondesi'];
-
-    var BA = [0.302, 0.3038, 0.2948, 0.2991, 0.3089, 0.2903, 0.289, 0.2965, 0.3043, 0.3009, 0.3015, 0.2849];
-    var HR = [16.0, 16.0, 11.0, 17.0, 14.0, 15.0, 15.0, 11.0, 12.0, 13.0, 17.0, 12.0];
-    var R = [47.0, 55.0, 47.0, 49.0, 38.0, 47.0, 36.0, 40.0, 41.0, 42.0, 52.0, 35.0];
-    var RBI = [46.0, 45.0, 46.0, 46.0, 42.0, 42.0, 40.0, 39.0, 37.0, 40.0, 45.0, 35.0];
-    var SB = [8.0, 7.0, 9.0, 7.0, 9.0, 8.0, 7.0, 6.0, 7.0, 9.0, 8.0, 9.0];
-    var ERA = [0.562, 1.554, 1.306, 1.473, 1.976, 2.077, 1.149, 2.589, 1.824, 1.636, 1.409, 2.015];
-    var K = [55.0, 62.0, 79.0, 45.0, 59.0, 67.0, 51.0, 61.0, 70.0, 52.0, 57.0, 63.0];
-    var S = [3.0, 1.0, 6.0, 6.0, 4.0, 2.0, 4.0, 3.0, 5.0, 4.0, 9.0, 5.0];
-    var W = [4.0, 6.0, 5.0, 4.0, 6.0, 7.0, 5.0, 8.0, 6.0, 6.0, 5.0, 6.0];
-    var WHIP = [0.7188, 0.745, 0.8319, 0.9052, 0.9627, 0.965, 0.8758, 0.9863, 0.8716, 0.9623, 0.887, 0.9643];
-                                                            
-    var maxBA = maximum(BA);
-    var maxHR = maximum(HR);
-    var maxR = maximum(R);
-    var maxRBI = maximum(RBI);
-    var maxSB = maximum(SB);
-    var minERA = minimum(ERA);
-    var maxK = maximum(K);
-    var maxS = maximum(S);
-    var maxW = maximum(W);
-    var minWHIP = minimum(WHIP);
-
-    var htmlCode = "<table id='MaxCategory' class='responsive'><thead>";
-    htmlCode += "<th colspan='11'>2022 Maximum Category</th></thead>";
-    htmlCode += "<tr><td class='colTitle'>Team Name</td><td class='colTitle'>BA</td>";
-    htmlCode += "<td class='colTitle'>HR</td><td class='colTitle'>RBI</td>";
-    htmlCode += "<td class='colTitle'>SB</td><td class='colTitle'>R</td>";
-    htmlCode += "<td class='colTitle'>W</td><td class='colTitle'>S</td>";
-    htmlCode += "<td class='colTitle'>ERA</td><td class='colTitle'>WHIP</td>";
-    htmlCode += "<td class='colTitle'>K</td></tr><tbody>";
-
-    for (var i = 0; i < 12; i++) {
-        htmlCode += "<tr><td class='team'>" + teamList[i] + "</td>";
-        if (BA[i] == maxBA) {
-            htmlCode += "<td class='pointsHL'>" + BA[i].toFixed(4) + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + BA[i].toFixed(4) + "</td>";
-        }
-        if (HR[i] == maxHR) {
-            htmlCode += "<td class='pointsHL'>" + HR[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + HR[i] + "</td>";
-        }
-        if (RBI[i] == maxRBI) {
-            htmlCode += "<td class='pointsHL'>" + RBI[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + RBI[i] + "</td>";
-        }
-        if (SB[i] == maxSB) {
-            htmlCode += "<td class='pointsHL'>" + SB[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + SB[i] + "</td>";
-        }
-        if (R[i] == maxR) {
-            htmlCode += "<td class='pointsHL'>" + R[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + R[i] + "</td>";
-        }
-        if (W[i] == maxW) {
-            htmlCode += "<td class='pointsHL'>" + W[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + W[i] + "</td>";
-        }
-        if (S[i] == maxS) {
-            htmlCode += "<td class='pointsHL'>" + S[i] + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + S[i] + "</td>";
-        }
-        if (ERA[i] == minERA) {
-            htmlCode += "<td class='pointsHL'>" + ERA[i].toFixed(3) + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + ERA[i].toFixed(3) + "</td>";
-        }
-        if (WHIP[i] == minWHIP) {
-            htmlCode += "<td class='pointsHL'>" + WHIP[i].toFixed(4) + "</td>";
-        } else {
-            htmlCode += "<td class='points'>" + WHIP[i].toFixed(4) + "</td>";
-        }
-        if (K[i] == maxK) {
-            htmlCode += "<td class='pointsHL'>" + K[i] + "</td></tr>";
-        } else {
-            htmlCode += "<td class='points'>" + K[i] + "</td></tr>";
-        }
-    }
-    htmlCode += "</tbody></table>";
-    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 9/5/2022</p>';
     return htmlCode;
 }
 
@@ -688,407 +368,6 @@ function minimum(results) {
         }
     }
     return min;
-}
-
-function ALMinors22() {
-    var pick = [];
-    var superScript = [];
-    // first round
-    pick.push("Brent", "David", "Kelly", 
-              "Greg", "Marty", "Jon",
-              "Jordan", "D&G", "Rich",
-              "Jeremy", "Rich", "Jason");
-    superScript.push("0", "1, 3, and 4", "0",
-                     "8", "0", "2",
-                     "0", "10","0",
-                     "0","7","9, 11, and 12");
-
-    // second round
-    pick.push("Brent", "Randall", "Kelly",
-              "Jason", "Randall", "Randall",
-              "Jordan", "Glenn", "Rich",
-              "Jeremy", "Jon", "Randall");
-    superScript.push("0", "9", "0",
-                     "0", "14", "13",
-                     "0", "6 and 10","0",
-                     "0","0","0");
-
-    // third round
-    pick.push("Brent", "Greg", "Kelly",
-              "Jason", "Marty", "Marty",
-              "Jordan", "Glenn", "Rich",
-              "Jeremy", "Jon", "Randall");
-    superScript.push("0", "4", "0",
-                     "0", "0", "5",
-                     "0","0","0",
-                     "0","0","0");
-
-    // fourth round
-    pick.push("Brent", "David", "Kelly",
-              "Jason", "Marty", "Greg", 
-              "Jordan", "Glenn", "Rich",
-              "Jeremy", "Jon", "Randall");
-    superScript.push("0", "0","0",
-                     "0","0","0",
-                     "0","0","0","0","0","0");
-
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2022 American League Minors Roster Draft (Ordered)</th></thead>';
-    htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
-
-    for (i = 0; i <12; i++) {
-        htmlCode += '<tr><td class="points">';
-        htmlCode += (i + 1).toString();
-        htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
-            htmlCode += '<td class="team">';
-            htmlCode += pick[j * 12 + i];
-            if (superScript[j * 12 + i] != "0") {
-                htmlCode += '<sup>' + superScript[j * 12 + i] + '</sup>';
-            }
-            htmlCode += '</td>';
-        }
-        htmlCode += '</tr>';
-    }
-
-    htmlCode += '</table>';
-
-    // include the footnotes of the trade details
-    htmlCode += '<br /><h3>Trade Details</h3>';
-    htmlCode += '<ol>';
-    // 1
-    htmlCode += '<li>6/30/2018: <strong>Jon</strong> trades <em>Shane Greene</em>, and a 2019 1st round minor league draft pick, and a 2019 2nd round minor league draft pick to <strong>David</strong> for <em>Mallex Smith</em>, <em>Rajai Davis</em>, and a 2021 1st round minor league pick.</li>';
-    // 2
-    htmlCode += '<li>8/27/2018: <strong>Jon</strong> trades <em>Brett Anderson</em> to <strong>Greg and Don</strong> for <em>Jake Newberry</em> and a 2021 1st round minor league pick.</li>';
-    // 3
-    htmlCode += '<li>3/29/2019: <strong>Don</strong> trades a 2019 1st round minor league pick (Brent) and a 2019 1st round minor league pick (Marty) to <strong>Jon</strong> for a 2020 1st round minor league pick (Marty), a 2021 1st round minor league pick (David), and a 2019 1st round minor league pick (Randall).</li>';
-    // 4
-    htmlCode += '<li>8/13/2019: <strong>Don and Greg</strong> trades <em>Luis Rengifo</em>, ';
-    htmlCode += 'a 2020 1st round minor league pick, a 2021 1st round minor league pick to ';
-    htmlCode += '<strong>David</strong> for <em>Tanner Roark</em>, a 2020 3rd round minor ';
-    htmlCode += 'league pick, and a 2021 3rd round minor league pick.</li>';
-    // 5
-    htmlCode += '<li>2/13/2020: <strong>Marty</strong> trades <em>Adam Ottovino</em> to ';
-    htmlCode += '<strong>Don and Greg</strong> for a 2020 3rd round minor league pick, a ';
-    htmlCode += '2020 4th round minor league pick, and a 2021 3rd round minor league pick.';
-    // 6
-    htmlCode += '<li>3/24/2021: <strong>Glenn</strong> trades a 2022 2nd round minor league pick to ';
-    htmlCode += '<strong>Don and Greg</strong> for <em>Ian Kennedy</em>.';
-    // 7
-    htmlCode += '<li>3/24/2021: <strong>Jon</strong> trades a 2022 1st round minor league pick ';
-    htmlCode += 'and a 2022 1st round reserve pick to <strong>Rich</strong> for a 2021 1st round minor league pick.</li>';
-    // 8
-    htmlCode += '<li>4/11/2021: <strong>Jason</strong> trades <em>Chris Sale</em> and a 2022 1st round ';
-    htmlCode += 'minor league pick to <strong>Don and Greg</strong> for <em>Jose Abreu</em>.</li>';
-    // 9
-    htmlCode += '<li>5/23/2021: <strong>Randall</strong> trades <em>Chris Rodriguez</em>, <em>Kirby Yates</em>, ';
-    htmlCode += 'and a 2022 1st round minor league pick to <strong>David</strong> for <em>Nathan Eovalid</em>, ';
-    htmlCode += '<em>Michael Pineda</em>, and a 2022 2nd round minor league draft pick.</li>';
-    // 10
-    htmlCode += '<li>7/10/2021: <strong>Don and Greg</strong> trade a 2022 2nd round minor league pick ';
-    htmlCode += 'to <strong>Glenn</strong> for a 2022 1st round minor league pick.</li>';
-    // 11
-    htmlCode += '<li>7/25/2021: <strong>Randall</strong> trades <em>Nick Mardigal</em> and ';
-    htmlCode += '<em>Emerson Hancock</em> to <strong>David</strong> for <em>David fletcher</em> ';
-    htmlCode += 'and a 2022 1st round minor league pick.</li>';
-    // 12
-    htmlCode += '<li>8/8/2021: <strong>Randall</strong> trades <em>Kevin Kiermaier</em> and ';
-    htmlCode += 'a 2022 1st round minor league pick to <strong>Jason</strong> for ';
-    htmlCode += '<em>George Springer</em>.</li>';
-    // 13
-    htmlCode += '<li>3/27/2022: <strong>Greg</strong> trade <em>Chris Sale</em> and ';
-    htmlCode += 'a 2022 2nd round minor league pick to <strong>Randall</strong> for ';
-    htmlCode += '<em>Jarred Kelenic</em> and a 2022 2nd round reserve pick.</li>';
-    // 14
-    htmlCode += '<li>3/31/2022: <strong>Randall</strong> trades <em>David Fletcher</em> ';
-    htmlCode += 'to <strong>Marty</strong> for a 2022 2nd round minor league pick.</li>'
-    htmlCode += '</ol>';
-    return htmlCode;
-}
-
-function ALReserves22() {
-    var pick = [];
-    var superScript = [];
-    // first round
-    pick.push("Brent", "David", "Kelly", "Jason", "Marty", "Greg",
-              "Jordan", "Glenn", "Rich", "Jeremy", "Rich", "Randall");
-    superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","1","0");
-
-    // second round
-    pick.push("Brent", "David", "Kelly", "Jason", "Marty", "Greg",
-              "Jordan", "Glenn", "Rich", "Jeremy", "Jon", "Greg");
-    superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","0","2");
-
-    // third round
-    pick.push("Brent", "David", "Kelly", "Jason", "Marty", "Greg",
-              "Jordan", "Glenn", "Rich", "Jeremy", "Jon", "Randall");
-    superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","0","0");
-
-    // fourth round
-    pick.push("Brent", "David", "Kelly", "Jason", "Marty", "Greg",
-              "Jordan", "Glenn", "Rich", "Jeremy", "Jon", "Randall");
-    superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","0","0");
-
-    // fifth round
-    pick.push("Brent", "David", "Kelly", "Jason", "Marty", "Greg",
-              "Jordan", "Glenn", "Rich", "Jeremy", "Jon", "Randall");
-    superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","0","0");
-
-    // sixth round
-    pick.push("Brent", "David", "Kelly", "Jason", "Marty", "Greg",
-              "Jordan", "Glenn", "Rich", "Jeremy", "Jon", "Randall");
-    superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","0","0");
-
-    // seventh round
-    pick.push("Brent", "David", "Kelly", "Jason", "Marty", "Greg",
-              "Jordan", "Glenn", "Rich", "Jeremy", "Jon", "Randall");
-    superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","0","0");
-
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2022 American League Reserves Roster Draft (Ordered)</th></thead>';
-    htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
-
-    for (i = 0; i <12; i++) {
-        htmlCode += '<tr><td class="points">';
-        htmlCode += (i + 1).toString();
-        htmlCode += '</td>';
-        for (j = 0; j < 7; j++) {
-            htmlCode += '<td class="team">';
-            htmlCode += pick[j * 12 + i];
-            if (superScript[j * 12 + i] != "0") {
-                htmlCode += '<sup>' + superScript[j * 12 + i] + '</sup>';
-            }
-            htmlCode += '</td>';
-        }
-        htmlCode += '</tr>';
-    }
-
-    htmlCode += '</table>';
-
-    // Include salaries for each round
-    htmlCode += '<br /><h3>Salaries by Round</h3>';
-    htmlCode += '<ul><li>$1.5 for Rounds 1 - 3</li>';
-    htmlCode += '<li>$1.0 for Rounds 4 - 5</li>';
-    htmlCode += '<li>$0.5 for Rounds 6 - 7</li></ul>';
-
-    // include the footnotes of the trade details
-    htmlCode += '<br /><h3>Trade Details</h3>';
-    htmlCode += '<ol>';
-    // 1
-    htmlCode += '<li>3/24/2021: <strong>Jon</strong> trades a 2022 1st round minor league pick ';
-    htmlCode += 'and a 2022 1st round reserve pick to <strong>Rich</strong> for a 2021 1st round minor league pick.</li>';
-    // 2
-    htmlCode += '<li>3/27/2022: <strong>Greg</strong> trade <em>Chris Sale</em> and ';
-    htmlCode += 'a 2022 2nd round minor league pick to <strong>Randall</strong> for ';
-    htmlCode += '<em>Jarred Kelenic</em> and a 2022 2nd round reserve pick';
-    htmlCode += '</ol>';
-    return htmlCode;
-}
-
-function NLReserves22() {
-    var pick = [];
-    var superScript = [];
-    // FYPD first round
-    // pick.push("Matt A", "David", "Doug", "Jason", "Don", "Greg", "Jon", "Ken",
-    //           "Glenn", "Rich", "Matt R");
-    // superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // FYPD second round
-    // pick.push("Matt R", "Matt A", "David", "Doug", "Jason", "Don", "Greg",
-    //           "Jon", "Ken", "Glenn", "Rich");
-    // superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // FYPD third round
-    // pick.push("Matt A", "David", "Doug", "Jason", "Don", "Greg", "Jon", "Ken",
-    //           "Glenn", "Rich", "Matt R");
-    // superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // FYPD fourth round
-    // pick.push("Matt R", "Matt A", "David", "Doug", "Jason", "Don", "Greg",
-    //           "Jon", "Ken", "Glenn", "Rich");
-    // superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction first round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction second round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction third round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction fourth round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction fifth round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction sixth round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction seventh round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // online first round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // online second round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // online third round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // online fourth round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // online fifth round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // online sixth round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // online seventh round
-    pick.push("Matt A", "Matt R", "Rich", "Ken", "Greg", "Doug", "David M", "Marc",
-              "Glenn", "Jon", "David I");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // First Year Player Draft
-    // htmlCode = '<table class="responsive"><thead><th colspan="5">2021 Ordered National League FYPD</th></thead>';
-    // htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">FYPD Round 1</td><td class="colTitle">FYPD Round 2</td><td class="colTitle">FYPD Round 3</td><td class="colTitle">FYPD Round 4</td>';
-
-    // Round 1 through 4
-    // for (i = 0; i <11; i++) {
-    //     htmlCode += '<tr><td class="points">';
-    //     htmlCode += (i + 1).toString();
-    //     htmlCode += '</td>';
-    //     for (j = 0; j < 4; j++) {
-    //         htmlCode += '<td class="team">';
-    //         htmlCode += pick[j * 11 + i];
-    //         if (superScript[j * 11 + i] != "0") {
-    //             htmlCode += '<sup>' + superScript[j * 11 + i] + '</sup>';
-    //         }
-    //         htmlCode += '</td>';
-    //     }
-    //     htmlCode += '</tr>';
-    // }
-
-    // htmlCode += '</table>';
-
-    // Include salaries for each round
-    // htmlCode += '<br /><h3>Salaries by Round</h3>';
-    // htmlCode += '<ul><li>$10 and contract of ML for all rounds</li></ul><br />';
-
-    // Post Auction Draft
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2022 Ordered National League Reserves Roster Draft (Post-Auction)</th></thead>';
-    htmlCode += '<tr><td class="colTitle">Slot</td>';
-    htmlCode += '<td class="colTitle">Round 1</td>';
-    htmlCode += '<td class="colTitle">Round 2</td>';
-    htmlCode += '<td class="colTitle">Round 3</td>';
-    htmlCode += '<td class="colTitle">Round 4</td>';
-    htmlCode += '<td class="colTitle">Round 5</td>';
-    htmlCode += '<td class="colTitle">Round 6</td>';
-    htmlCode += '<td class="colTitle">Round 7</td></tr>';
-
-    for (i = 0; i < 11; i++) {
-        htmlCode += '<tr><td class="points">';
-        htmlCode += (i + 1).toString();
-        htmlCode += '</td>';
-        for (j = 0; j < 7; j++) {
-            htmlCode += '<td class="team">';
-            htmlCode += pick[j * 11 + i];
-            if (superScript[j * 11 + i] != "0") {
-                htmlCode += '<sup>' + superScript[j * 11 + i] + '</sup>';
-            }
-            htmlCode += '</td>';
-        }
-        htmlCode += '</tr>';
-    }
-
-    htmlCode += '</table>';
-
-    // Include salaries for each round
-    htmlCode += '<br /><h3>Salaries by Round</h3>';
-    htmlCode += '<li>$15 for round 1</li>';
-    htmlCode += '<li>$10 for round 2</li>';
-    htmlCode += '<li>$5 for rounds 3 and 4</li>';
-    htmlCode += '<li>$2 for rounds 5 through 7</li></ul><br />';
-
-    // Online Draft
-    htmlCode += '<table class="responsive"><thead><th colspan="8">2021 Ordered National League Online Reserves Roster Draft</th></thead>';
-    htmlCode += '<tr><td class="colTitle">Slot</td>';
-    htmlCode += '<td class="colTitle">Online Round 1</td>';
-    htmlCode += '<td class="colTitle">Online Round 2</td>';
-    htmlCode += '<td class="colTitle">Online Round 3</td>';
-    htmlCode += '<td class="colTitle">Online Round 4</td>';
-    htmlCode += '<td class="colTitle">Online Round 5</td>';
-    htmlCode += '<td class="colTitle">Online Round 6</td>';
-    htmlCode += '<td class="colTitle">Online Round 7</td></tr>';
-
-    for (i = 0; i <11; i++) {
-        htmlCode += '<tr><td class="points">';
-        htmlCode += (i + 1).toString();
-        htmlCode += '</td>';
-        for (j = 7; j < 14; j++) {
-            htmlCode += '<td class="team">';
-            htmlCode += pick[j * 11 + i];
-            if (superScript[j * 11 + i] != "0") {
-                htmlCode += '<sup>' + superScript[j * 11 + i] + '</sup>';
-            }
-            htmlCode += '</td>';
-        }
-        htmlCode += '</tr>';
-    }
-
-    htmlCode += '</table>';
-
-    // Include salaries for each round
-    htmlCode += '<br /><h3>Salaries by Round</h3>';
-    htmlCode += '<li>$5 for all rounds</li></ul>';
-
-    // include the footnotes of the trade details
-    htmlCode += '<br /><h3>Trade Details</h3>';
-    // htmlCode += '<ol>';
-    // #1
-    // htmlCode += '<li>8/12/2018: <strong>Jon</strong> traded <em>Antonio Santillan</em>, ';
-    // htmlCode += '<em>Magneuris Sierra</em>, <em>Marcell Ozuna</em>, <em>Kris Bryant</em>, ';
-    // htmlCode += 'and a 2019 8th round pick (adjusted to online 1st round in 2020) to ';
-    // htmlCode += '<strong>Rich</strong> for <em>Charlie Blackmon</em>, <em>Lorenzo Cain</em>, ';
-    // htmlCode += '<em>Raisel Iglesias</em> and a 2019 9th round pick (adjusted to online 2nd ';
-    // htmlCode += 'round in 2020).</li>';
-    // htmlCode += '</ol>';
-    return htmlCode;
-
 }
 
 function ALMinors23() {
@@ -2070,92 +1349,157 @@ function NLReserves25() {
     var pick = [];
     var superScript = [];
     // FYPD first round
-     pick.push("Matt A", "Marc", "Marc", "Matt R", 
-               "Ken", "Jeffrey", "Doug", "David",
-               "Matt R", "Rich", "Glenn");
-     superScript.push("0","2","0","3",
-                      "0","0","0","0",
-                      "0","0","0");
+    pick.push("Marc", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Matt R", "Matt A");
+    superScript.push("2","0","0",
+                     "0","0","0",
+                     "0","0",
+                     "0","3","0");
 
     // FYPD second round
-    pick.push("Matt A", "Jon", "Marc", "Greg", 
-              "Ken", "Jeffrey", "Doug", "David",
-              "Greg", "Rich", "Glenn");
-    superScript.push("0","0","0","0",
-                     "0","0","0","0",
-                     "3","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Greg", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Jeffrey", "Matt A");
+    superScript.push("0","0","0",
+                     "3","0","0",
+                     "0","0",
+                     "0","1","0");
 
     // FYPD third round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Greg", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","1","0","0",
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Greg", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+    superScript.push("0","0","0",
+                     "0","0","1",
+                     "0","0",
                      "0","0","0");
 
     // FYPD fourth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction first round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
-
-    // post-auction second round
-    pick.push("Matt A", "Jon", "Marc", "Jon", 
-              "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","1",
-                     "0","0","0","0",
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+    superScript.push("0","0","0",
+                     "0","0","0",
+                     "0","0",
                      "0","0","0");
 
+    // post-auction first round
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
+
+    // post-auction second round
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
+
     // post-auction third round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Greg", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","2","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // post-auction fourth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // post-auction fifth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // post-auction sixth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // post-auction seventh round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // online first round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // online second round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // online third round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // online fourth round
-    pick.push("Matt A", "Jon", "Marc", "Greg", "Ken", "Jeffrey", "Doug", "David",
-              "Matt R", "Rich", "Glenn");
-    superScript.push("0","0","0","0","0","0","0","0","0","0","0");
+    pick.push("Jon", "Rich", "Marc", 
+              "Matt R", "Doug", "Jeffrey", 
+              "Ken", "David",
+              "Glenn", "Greg", "Matt A");
+superScript.push("0","0","0",
+                 "0","0","0",
+                 "0","0",
+                 "0","0","0");
 
     // First Year Player Draft
-     htmlCode = '<table class="responsive"><thead><th colspan="5">2025 Un-Ordered National League FYPD</th></thead>';
+     htmlCode = '<table class="responsive"><thead><th colspan="5">2025 Ordered National League FYPD</th></thead>';
      htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">FYPD Round 1</td><td class="colTitle">FYPD Round 2</td><td class="colTitle">FYPD Round 3</td><td class="colTitle">FYPD Round 4</td>';
 
     // Round 1 through 4
@@ -2181,7 +1525,7 @@ function NLReserves25() {
     htmlCode += '<ul><li>$10 and contract of ML for all rounds</li></ul><br />';
 
     // Post Auction Draft
-    htmlCode += '<table class="responsive"><thead><th colspan="8">2025 Un-Ordered National League Reserves Roster Draft (Post-Auction)</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2025 Ordered National League Reserves Roster Draft (Post-Auction)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td>';
     htmlCode += '<td class="colTitle">Round 1</td>';
     htmlCode += '<td class="colTitle">Round 2</td>';
@@ -2216,7 +1560,7 @@ function NLReserves25() {
     htmlCode += '<li>$2 for rounds 5 through 7</li></ul><br />';
 
     // Online Draft
-    htmlCode += '<table class="responsive"><thead><th colspan="8">2025 Un-Ordered National League Online Reserves Roster Draft</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2025 Ordered National League Online Reserves Roster Draft</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td>';
     htmlCode += '<td class="colTitle">Online Round 1</td>';
     htmlCode += '<td class="colTitle">Online Round 2</td>';
