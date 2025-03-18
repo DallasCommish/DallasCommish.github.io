@@ -1173,12 +1173,12 @@ function ALMinors25() {
     // first round
     pick.push("Rich", "Brent", "Brent", 
               "Jon", "Marty", "Chris", 
-              "Kelly", "Jordan", "Brent", 
-              "Glenn", "Chris", "Jordan");
+              "Kelly", "Jordan", "Randall", 
+              "Glenn", "Chris", "Randall");
     superScript.push("0","2","0",
                      "0","0","0",
-                     "0","0","4",
-                     "0","3 and 7","6");
+                     "0","0","4 and 9",
+                     "0","3 and 7","6 and 10");
 
     // second round
     pick.push("Rich", "Jon", "Brent", 
@@ -1260,6 +1260,13 @@ function ALMinors25() {
     htmlCode += "<li>8/31/2024: <strong>Greg</strong> trades <em>Miguel Andujar</em>, <em>Tarik Skubal</em>, ";
     htmlCode += "and <em>Dylan Carlson</em> to <strong>Glenn</strong> for <em>Kevin Gausman</em>, <em>Rafael Devers</em>, ";
     htmlCode += "<em>Riley Greene</em>, and a 2025 2nd round ML pick.</li>";
+    // 9
+    htmlCode += "<li>3/17/2025: <strong>Brent</strong> trades <em>Rickey Tiedemann</em> and a 2025 1st round ";
+    htmlCode += "ML pick to <strong>Randall</strong> for <em>Zach Eflin</em> and a 2026 2nd round ML pick.</li>";
+    // 10
+    htmlCode += "<li>3/17/2025: <strong>Jordan</strong> trades <em>Brandon Lowe</em>, a 1st round 2025 ML pick, ";
+    htmlCode += "and a 1st round 2025 reserve pick to <strong>Randall</strong> for <em>Anthony Santander</em>, ";
+    htmlCode += "<em>Ronel Blanco</em>, and a 1st round 2025 reserve pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1269,9 +1276,9 @@ function ALReserves25() {
     var superScript = [];
     // first round
     pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
-              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+              "Kelly", "Randall", "Jeremy", "Glenn", "Jordan", "Greg");
     superScript.push("0","0","0","0","0","0",
-                     "0","0","0","0","0","0");
+                     "0","2","0","0","2","0");
     
     // second round
     pick.push("Rich", "David", "Brent", "Greg", "Marty", "Chris",
@@ -1341,6 +1348,10 @@ function ALReserves25() {
     // 1
     htmlCode += "<li>8/1/2024: <strong>Greg</strong> trades <em>Yariel Rodriguez</em> and a 3rd round 2025 reserve pick ";
     htmlCode += "to <strong>Jon</strong> for a 2nd round 2025 reserve pick.</li>";
+    // 2
+    htmlCode += "<li>3/17/2025: <strong>Jordan</strong> trades <em>Brandon Lowe</em>, a 1st round 2025 ML pick, ";
+    htmlCode += "and a 1st round 2025 reserve pick to <strong>Randall</strong> for <em>Anthony Santander</em>, ";
+    htmlCode += "<em>Ronel Blanco</em>, and a 1st round 2025 reserve pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1622,11 +1633,11 @@ function ALMinors26() {
     pick.push("Glenn", "Jeremy", "Greg", 
               "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
-              "Jon", "Brent", "Randall");
+              "Jon", "Brent", "Brent");
     superScript.push("0","0","0",
                      "0","0","0",
                      "0","0","0",
-                     "0","0","0");
+                     "0","0","5");
 
     // third round
     pick.push("Glenn", "Jeremy", "Greg", 
@@ -1685,6 +1696,9 @@ function ALMinors26() {
     // 4
     htmlCode += "<li>7/28/2024: <strong>Marty</strong> trades <em>Joe Ryan</em> and <em>Randy Arozarena</em> to ";
     htmlCode += "<strong>Randall</strong> for <em>Eduoard Julien</em>, <em>Tyler O'Neill</em>, and a 1st round 2026 ML pick.</li>";
+    // 5
+    htmlCode += "<li>3/17/2025: <strong>Brent</strong> trades <em>Rickey Tiedemann</em> and a 2025 1st round ";
+    htmlCode += "ML pick to <strong>Randall</strong> for <em>Zach Eflin</em> and a 2026 2nd round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
