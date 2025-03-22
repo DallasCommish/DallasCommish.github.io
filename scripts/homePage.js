@@ -1183,12 +1183,12 @@ function ALMinors25() {
     // second round
     pick.push("Rich", "Jon", "Brent", 
               "Jon", "Marty", "Chris", 
-              "Kelly", "Kelly", "Jeremy", 
-              "Greg", "Randall", "Greg");
+              "Kelly", "Kelly", "Jordan", 
+              "Greg", "David", "Greg");
     superScript.push("0","1","0",
                      "0","0","0",
-                     "0","5","0",
-                     "8","0","0");
+                     "0","5","12",
+                     "8","11","0");
 
     // third round
     pick.push("Rich", "David", "Brent", 
@@ -1203,11 +1203,11 @@ function ALMinors25() {
     // fourth round
     pick.push("Rich", "David", "Brent", 
               "Jon", "Marty", "Chris", 
-              "Kelly", "Jordan", "Jeremy", 
+              "Kelly", "Jeremy", "Jeremy", 
               "Glenn", "Randall", "Greg");
     superScript.push("0","0","0",
                      "0","0","0",
-                     "0","0","0",
+                     "0","12","0",
                      "0","0","0");
 
     htmlCode = '<table class="responsive"><thead><th colspan="5">2025 American League Minors Roster Draft (Ordered)</th></thead>';
@@ -1267,6 +1267,13 @@ function ALMinors25() {
     htmlCode += "<li>3/17/2025: <strong>Jordan</strong> trades <em>Brandon Lowe</em>, a 1st round 2025 ML pick, ";
     htmlCode += "and a 1st round 2025 reserve pick to <strong>Randall</strong> for <em>Anthony Santander</em>, ";
     htmlCode += "<em>Ronel Blanco</em>, and a 1st round 2025 reserve pick.</li>";
+    // 11
+    htmlCode += "<li>3/21/2025: <strong>David</strong> trades <em>Matt Vierling</em> to <strong>Randall</strong> ";
+    htmlCode += "for a 2nd round 2025 ML pick.</li>";
+    // 12
+    htmlCode += "<li>3/21/2025: <strong>Jeremy</strong> trades <em>Emmanuel Clase</em>, a 2025 2nd round ML pick, ";
+    htmlCode += "and a 2026 4th round ML pick to <strong>Jordan</strong> for <em>Andrew Vaughn</em>, ";
+    htmlCode += "<em>Marcelo Mayer</em>, <em>Wenceel Perez</em>, a 2025 4th round ML pick, and a 2026 2nd round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1631,11 +1638,11 @@ function ALMinors26() {
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
-              "Chris", "Jordan", "David M", 
+              "Chris", "Jeremy", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Brent");
     superScript.push("0","0","0",
-                     "0","0","0",
+                     "0","6","0",
                      "0","0","0",
                      "0","0","5");
 
@@ -1650,11 +1657,11 @@ function ALMinors26() {
                      "0","0","0");
 
     // fourth round
-    pick.push("Glenn", "Jeremy", "Greg", 
+    pick.push("Glenn", "Jordan", "Greg", 
               "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
-    superScript.push("0","0","0",
+    superScript.push("0","6","0",
                      "0","0","0",
                      "0","0","0",
                      "0","0","0");
@@ -1699,6 +1706,10 @@ function ALMinors26() {
     // 5
     htmlCode += "<li>3/17/2025: <strong>Brent</strong> trades <em>Rickey Tiedemann</em> and a 2025 1st round ";
     htmlCode += "ML pick to <strong>Randall</strong> for <em>Zach Eflin</em> and a 2026 2nd round ML pick.</li>";
+    // 6
+    htmlCode += "<li>3/21/2025: <strong>Jeremy</strong> trades <em>Emmanuel Clase</em>, a 2025 2nd round ML pick, ";
+    htmlCode += "and a 2026 4th round ML pick to <strong>Jordan</strong> for <em>Andrew Vaughn</em>, ";
+    htmlCode += "<em>Marcelo Mayer</em>, <em>Wenceel Perez</em>, a 2025 4th round ML pick, and a 2026 2nd round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
