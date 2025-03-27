@@ -1183,11 +1183,11 @@ function ALMinors25() {
     // second round
     pick.push("Rich", "Jon", "Brent", 
               "Jon", "Marty", "Chris", 
-              "Kelly", "Kelly", "Jordan", 
+              "Kelly", "Greg", "Jordan", 
               "Greg", "David", "Greg");
     superScript.push("0","1","0",
                      "0","0","0",
-                     "0","5","12",
+                     "0","5 and 13","12",
                      "8","11","0");
 
     // third round
@@ -1274,6 +1274,9 @@ function ALMinors25() {
     htmlCode += "<li>3/21/2025: <strong>Jeremy</strong> trades <em>Emmanuel Clase</em>, a 2025 2nd round ML pick, ";
     htmlCode += "and a 2026 4th round ML pick to <strong>Jordan</strong> for <em>Andrew Vaughn</em>, ";
     htmlCode += "<em>Marcelo Mayer</em>, <em>Wenceel Perez</em>, a 2025 4th round ML pick, and a 2026 2nd round ML pick.</li>";
+    // 13
+    htmlCode += "<li>3/26/2025: <strong>Kelly</strong> trades a 2025 2nd round ML pick to ";
+    htmlCode += "<strong>Greg</strong> for a 2026 2nd round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1637,11 +1640,11 @@ function ALMinors26() {
                      "0","0","4");
 
     // second round
-    pick.push("Glenn", "Jeremy", "Greg", 
+    pick.push("Glenn", "Jeremy", "Kelly", 
               "Chris", "Jeremy", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Brent");
-    superScript.push("0","0","0",
+    superScript.push("0","0","7",
                      "0","6","0",
                      "0","0","0",
                      "0","0","5");
@@ -1710,6 +1713,9 @@ function ALMinors26() {
     htmlCode += "<li>3/21/2025: <strong>Jeremy</strong> trades <em>Emmanuel Clase</em>, a 2025 2nd round ML pick, ";
     htmlCode += "and a 2026 4th round ML pick to <strong>Jordan</strong> for <em>Andrew Vaughn</em>, ";
     htmlCode += "<em>Marcelo Mayer</em>, <em>Wenceel Perez</em>, a 2025 4th round ML pick, and a 2026 2nd round ML pick.</li>";
+    // 7
+    htmlCode += "<li>3/26/2025: <strong>Kelly</strong> trades a 2025 2nd round ML pick to ";
+    htmlCode += "<strong>Greg</strong> for a 2026 2nd round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
