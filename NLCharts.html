@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+        <style>
+            :root {
+                --hitting-color: LightCoral;
+                --pitching-color: LightGreen;
+                --total-color: DeepSkyBlue;
+                --place-color: LightSlateGrey;
+                --hitting-max: 48;
+                --pitching-max: 46;
+                --total-max: 91.5;
+            }
+
+            caption {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .highlighted {
+                animation: highlighted-bar 2s linear infinite;
+            }
+            @keyframes highlighted-bar {
+                0% { box-shadow: none; }
+                50% { box-shadow: 0 0 1px 0 black, 0 0 20px 5px darkgray; }
+                100% { box-shadow: none; }
+            }
+        </style>
+    </head>
+
+    <body>
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> P-Funk All-Stars </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(27 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 27 </span> <span class="tooltip"> Year: 2022 <br> Points: 27 </span> </td>
+                    <td style="--size: calc(13 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2023 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(15.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 15.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 15.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(29 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2022 <br> Points: 29 </span> </td>
+                    <td style="--size: calc(33 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 33 </span> <span class="tooltip"> Year: 2023 <br> Points: 33 </span> </td>
+                    <td style="--size: calc(26 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2024 <br> Points: 26 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(56 / var(--total-max)); --color: var(--total-color);"> <span class="data"> <span class="data"> 56 </span> </span> <span class="tooltip"> Year: 2022 <br> Points: 56 </span> </td>
+                    <td style="--size: calc(46 / var(--total-max)); --color: var(--total-color);"> <span class="data"> <span class="data"> 46 </span> </span> <span class="tooltip"> Year: 2023 <br> Points: 46 </span> </td>
+                    <td style="--size: calc(41.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> <span class="data"> 41.5 </span> </span> <span class="tooltip"> Year: 2024 <br> Points: 41.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 4) / 12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2022 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2023 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2024 <br> Place: 6 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Dread Pirate Roberts </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2020 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(14 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 14 </span> <span class="tooltip"> Year: 2020 <br> Points: 14 </span> </td>
+                    <td style="--size: calc(25 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2021 <br> Points: 25 </span> </td>
+                    <td style="--size: calc(20 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 20 </span> <span class="tooltip"> Year: 2022 <br> Points: 20 </span> </td>
+                    <td style="--size: calc(16 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 16 </span> <span class="tooltip"> Year: 2023 <br> Points: 16 </span> </td>
+                    <td style="--size: calc(9 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2024 <br> Points: 9 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(9.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 9.5 </span> <span class="tooltip"> Year: 2020 <br> Points: 9.5 </span> </td>
+                    <td style="--size: calc(20.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 20.5 </span> <span class="tooltip"> Year: 2021 <br> Points: 20.5 </span> </td>
+                    <td style="--size: calc(30.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 30.5 </span> <span class="tooltip"> Year: 2022 <br> Points: 30.5 </span> </td>
+                    <td style="--size: calc(38 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 38 </span> <span class="tooltip"> Year: 2023 <br> Points: 38 </span> </td>
+                    <td style="--size: calc(30.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 30.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 30.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(23.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 23.5 </span> <span class="tooltip"> Year: 2020 <br> Points: 23.5 </span> </td>
+                    <td style="--size: calc(45.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 45.5 </span> <span class="tooltip"> Year: 2021 <br> Points: 45.5 </span> </td>
+                    <td style="--size: calc(50.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 50.5 </span> <span class="tooltip"> Year: 2022 <br> Points: 50.5 </span> </td>
+                    <td style="--size: calc(54 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 54 </span> <span class="tooltip"> Year: 2023 <br> Points: 54 </span> </td>
+                    <td style="--size: calc(39.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 39.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 39.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 8) / 12); --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2020 <br> Place: 8 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2021 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 5) / 12); --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2022 <br> Place: 5 </span> </td>
+                    <td style="--size: calc((13 - 5) / 12); --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2023 <br> Place: 5 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2024 <br> Place: 7 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Wichita TinMen </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2010 </th>
+                <th scope="col"> 2011 </th>
+                <th scope="col"> 2012 </th>
+                <th scope="col"> 2013 </th>
+                <th scope="col"> 2014 </th>
+                <th scope="col"> 2015 </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(25.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 25.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 25.5 </span> </td>
+                    <td style="--size: calc(34 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2011 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(27 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 27 </span> <span class="tooltip"> Year: 2012 <br> Points: 27 </span> </td>
+                    <td style="--size: calc(33 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 33 </span> <span class="tooltip"> Year: 2013 <br> Points: 33 </span> </td>
+                    <td style="--size: calc(37 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2014 <br> Points: 37 </span> </td>
+                    <td style="--size: calc(37 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2015 <br> Points: 37 </span> </td>
+                    <td style="--size: calc(34.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 34.5 </span> <span class="tooltip"> Year: 2016 <br> Points: 34.5 </span> </td>
+                    <td style="--size: calc(37 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2017 <br> Points: 37 </span> </td>
+                    <td style="--size: calc(40 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2018 <br> Points: 40 </span> </td>
+                    <td style="--size: calc(23 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 23 </span> <span class="tooltip"> Year: 2019 <br> Points: 23 </span> </td>
+                    <td style="--size: calc(32 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2021 <br> Points: 32 </span> </td>
+                    <td style="--size: calc(39 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 39 </span> <span class="tooltip"> Year: 2022 <br> Points: 39 </span> </td>
+                    <td style="--size: calc(35 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2023 <br> Points: 35 </span> </td>
+                    <td style="--size: calc(40 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2024 <br> Points: 40 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(27.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 27.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 27.5 </span> </td>
+                    <td style="--size: calc(13 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2011 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(28 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 28 </span> <span class="tooltip"> Year: 2012 <br> Points: 28 </span> </td>
+                    <td style="--size: calc(37 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2013 <br> Points: 37 </span> </td>
+                    <td style="--size: calc(41 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2014 <br> Points: 41 </span> </td>
+                    <td style="--size: calc(44 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 44 </span> <span class="tooltip"> Year: 2015 <br> Points: 44 </span> </td>
+                    <td style="--size: calc(42.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 42.5 </span> <span class="tooltip"> Year: 2016 <br> Points: 42.5 </span> </td>
+                    <td style="--size: calc(39 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 39 </span> <span class="tooltip"> Year: 2017 <br> Points: 39 </span> </td>
+                    <td style="--size: calc(28.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 28.5 </span> <span class="tooltip"> Year: 2018 <br> Points: 28.5 </span> </td>
+                    <td style="--size: calc(28.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 28.5 </span> <span class="tooltip"> Year: 2019 <br> Points: 28.5 </span> </td>
+                    <td style="--size: calc(31.5 /var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 31.5 </span> <span class="tooltip"> Year: 2021 <br> Points: 31.5 </span> </td>
+                    <td style="--size: calc(39.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 39.5 </span> <span class="tooltip"> Year: 2022 <br> Points: 39.5 </span> </td>
+                    <td style="--size: calc(37 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2023 <br> Points: 37 </span> </td>
+                    <td style="--size: calc(26 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2024 <br> Points: 26 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(53 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 53 </span> <span class="tooltip"> Year: 2010 <br> Points: 53 </span> </td>
+                    <td style="--size: calc(47 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 47 </span> <span class="tooltip"> Year: 2011 <br> Points: 47 </span> </td>
+                    <td style="--size: calc(55 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 55 </span> <span class="tooltip"> Year: 2012 <br> Points: 55 </span> </td>
+                    <td style="--size: calc(70 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 70 </span> <span class="tooltip"> Year: 2013 <br> Points: 70 </span> </td>
+                    <td style="--size: calc(78 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 78 </span> <span class="tooltip"> Year: 2014 <br> Points: 78 </span> </td>
+                    <td style="--size: calc(81 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 81 </span> <span class="tooltip"> Year: 2015 <br> Points: 81 </span> </td>
+                    <td style="--size: calc(77 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 77 </span> <span class="tooltip"> Year: 2016 <br> Points: 77 </span> </td>
+                    <td style="--size: calc(76 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 76 </span> <span class="tooltip"> Year: 2017 <br> Points: 76 </span> </td>
+                    <td style="--size: calc(68.5 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 68.5 </span> <span class="tooltip"> Year: 2018 <br> Points: 68.5 </span> </td>
+                    <td style="--size: calc(51.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 51.5 </span> <span class="tooltip"> Year: 2019 <br> Points: 51.5 </span> </td>
+                    <td style="--size: calc(63.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 63.5 </span> <span class="tooltip"> Year: 2021 <br> Points: 63.5 </span> </td>
+                    <td style="--size: calc(78.5 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 78.5 </span> <span class="tooltip"> Year: 2022 <br> Points: 78.5 </span> </td>
+                    <td style="--size: calc(72 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 72 </span> <span class="tooltip"> Year: 2023 <br> Points: 72 </span> </td>
+                    <td style="--size: calc(66 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 66 </span> <span class="tooltip"> Year: 2024 <br> Points: 66 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 5) / 12); --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2010 <br> Place: 5 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2011 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 4) / 12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2012 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2013 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2014 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2015 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 2) / 12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2016 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2017 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2018 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2019 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2021 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2022 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2023 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2024 <br> Place: 3 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Liberty Lunch </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2009 </th>
+                <th scope="col"> 2010 </th>
+                <th scope="col"> 2011 </th>
+                <th scope="col"> 2012 </th>
+                <th scope="col"> 2013 </th>
+                <th scope="col"> 2014 </th>
+                <th scope="col"> 2015 </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2020 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(21 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2009 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(33 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 33 </span> <span class="tooltip"> Year: 2010 <br> Points: 33 </span> </td>
+                    <td style="--size: calc(19 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 19 </span> <span class="tooltip"> Year: 2011 <br> Points: 19 </span> </td>
+                    <td style="--size: calc(24 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 24 </span> <span class="tooltip"> Year: 2012 <br> Points: 24 </span> </td>
+                    <td style="--size: calc(21 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2013 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(15 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 15 </span> <span class="tooltip"> Year: 2014 <br> Points: 15 </span> </td>
+                    <td style="--size: calc(24 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 24 </span> <span class="tooltip"> Year: 2015 <br> Points: 24 </span> </td>
+                    <td style="--size: calc(41 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2016 <br> Points: 41 </span> </td>
+                    <td style="--size: calc(19 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 19 </span> <span class="tooltip"> Year: 2017 <br> Points: 19 </span> </td>
+                    <td style="--size: calc(25 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2018 <br> Points: 25 </span> </td>
+                    <td style="--size: calc(29 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2019 <br> Points: 29 </span> </td>
+                    <td style="--size: calc(30 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2020 <br> Points: 30 </span> </td>
+                    <td style="--size: calc(28 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 28 </span> <span class="tooltip"> Year: 2021 <br> Points: 28 </span> </td>
+                    <td style="--size: calc(17 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 17 </span> <span class="tooltip"> Year: 2022 <br> Points: 17 </span> </td>
+                    <td style="--size: calc(26 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2023 <br> Points: 26 </span> </td>
+                    <td style="--size: calc(25 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2024 <br> Points: 25 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(26.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 26.5 </span> <span class="tooltip"> Year: 2009 <br> Points: 26.5 </span> </td>
+                    <td style="--size: calc(17 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 17 </span> <span class="tooltip"> Year: 2010 <br> Points: 17 </span> </td>
+                    <td style="--size: calc(21 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2011 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(27 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 27 </span> <span class="tooltip"> Year: 2012 <br> Points: 27 </span> </td>
+                    <td style="--size: calc(15 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 15 </span> <span class="tooltip"> Year: 2013 <br> Points: 15 </span> </td>
+                    <td style="--size: calc(30 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2014 <br> Points: 30 </span> </td>
+                    <td style="--size: calc(26 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2015 <br> Points: 26 </span> </td>
+                    <td style="--size: calc(41 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2016 <br> Points: 41 </span> </td>
+                    <td style="--size: calc(19.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 19.5 </span> <span class="tooltip"> Year: 2017 <br> Points: 19.5 </span> </td>
+                    <td style="--size: calc(34 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2018 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(16 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 16 </span> <span class="tooltip"> Year: 2019 <br> Points: 16 </span> </td>
+                    <td style="--size: calc(11.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 11.5 </span> <span class="tooltip"> Year: 2020 <br> Points: 11.5 </span> </td>
+                    <td style="--size: calc(13 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2021 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(6 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2022 <br> Points: 6 </span> </td>
+                    <td style="--size: calc(4 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2023 <br> Points: 4 </span> </td>
+                    <td style="--size: calc(6 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2024 <br> Points: 6 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(47.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 47.5 </span> <span class="tooltip"> Year: 2009 <br> Points: 47.5 </span> </td>
+                    <td style="--size: calc(50 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 50 </span> <span class="tooltip"> Year: 2010 <br> Points: 50 </span> </td>
+                    <td style="--size: calc(40 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2011 <br> Points: 40 </span> </td>
+                    <td style="--size: calc(51 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 51 </span> <span class="tooltip"> Year: 2012 <br> Points: 51 </span> </td>
+                    <td style="--size: calc(36 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 36 </span> <span class="tooltip"> Year: 2013 <br> Points: 36 </span> </td>
+                    <td style="--size: calc(45 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 45 </span> <span class="tooltip"> Year: 2014 <br> Points: 45 </span> </td>
+                    <td style="--size: calc(50 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 50 </span> <span class="tooltip"> Year: 2015 <br> Points: 50 </span> </td>
+                    <td style="--size: calc(82 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 82 </span> <span class="tooltip"> Year: 2016 <br> Points: 82 </span> </td>
+                    <td style="--size: calc(38.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 38.5 </span> <span class="tooltip"> Year: 2017 <br> Points: 38.5 </span> </td>
+                    <td style="--size: calc(59 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 59 </span> <span class="tooltip"> Year: 2018 <br> Points: 59 </span> </td>
+                    <td style="--size: calc(45 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 45 </span> <span class="tooltip"> Year: 2019 <br> Points: 45 </span> </td>
+                    <td style="--size: calc(41.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 41.5 </span> <span class="tooltip"> Year: 2020 <br> Points: 41.5 </span> </td>
+                    <td style="--size: calc(41 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2021 <br> Points: 41 </span> </td>
+                    <td style="--size: calc(23 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 23 </span> <span class="tooltip"> Year: 2022 <br> Points: 23 </span> </td>
+                    <td style="--size: calc(30 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2023 <br> Points: 30 </span> </td>
+                    <td style="--size: calc(31 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2024 <br> Points: 31 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2009 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2010 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2011 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2012 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2013 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2014 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 8) / 12); --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2015 <br> Place: 8 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2016 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2017 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 5) / 12); --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2018 <br> Place: 5 </span> </td>
+                    <td style="--size: calc((13 - 5) / 12); --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2019 <br> Place: 5 </span> </td>
+                    <td style="--size: calc((13 - 2) / 12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2020 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2021 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 10) / 12); --color: var(--place-color);"> <span class="data"> 10 </span> <span class="tooltip"> Year: 2022 <br> Place: 10 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2023 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2024 <br> Place: 9 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+        
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Matty Bos </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2008 </th>
+                <th scope="col"> 2009 </th>
+                <th scope="col"> 2010 </th>
+                <th scope="col"> 2011 </th>
+                <th scope="col"> 2012 </th>
+                <th scope="col"> 2013 </th>
+                <th scope="col"> 2014 </th>
+                <th scope="col"> 2015 </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(19 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 19 </span> <span class="tooltip"> Year: 2008 <br> Points: 19 </span> </td>
+                    <td style="--size: calc(34 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2009 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(4 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2010 <br> Points: 4 </span> </td>
+                    <td style="--size: calc(15.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 15.5 </span> <span class="tooltip"> Year: 2011 <br> Points: 15.5 </span> </td>
+                    <td style="--size: calc(28 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 28 </span> <span class="tooltip"> Year: 2012 <br> Points: 28 </span> </td>
+                    <td style="--size: calc(33 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 33 </span> <span class="tooltip"> Year: 2013 <br> Points: 33 </span> </td>
+                    <td style="--size: calc(40 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2014 <br> Points: 40 </span> </td>
+                    <td style="--size: calc(32 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2015 <br> Points: 32 </span> </td>
+                    <td style="--size: calc(29 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2016 <br> Points: 29 </span> </td>
+                    <td style="--size: calc(25 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2017 <br> Points: 25 </span> </td>
+                    <td style="--size: calc(32 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2018 <br> Points: 32 </span> </td>
+                    <td style="--size: calc(30 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2019 <br> Points: 30 </span> </td>
+                    <td style="--size: calc(30 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2021 <br> Points: 30 </span> </td>
+                    <td style="--size: calc(24.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 24.5 </span> <span class="tooltip"> Year: 2022 <br> Points: 24.5 </span> </td>
+                    <td style="--size: calc(40 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2023 <br> Points: 40 </span> </td>
+                    <td style="--size: calc(37 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2024 <br> Points: 37 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(35 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2008 <br> Points: 35 </span> </td>
+                    <td style="--size: calc(43 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 43 </span> <span class="tooltip"> Year: 2009 <br> Points: 43 </span> </td>
+                    <td style="--size: calc(42 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 42 </span> <span class="tooltip"> Year: 2010 <br> Points: 42 </span> </td>
+                    <td style="--size: calc(30 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2011 <br> Points: 30 </span> </td>
+                    <td style="--size: calc(26 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2012 <br> Points: 26 </span> </td>
+                    <td style="--size: calc(46 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 46 </span> <span class="tooltip"> Year: 2013 <br> Points: 46 </span> </td>
+                    <td style="--size: calc(45 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 45 </span> <span class="tooltip"> Year: 2014 <br> Points: 45 </span> </td>
+                    <td style="--size: calc(38.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 38.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 38.5 </span> </td>
+                    <td style="--size: calc(14 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 14 </span> <span class="tooltip"> Year: 2016 <br> Points: 14 </span> </td>
+                    <td style="--size: calc(9 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2017 <br> Points: 9 </span> </td>
+                    <td style="--size: calc(29 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2018 <br> Points: 29 </span> </td>
+                    <td style="--size: calc(25 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2019 <br> Points: 25 </span> </td>
+                    <td style="--size: calc(28 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 28 </span> <span class="tooltip"> Year: 2021 <br> Points: 28 </span> </td>
+                    <td style="--size: calc(15 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 15 </span> <span class="tooltip"> Year: 2022 <br> Points: 15 </span> </td>
+                    <td style="--size: calc(31 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2023 <br> Points: 31 </span> </td>
+                    <td style="--size: calc(41 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2024 <br> Points: 41 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(54 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 54 </span> <span class="tooltip"> Year: 2008 <br> Points: 54 </span> </td>
+                    <td style="--size: calc(77 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 77 </span> <span class="tooltip"> Year: 2009 <br> Points: 77 </span> </td>
+                    <td style="--size: calc(46 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 46 </span> <span class="tooltip"> Year: 2010 <br> Points: 46 </span> </td>
+                    <td style="--size: calc(45.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 45.5 </span> <span class="tooltip"> Year: 2011 <br> Points: 45.5 </span> </td>
+                    <td style="--size: calc(54 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 54 </span> <span class="tooltip"> Year: 2012 <br> Points: 54 </span> </td>
+                    <td style="--size: calc(79 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 79 </span> <span class="tooltip"> Year: 2013 <br> Points: 79 </span> </td>
+                    <td style="--size: calc(85 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 85 </span> <span class="tooltip"> Year: 2014 <br> Points: 85 </span> </td>
+                    <td style="--size: calc(70.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 70.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 70.5 </span> </td>
+                    <td style="--size: calc(43 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 43 </span> <span class="tooltip"> Year: 2016 <br> Points: 43 </span> </td>
+                    <td style="--size: calc(34 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2017 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(61 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 61 </span> <span class="tooltip"> Year: 2018 <br> Points: 61 </span> </td>
+                    <td style="--size: calc(55 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 55 </span> <span class="tooltip"> Year: 2019 <br> Points: 55 </span> </td>
+                    <td style="--size: calc(58 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 58 </span> <span class="tooltip"> Year: 2021 <br> Points: 58 </span> </td>
+                    <td style="--size: calc(39.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 39.5 </span> <span class="tooltip"> Year: 2022 <br> Points: 39.5 </span> </td>
+                    <td style="--size: calc(71 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 71 </span> <span class="tooltip"> Year: 2023 <br> Points: 71 </span> </td>
+                    <td style="--size: calc(78 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 78 </span> <span class="tooltip"> Year: 2024 <br> Points: 78 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2008 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 2) / 12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2009 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2010 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 8) / 12); --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2011 <br> Place: 8 </span> </td>
+                    <td style="--size: calc((13 - 5) / 12); --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2012 <br> Place: 5 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2013 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2014 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2015 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 8) / 12); --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2016 <br> Place: 8 </span> </td>
+                    <td style="--size: calc((13 - 10) / 12); --color: var(--place-color);"> <span class="data"> 10 </span> <span class="tooltip"> Year: 2017 <br> Place: 10 </span> </td>
+                    <td style="--size: calc((13 - 4) / 12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2018 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 2) / 12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2019 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 4) / 12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2021 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2022 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 2) / 12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2023 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2024 <br> Place: 1 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+        
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> The Cream and the Clear </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2008 </th>
+                <th scope="col"> 2009 </th>
+                <th scope="col"> 2010 </th>
+                <th scope="col"> 2011 </th>
+                <th scope="col"> 2012 </th>
+                <th scope="col"> 2013 </th>
+                <th scope="col"> 2014 </th>
+                <th scope="col"> 2015 </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(18 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 18 </span> <span class="tooltip"> Year: 2008 <br> Points: 18 </span> </td>
+                    <td style="--size: calc(45 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 45 </span> <span class="tooltip"> Year: 2009 <br> Points: 45 </span> </td>
+                    <td style="--size: calc(14 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 14 </span> <span class="tooltip"> Year: 2010 <br> Points: 14 </span> </td>
+                    <td style="--size: calc(36 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 36 </span> <span class="tooltip"> Year: 2011 <br> Points: 36 </span> </td>
+                    <td style="--size: calc(28 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 28 </span> <span class="tooltip"> Year: 2012 <br> Points: 28 </span> </td>
+                    <td style="--size: calc(21 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2013 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(37.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 37.5 </span> <span class="tooltip"> Year: 2014 <br> Points: 37.5 </span> </td>
+                    <td style="--size: calc(34.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 34.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 34.5 </span> </td>
+                    <td style="--size: calc(13 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2016 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(9 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2017 <br> Points: 9 </span> </td>
+                    <td style="--size: calc(18 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 18 </span> <span class="tooltip"> Year: 2018 <br> Points: 18 </span> </td>
+                    <td style="--size: calc(18 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 18 </span> <span class="tooltip"> Year: 2019 <br> Points: 18 </span> </td>
+                    <td style="--size: calc(13 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2021 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(14 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 14 </span> <span class="tooltip"> Year: 2022 <br> Points: 14 </span> </td>
+                    <td style="--size: calc(19 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 19 </span> <span class="tooltip"> Year: 2023 <br> Points: 19 </span> </td>
+                    <td style="--size: calc(12 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 12 </span> <span class="tooltip"> Year: 2024 <br> Points: 12 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(13 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2008 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(40.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 40.5 </span> <span class="tooltip"> Year: 2009 <br> Points: 40.5 </span> </td>
+                    <td style="--size: calc(26.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 26.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 26.5 </span> </td>
+                    <td style="--size: calc(36 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 36 </span> <span class="tooltip"> Year: 2011 <br> Points: 36 </span> </td>
+                    <td style="--size: calc(30.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 30.5 </span> <span class="tooltip"> Year: 2012 <br> Points: 30.5 </span> </td>
+                    <td style="--size: calc(31 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2013 <br> Points: 31 </span> </td>
+                    <td style="--size: calc(25 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2014 <br> Points: 25 </span> </td>
+                    <td style="--size: calc(21 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2015 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(21 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2016 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(35 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2017 <br> Points: 35 </span> </td>
+                    <td style="--size: calc(37 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2018 <br> Points: 37 </span> </td>
+                    <td style="--size: calc(21 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2019 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(2 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2021 <br> Points: 2 </span> </td>
+                    <td style="--size: calc(17 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 17 </span> <span class="tooltip"> Year: 2022 <br> Points: 17 </span> </td>
+                    <td style="--size: calc(7 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2023 <br> Points: 7 </span> </td>
+                    <td style="--size: calc(12 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 12 </span> <span class="tooltip"> Year: 2024 <br> Points: 12 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(31 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2008 <br> Points: 31 </span> </td>
+                    <td style="--size: calc(85.5 / var(--total-max)); --color: var(--total-color);" class="highlighted"> <span class="data"> 85.5 </span> <span class="tooltip"> Year: 2009 <br> Points: 85.5 </span> </td>
+                    <td style="--size: calc(40.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 40.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 40.5 </span> </td>
+                    <td style="--size: calc(72 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 72 </span> <span class="tooltip"> Year: 2011 <br> Points: 72 </span> </td>
+                    <td style="--size: calc(58.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 58.5 </span> <span class="tooltip"> Year: 2012 <br> Points: 58.5 </span> </td>
+                    <td style="--size: calc(52 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 52 </span> <span class="tooltip"> Year: 2013 <br> Points: 52 </span> </td>
+                    <td style="--size: calc(62.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 62.5 </span> <span class="tooltip"> Year: 2014 <br> Points: 62.5 </span> </td>
+                    <td style="--size: calc(55.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 55.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 55.5 </span> </td>
+                    <td style="--size: calc(34 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2016 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(44 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 44 </span> <span class="tooltip"> Year: 2017 <br> Points: 44 </span> </td>
+                    <td style="--size: calc(55 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 55 </span> <span class="tooltip"> Year: 2018 <br> Points: 55 </span> </td>
+                    <td style="--size: calc(39 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 39 </span> <span class="tooltip"> Year: 2019 <br> Points: 39 </span> </td>
+                    <td style="--size: calc(15 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 15 </span> <span class="tooltip"> Year: 2021 <br> Points: 15 </span> </td>
+                    <td style="--size: calc(31 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2022 <br> Points: 31 </span> </td>
+                    <td style="--size: calc(26 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2023 <br> Points: 26 </span> </td>
+                    <td style="--size: calc(24 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 24 </span> <span class="tooltip"> Year: 2024 <br> Points: 24 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 11) / 12); --color: var(--place-color);"> <span class="data"> 11 </span> <span class="tooltip"> Year: 2008 <br> Place: 11 </span> </td>
+                    <td style="--size: calc((13 - 1) / 12); --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2009 <br> Place: 1 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2010 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 2) / 12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2011 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2012 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2013 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 4) / 12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2014 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2015 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2016 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 8) / 12); --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2017 <br> Place: 8 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2018 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2019 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 11) / 12); --color: var(--place-color);"> <span class="data"> 11 </span> <span class="tooltip"> Year: 2021 <br> Place: 11 </span> </td>
+                    <td style="--size: calc((13 - 9) / 12); --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2022 <br> Place: 9 </span> </td>
+                    <td style="--size: calc((13 - 10) / 12); --color: var(--place-color);"> <span class="data"> 10 </span> <span class="tooltip"> Year: 2023 <br> Place: 10 </span> </td>
+                    <td style="--size: calc((13 - 10) / 12); --color: var(--place-color);"> <span class="data"> 10 </span> <span class="tooltip"> Year: 2024 <br> Place: 10 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+        
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Leonard Peltier's Army </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2008 </th>
+                <th scope="col"> 2009 </th>
+                <th scope="col"> 2010 </th>
+                <th scope="col"> 2011 </th>
+                <th scope="col"> 2012 </th>
+                <th scope="col"> 2013 </th>
+                <th scope="col"> 2014 </th>
+                <th scope="col"> 2015 </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(40 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2008 <br> Points: 40 </span> </td>
+                    <td style="--size: calc(6 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2009 <br> Points: 6 </span> </td>
+                    <td style="--size: calc(25.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 25.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 25.5 </span> </td>
+                    <td style="--size: calc(31 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2011 <br> Points: 31 </span> </td>
+                    <td style="--size: calc(31 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2012 <br> Points: 31 </span> </td>
+                    <td style="--size: calc(36 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 36 </span> <span class="tooltip"> Year: 2013 <br> Points: 36 </span> </td>
+                    <td style="--size: calc(9 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2014 <br> Points: 9 </span> </td>
+                    <td style="--size: calc(41 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2015 <br> Points: 41 </span> </td>
+                    <td style="--size: calc(38 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 38 </span> <span class="tooltip"> Year: 2016 <br> Points: 38 </span> </td>
+                    <td style="--size: calc(32 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2017 <br> Points: 32 </span> </td>
+                    <td style="--size: calc(42 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 42 </span> <span class="tooltip"> Year: 2018 <br> Points: 42 </span> </td>
+                    <td style="--size: calc(27 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 27 </span> <span class="tooltip"> Year: 2019 <br> Points: 27 </span> </td>
+                    <td style="--size: calc(33.5 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 33.5 </span> <span class="tooltip"> Year: 2021 <br> Points: 33.5 </span> </td>
+                    <td style="--size: calc(25 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2022 <br> Points: 25 </span> </td>
+                    <td style="--size: calc(32 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2023 <br> Points: 32 </span> </td>
+                    <td style="--size: calc(26 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2024 <br> Points: 26 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(32.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 32.5 </span> <span class="tooltip"> Year: 2008 <br> Points: 32.5 </span> </td>
+                    <td style="--size: calc(2 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2009 <br> Points: 2 </span> </td>
+                    <td style="--size: calc(13 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2010 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(33.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 33.5 </span> <span class="tooltip"> Year: 2011 <br> Points: 33.5 </span> </td>
+                    <td style="--size: calc(32 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2012 <br> Points: 32 </span> </td>
+                    <td style="--size: calc(30 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2013 <br> Points: 30 </span> </td>
+                    <td style="--size: calc(4 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2014 <br> Points: 4 </span> </td>
+                    <td style="--size: calc(33.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 33.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 33.5 </span> </td>
+                    <td style="--size: calc(34 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2016 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(35 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2017 <br> Points: 35 </span> </td>
+                    <td style="--size: calc(32 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2018 <br> Points: 32 </span> </td>
+                    <td style="--size: calc(17 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 17 </span> <span class="tooltip"> Year: 2019 <br> Points: 17 </span> </td>
+                    <td style="--size: calc(32.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 32.5 </span> <span class="tooltip"> Year: 2021 <br> Points: 32.5 </span> </td>
+                    <td style="--size: calc(34 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2022 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(29 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2023 <br> Points: 29 </span> </td>
+                    <td style="--size: calc(35 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2024 <br> Points: 35 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(72.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 72.5 </span> <span class="tooltip"> Year: 2008 <br> Points: 72.5 </span> </td>
+                    <td style="--size: calc(8 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2009 <br> Points: 8 </span> </td>
+                    <td style="--size: calc(38.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 38.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 38.5 </span> </td>
+                    <td style="--size: calc(64.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 64.5 </span> <span class="tooltip"> Year: 2011 <br> Points: 64.5 </span> </td>
+                    <td style="--size: calc(63 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 63 </span> <span class="tooltip"> Year: 2012 <br> Points: 63 </span> </td>
+                    <td style="--size: calc(66 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 66 </span> <span class="tooltip"> Year: 2013 <br> Points: 66 </span> </td>
+                    <td style="--size: calc(13 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 13 </span> <span class="tooltip"> Year: 2014 <br> Points: 13 </span> </td>
+                    <td style="--size: calc(74.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 74.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 74.5 </span> </td>
+                    <td style="--size: calc(72 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 72 </span> <span class="tooltip"> Year: 2016 <br> Points: 72 </span> </td>
+                    <td style="--size: calc(67 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 67 </span> <span class="tooltip"> Year: 2017 <br> Points: 67 </span> </td>
+                    <td style="--size: calc(74 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 74 </span> <span class="tooltip"> Year: 2018 <br> Points: 74 </span> </td>
+                    <td style="--size: calc(44 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 44 </span> <span class="tooltip"> Year: 2019 <br> Points: 44 </span> </td>
+                    <td style="--size: calc(66 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 66 </span> <span class="tooltip"> Year: 2021 <br> Points: 66 </span> </td>
+                    <td style="--size: calc(59 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 59 </span> <span class="tooltip"> Year: 2022 <br> Points: 59 </span> </td>
+                    <td style="--size: calc(61 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 61 </span> <span class="tooltip"> Year: 2023 <br> Points: 61 </span> </td>
+                    <td style="--size: calc(61 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 61 </span> <span class="tooltip"> Year: 2024 <br> Points: 61 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2008 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 12) / 12); --color: var(--place-color);"> <span class="data"> 12 </span> <span class="tooltip"> Year: 2009 <br> Place: 12 </span> </td>
+                    <td style="--size: calc((13 - 10) / 12); --color: var(--place-color);"> <span class="data"> 10 </span> <span class="tooltip"> Year: 2010 <br> Place: 10 </span> </td>
+                    <td style="--size: calc((13 - 3) / 12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2011 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 2) / 12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2012 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 4) /12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2013 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 12) /12); --color: var(--place-color);"> <span class="data"> 12 </span> <span class="tooltip"> Year: 2014 <br> Place: 12 </span> </td>
+                    <td style="--size: calc((13 - 2) /12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2015 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 4) /12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2016 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 4) /12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2017 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 2) /12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2018 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 6) /12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2019 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 2) /12); --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2021 <br> Place: 2 </span> </td>
+                    <td style="--size: calc((13 - 3) /12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2022 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 3) /12); --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2023 <br> Place: 3 </span> </td>
+                    <td style="--size: calc((13 - 4) /12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2024 <br> Place: 4 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+        
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Farm Fresh Gregs </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2010 </th>
+                <th scope="col"> 2011 </th>
+                <th scope="col"> 2012 </th>
+                <th scope="col"> 2013 </th>
+                <th scope="col"> 2014 </th>
+                <th scope="col"> 2015 </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: 0.67; --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2010 <br> Points: 32 </span> </td>
+                    <td style="--size: 0.67; --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2011 <br> Points: 32 </span> </td>
+                    <td style="--size: 1.00; --color: var(--hitting-color);"> <span class="data"> 48 </span> <span class="tooltip"> Year: 2012 <br> Points: 48 </span> </td>
+                    <td style="--size: 1.00; --color: var(--hitting-color);"> <span class="data"> 48 </span> <span class="tooltip"> Year: 2013 <br> Points: 48 </span> </td>
+                    <td style="--size: 0.52; --color: var(--hitting-color);"> <span class="data"> 25 </span> <span class="tooltip"> Year: 2014 <br> Points: 25 </span> </td>
+                    <td style="--size: 0.67; --color: var(--hitting-color);"> <span class="data"> 32 </span> <span class="tooltip"> Year: 2015 <br> Points: 32 </span> </td>
+                    <td style="--size: 0.34; --color: var(--hitting-color);"> <span class="data"> 16.5 </span> <span class="tooltip"> Year: 2016 <br> Points: 16.5 </span> </td>
+                    <td style="--size: 0.85; --color: var(--hitting-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2017 <br> Points: 41 </span> </td>
+                    <td style="--size: 0.69; --color: var(--hitting-color);"> <span class="data"> 33 </span> <span class="tooltip"> Year: 2018 <br> Points: 33 </span> </td>
+                    <td style="--size: 0.33; --color: var(--hitting-color);"> <span class="data"> 16 </span> <span class="tooltip"> Year: 2019 <br> Points: 16 </span> </td>
+                    <td style="--size: 0.40; --color: var(--hitting-color);"> <span class="data"> 19 </span> <span class="tooltip"> Year: 2021 <br> Points: 19 </span> </td>
+                    <td style="--size: 0.83; --color: var(--hitting-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2022 <br> Points: 40 </span> </td>
+                    <td style="--size: 0.33; --color: var(--hitting-color);"> <span class="data"> 16 </span> <span class="tooltip"> Year: 2023 <br> Points: 16 </span> </td>
+                    <td style="--size: 0.77; --color: var(--hitting-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2024 <br> Points: 37 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: 0.95; --color: var(--pitching-color);"> <span class="data"> 43.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 43.5 </span> </td>
+                    <td style="--size: 0.59; --color: var(--pitching-color);"> <span class="data"> 27 </span> <span class="tooltip"> Year: 2011 <br> Points: 27 </span> </td>
+                    <td style="--size: 0.95; --color: var(--pitching-color);"> <span class="data"> 43.5 </span> <span class="tooltip"> Year: 2012 <br> Points: 43.5 </span> </td>
+                    <td style="--size: 0.51; --color: var(--pitching-color);"> <span class="data"> 23.5 </span> <span class="tooltip"> Year: 2013 <br> Points: 23.5 </span> </td>
+                    <td style="--size: 0.40; --color: var(--pitching-color);"> <span class="data"> 18.5 </span> <span class="tooltip"> Year: 2014 <br> Points: 18.5 </span> </td>
+                    <td style="--size: 0.55; --color: var(--pitching-color);"> <span class="data"> 25.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 25.5 </span> </td>
+                    <td style="--size: 0.37; --color: var(--pitching-color);"> <span class="data"> 17 </span> <span class="tooltip"> Year: 2016 <br> Points: 17 </span> </td>
+                    <td style="--size: 0.91; --color: var(--pitching-color);"> <span class="data"> 42 </span> <span class="tooltip"> Year: 2017 <br> Points: 42 </span> </td>
+                    <td style="--size: 0.52; --color: var(--pitching-color);"> <span class="data"> 24 </span> <span class="tooltip"> Year: 2018 <br> Points: 24 </span> </td>
+                    <td style="--size: 0.41; --color: var(--pitching-color);"> <span class="data"> 19 </span> <span class="tooltip"> Year: 2019 <br> Points: 19 </span> </td>
+                    <td style="--size: 0.24; --color: var(--pitching-color);"> <span class="data"> 11 </span> <span class="tooltip"> Year: 2021 <br> Points: 11 </span> </td>
+                    <td style="--size: 0.83; --color: var(--pitching-color);"> <span class="data"> 38 </span> <span class="tooltip"> Year: 2022 <br> Points: 38 </span> </td>
+                    <td style="--size: 0.43; --color: var(--pitching-color);"> <span class="data"> 20 </span> <span class="tooltip"> Year: 2023 <br> Points: 20 </span> </td>
+                    <td style="--size: 0.79; --color: var(--pitching-color);"> <span class="data"> 36.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 36.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: 0.83; --color: var(--total-color);" class="highlighted"> <span class="data"> 75.5 </span> <span class="tooltip"> Year: 2010 <br> Points: 75.5 </span> </td>
+                    <td style="--size: 0.64; --color: var(--total-color);"> <span class="data"> 59 </span> <span class="tooltip"> Year: 2011 <br> Points: 59 </span> </td>
+                    <td style="--size: 1.00; --color: var(--total-color);" class="highlighted"> <span class="data"> 91.5 </span> <span class="tooltip"> Year: 2012 <br> Points: 91.5 </span> </td>
+                    <td style="--size: 0.78; --color: var(--total-color);"> <span class="data"> 71.5 </span> <span class="tooltip"> Year: 2013 <br> Points: 71.5 </span> </td>
+                    <td style="--size: 0.48; --color: var(--total-color);"> <span class="data"> 43.5 </span> <span class="tooltip"> Year: 2014 <br> Points: 43.5 </span> </td>
+                    <td style="--size: 0.63; --color: var(--total-color);"> <span class="data"> 57.5 </span> <span class="tooltip"> Year: 2015 <br> Points: 57.5 </span> </td>
+                    <td style="--size: 0.37; --color: var(--total-color);"> <span class="data"> 33.5 </span> <span class="tooltip"> Year: 2016 <br> Points: 33.5 </span> </td>
+                    <td style="--size: 0.91; --color: var(--total-color);" class="highlighted"> <span class="data"> 83 </span> <span class="tooltip"> Year: 2017 <br> Points: 83 </span> </td>
+                    <td style="--size: 0.62; --color: var(--total-color);"> <span class="data"> 57 </span> <span class="tooltip"> Year: 2018 <br> Points: 57 </span> </td>
+                    <td style="--size: 0.38; --color: var(--total-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2019 <br> Points: 35 </span> </td>
+                    <td style="--size: 0.33; --color: var(--total-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2021 <br> Points: 30 </span> </td>
+                    <td style="--size: 0.85; --color: var(--total-color);"> <span class="data"> 78 </span> <span class="tooltip"> Year: 2022 <br> Points: 78 </span> </td>
+                    <td style="--size: 0.39; --color: var(--total-color);"> <span class="data"> 36 </span> <span class="tooltip"> Year: 2023 <br> Points: 36 </span> </td>
+                    <td style="--size: 0.80; --color: var(--total-color);"> <span class="data"> 73.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 73.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: 1.00; --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2010 <br> Place: 1 </span> </td>
+                    <td style="--size: 0.75; --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2011 <br> Place: 4 </span> </td>
+                    <td style="--size: 1.00; --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2012 <br> Place: 1 </span> </td>
+                    <td style="--size: 0.92; --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2013 <br> Place: 2 </span> </td>
+                    <td style="--size: 0.42; --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2014 <br> Place: 8 </span> </td>
+                    <td style="--size: 0.67; --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2015 <br> Place: 5 </span> </td>
+                    <td style="--size: 0.25; --color: var(--place-color);"> <span class="data"> 10 </span> <span class="tooltip"> Year: 2016 <br> Place: 10 </span> </td>
+                    <td style="--size: 1.00; --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2017 <br> Place: 1 </span> </td>
+                    <td style="--size: 0.58; --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2018 <br> Place: 6 </span> </td>
+                    <td style="--size: 0.33; --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2019 <br> Place: 9 </span> </td>
+                    <td style="--size: 0.25; --color: var(--place-color);"> <span class="data"> 10 </span> <span class="tooltip"> Year: 2021 <br> Place: 10 </span> </td>
+                    <td style="--size: 0.92; --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2022 <br> Place: 2 </span> </td>
+                    <td style="--size: 0.42; --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2023 <br> Place: 8 </span> </td>
+                    <td style="--size: 0.92; --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2024 <br> Place: 2 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%">
+
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Donner Party </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2008 </th>
+                <th scope="col"> 2009 </th>
+                <th scope="col"> 2010 </th>
+                <th scope="col"> 2011 </th>
+                <th scope="col"> 2012 </th>
+                <th scope="col"> 2013 </th>
+                <th scope="col"> 2014 </th>
+                <th scope="col"> 2015 </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: 0.88; --color: var(--hitting-color);"> <span class="data"> 42 </span> <span class="tooltip"> Year: 2008 <br> Points: 42 </span> </td>
+                    <td style="--size: 0.79; --color: var(--hitting-color);"> <span class="data"> 38 </span> <span class="tooltip"> Year: 2009 <br> Points: 38 </span> </td>
+                    <td style="--size: 0.94; --color: var(--hitting-color);"> <span class="data"> 45 </span> <span class="tooltip"> Year: 2010 <br> Points: 45 </span> </td>
+                    <td style="--size: 0.56; --color: var(--hitting-color);"> <span class="data"> 27 </span> <span class="tooltip"> Year: 2011 <br> Points: 27 </span> </td>
+                    <td style="--size: 0.60; --color: var(--hitting-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2012 <br> Points: 29 </span> </td>
+                    <td style="--size: 0.56; --color: var(--hitting-color);"> <span class="data"> 27 </span> <span class="tooltip"> Year: 2013 <br> Points: 27 </span> </td>
+                    <td style="--size: 0.65; --color: var(--hitting-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2014 <br> Points: 31 </span> </td>
+                    <td style="--size: 0.48; --color: var(--hitting-color);"> <span class="data"> 23 </span> <span class="tooltip"> Year: 2015 <br> Points: 23 </span> </td>
+                    <td style="--size: 0.77; --color: var(--hitting-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2016 <br> Points: 37 </span> </td>
+                    <td style="--size: 0.85; --color: var(--hitting-color);"> <span class="data"> 41 </span> <span class="tooltip"> Year: 2017 <br> Points: 41 </span> </td>
+                    <td style="--size: 0.63; --color: var(--hitting-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2018 <br> Points: 30 </span> </td>
+                    <td style="--size: 0.46; --color: var(--hitting-color);"> <span class="data"> 22 </span> <span class="tooltip"> Year: 2019 <br> Points: 22 </span> </td>
+                    <td style="--size: 0.10; --color: var(--hitting-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2021 <br> Points: 5 </span> </td>
+                    <td style="--size: 0.61; --color: var(--hitting-color);"> <span class="data"> 29.5 </span> <span class="tooltip"> Year: 2012 <br> Points: 29.5 </span> </td>
+                    <td style="--size: 0.60; --color: var(--hitting-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2013 <br> Points: 29 </span> </td>
+                    <td style="--size: 0.65; --color: var(--hitting-color);"> <span class="data"> 31 </span> <span class="tooltip"> Year: 2014 <br> Points: 31 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: 0.80; --color: var(--pitching-color);"> <span class="data"> 37 </span> <span class="tooltip"> Year: 2008 <br> Points: 37 </span> </td>
+                    <td style="--size: 0.78; --color: var(--pitching-color);"> <span class="data"> 36 </span> <span class="tooltip"> Year: 2009 <br> Points: 36 </span> </td>
+                    <td style="--size: 0.48; --color: var(--pitching-color);"> <span class="data"> 22 </span> <span class="tooltip"> Year: 2010 <br> Points: 22 </span> </td>
+                    <td style="--size: 0.65; --color: var(--pitching-color);"> <span class="data"> 30 </span> <span class="tooltip"> Year: 2011 <br> Points: 30 </span> </td>
+                    <td style="--size: 0.30; --color: var(--pitching-color);"> <span class="data"> 14 </span> <span class="tooltip"> Year: 2012 <br> Points: 14 </span> </td>
+                    <td style="--size: 0.61; --color: var(--pitching-color);"> <span class="data"> 28 </span> <span class="tooltip"> Year: 2013 <br> Points: 28 </span> </td>
+                    <td style="--size: 0.17; --color: var(--pitching-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2014 <br> Points: 8 </span> </td>
+                    <td style="--size: 0.46; --color: var(--pitching-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2015 <br> Points: 21 </span> </td>
+                    <td style="--size: 0.87; --color: var(--pitching-color);"> <span class="data"> 40 </span> <span class="tooltip"> Year: 2016 <br> Points: 40 </span> </td>
+                    <td style="--size: 0.83; --color: var(--pitching-color);"> <span class="data"> 38 </span> <span class="tooltip"> Year: 2017 <br> Points: 38 </span> </td>
+                    <td style="--size: 0.26; --color: var(--pitching-color);"> <span class="data"> 12 </span> <span class="tooltip"> Year: 2018 <br> Points: 12 </span> </td>
+                    <td style="--size: 0.76; --color: var(--pitching-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2019 <br> Points: 35 </span> </td>
+                    <td style="--size: 0.83; --color: var(--pitching-color);"> <span class="data"> 38 </span> <span class="tooltip"> Year: 2021 <br> Points: 38 </span> </td>
+                    <td style="--size: 0.13; --color: var(--pitching-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2022 <br> Points: 6 </span> </td>
+                    <td style="--size: 0.63; --color: var(--pitching-color);"> <span class="data"> 29 </span> <span class="tooltip"> Year: 2023 <br> Points: 29 </span> </td>
+                    <td style="--size: 0.40; --color: var(--pitching-color);"> <span class="data"> 18.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 18.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: 0.86; --color: var(--total-color);" class="highlighted"> <span class="data"> 79 </span> <span class="tooltip"> Year: 2008 <br> Points: 79 </span> </td>
+                    <td style="--size: 0.81; --color: var(--total-color);"> <span class="data"> 74 </span> <span class="tooltip"> Year: 2009 <br> Points: 74 </span> </td>
+                    <td style="--size: 0.73; --color: var(--total-color);"> <span class="data"> 67 </span> <span class="tooltip"> Year: 2010 <br> Points: 67 </span> </td>
+                    <td style="--size: 0.62; --color: var(--total-color);"> <span class="data"> 57 </span> <span class="tooltip"> Year: 2011 <br> Points: 57 </span> </td>
+                    <td style="--size: 0.47; --color: var(--total-color);"> <span class="data"> 43 </span> <span class="tooltip"> Year: 2012 <br> Points: 43 </span> </td>
+                    <td style="--size: 0.60; --color: var(--total-color);"> <span class="data"> 55 </span> <span class="tooltip"> Year: 2013 <br> Points: 55 </span> </td>
+                    <td style="--size: 0.43; --color: var(--total-color);"> <span class="data"> 39 </span> <span class="tooltip"> Year: 2014 <br> Points: 39 </span> </td>
+                    <td style="--size: 0.48; --color: var(--total-color);"> <span class="data"> 44 </span> <span class="tooltip"> Year: 2015 <br> Points: 44 </span> </td>
+                    <td style="--size: 0.84; --color: var(--total-color);"> <span class="data"> 77 </span> <span class="tooltip"> Year: 2016 <br> Points: 77 </span> </td>
+                    <td style="--size: 0.86; --color: var(--total-color);"> <span class="data"> 79 </span> <span class="tooltip"> Year: 2017 <br> Points: 79 </span> </td>
+                    <td style="--size: 0.46; --color: var(--total-color);"> <span class="data"> 42 </span> <span class="tooltip"> Year: 2018 <br> Points: 42 </span> </td>
+                    <td style="--size: 0.62; --color: var(--total-color);" class="highlighted"> <span class="data"> 57 </span> <span class="tooltip"> Year: 2019 <br> Points: 57 </span> </td>
+                    <td style="--size: 0.47; --color: var(--total-color);"> <span class="data"> 43 </span> <span class="tooltip"> Year: 2021 <br> Points: 43 </span> </td>
+                    <td style="--size: 0.39; --color: var(--total-color);"> <span class="data"> 35.5 </span> <span class="tooltip"> Year: 2022 <br> Points: 35.5 </span> </td>
+                    <td style="--size: 0.63; --color: var(--total-color);"> <span class="data"> 58 </span> <span class="tooltip"> Year: 2023 <br> Points: 58 </span> </td>
+                    <td style="--size: 0.54; --color: var(--total-color);"> <span class="data"> 49.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 49.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: 1.00; --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2008 <br> Place: 1 </span> </td>
+                    <td style="--size: 0.83; --color: var(--place-color);"> <span class="data"> 3 </span> <span class="tooltip"> Year: 2009 <br> Place: 3 </span> </td>
+                    <td style="--size: 0.75; --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2010 <br> Place: 4 </span> </td>
+                    <td style="--size: 0.58; --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2011 <br> Place: 6 </span> </td>
+                    <td style="--size: 0.33; --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2012 <br> Place: 9 </span> </td>
+                    <td style="--size: 0.58; --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2013 <br> Place: 6 </span> </td>
+                    <td style="--size: 0.33; --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2014 <br> Place: 9 </span> </td>
+                    <td style="--size: 0.33; --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2015 <br> Place: 9 </span> </td>
+                    <td style="--size: 0.92; --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2016 <br> Place: 2 </span> </td>
+                    <td style="--size: 0.92; --color: var(--place-color);"> <span class="data"> 2 </span> <span class="tooltip"> Year: 2017 <br> Place: 2 </span> </td>
+                    <td style="--size: 0.22; --color: var(--place-color);"> <span class="data"> 9 </span> <span class="tooltip"> Year: 2018 <br> Place: 9 </span> </td>
+                    <td style="--size: 1.00; --color: var(--place-color);"> <span class="data"> 1 </span> <span class="tooltip"> Year: 2019 <br> Place: 1 </span> </td>
+                    <td style="--size: 0.42; --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2021 <br> Place: 8 </span> </td>
+                    <td style="--size: 0.42; --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2022 <br> Place: 8 </span> </td>
+                    <td style="--size: 0.75; --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2023 <br> Place: 4 </span> </td>
+                    <td style="--size: 0.67; --color: var(--place-color);"> <span class="data"> 5 </span> <span class="tooltip"> Year: 2024 <br> Place: 5 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width:75%;">
+
+        <table class="charts-css column hide-data show-heading data-spacing-5 datasets-spacing-4 multiple show-labels">
+            <caption> Seattle Stackers </caption>
+
+            <thead>
+                <th scope="col"> Category </th>
+                <th scope="col"> 2016 </th>
+                <th scope="col"> 2017 </th>
+                <th scope="col"> 2018 </th>
+                <th scope="col"> 2019 </th>
+                <th scope="col"> 2021 </th>
+                <th scope="col"> 2022 </th>
+                <th scope="col"> 2023 </th>
+                <th scope="col"> 2024 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Hitting </th>
+                    <td style="--size: calc(15 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 15 </span> <span class="tooltip"> Year: 2016 <br> Points: 15 </span> </td>
+                    <td style="--size: calc(35 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 35 </span> <span class="tooltip"> Year: 2017 <br> Points: 35 </span> </td>
+                    <td style="--size: calc(26 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 26 </span> <span class="tooltip"> Year: 2018 <br> Points: 26 </span> </td>
+                    <td style="--size: calc(33 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 33 </span> <span class="tooltip"> Year: 2019 <br> Points: 33 </span> </td>
+                    <td style="--size: calc(23 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 23 </span> <span class="tooltip"> Year: 2021 <br> Points: 23 </span> </td>
+                    <td style="--size: calc(21 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2022 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(34 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 34 </span> <span class="tooltip"> Year: 2023 <br> Points: 34 </span> </td>
+                    <td style="--size: calc(17 / var(--hitting-max)); --color: var(--hitting-color);"> <span class="data"> 17 </span> <span class="tooltip"> Year: 2024 <br> Points: 17 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Pitching </th>
+                    <td style="--size: calc(28.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 28.5 </span> <span class="tooltip"> Year: 2016 <br> Points: 28.5 </span> </td>
+                    <td style="--size: calc(14 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 14 </span> <span class="tooltip"> Year: 2017 <br> Points: 14 </span> </td>
+                    <td style="--size: calc(19.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 19.5 </span> <span class="tooltip"> Year: 2018 <br> Points: 19.5 </span> </td>
+                    <td style="--size: calc(15 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 15 </span> <span class="tooltip"> Year: 2019 <br> Points: 15 </span> </td>
+                    <td style="--size: calc(21 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 21 </span> <span class="tooltip"> Year: 2021 <br> Points: 21 </span> </td>
+                    <td style="--size: calc(18 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 18 </span> <span class="tooltip"> Year: 2022 <br> Points: 18 </span> </td>
+                    <td style="--size: calc(19 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 19 </span> <span class="tooltip"> Year: 2023 <br> Points: 19 </span> </td>
+                    <td style="--size: calc(20.5 / var(--pitching-max)); --color: var(--pitching-color);"> <span class="data"> 20.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 20.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Total </th>
+                    <td style="--size: calc(43.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 43.5 </span> <span class="tooltip"> Year: 2016 <br> Points: 43.5 </span> </td>
+                    <td style="--size: calc(49 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 49 </span> <span class="tooltip"> Year: 2017 <br> Points: 49 </span> </td>
+                    <td style="--size: calc(45.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 45.5 </span> <span class="tooltip"> Year: 2018 <br> Points: 45.5 </span> </td>
+                    <td style="--size: calc(48 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 48 </span> <span class="tooltip"> Year: 2019 <br> Points: 48 </span> </td>
+                    <td style="--size: calc(26.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 26.5 </span> <span class="tooltip"> Year: 2020 <br> Points: 26.5 </span> </td>
+                    <td style="--size: calc(44 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 44 </span> <span class="tooltip"> Year: 2021 <br> Points: 44 </span> </td>
+                    <td style="--size: calc(39 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 39 </span> <span class="tooltip"> Year: 2022 <br> Points: 39 </span> </td>
+                    <td style="--size: calc(53 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 53 </span> <span class="tooltip"> Year: 2023 <br> Points: 53 </span> </td>
+                    <td style="--size: calc(37.5 / var(--total-max)); --color: var(--total-color);"> <span class="data"> 37.5 </span> <span class="tooltip"> Year: 2024 <br> Points: 37.5 </span> </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Place </th>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2016 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2017 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 8) / 12); --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2018 <br> Place: 8 </span> </td>
+                    <td style="--size: calc((13 - 4) /12); --color: var(--place-color);"> <span class="data"> 4 </span> <span class="tooltip"> Year: 2019 <br> Place: 4 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2020 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2021 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 7) / 12); --color: var(--place-color);"> <span class="data"> 7 </span> <span class="tooltip"> Year: 2022 <br> Place: 7 </span> </td>
+                    <td style="--size: calc((13 - 6) / 12); --color: var(--place-color);"> <span class="data"> 6 </span> <span class="tooltip"> Year: 2023 <br> Place: 6 </span> </td>
+                    <td style="--size: calc((13 - 8) / 12); --color: var(--place-color);"> <span class="data"> 8 </span> <span class="tooltip"> Year: 2024 <br> Place: 8 </span> </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
