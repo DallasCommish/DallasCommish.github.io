@@ -39,16 +39,11 @@
                                 <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 American <span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#" id="ALMinors24">2024 Minors Draft</a></li>
-                                    <li><a href="#" id="ALReserves24">2024 Reserves Draft</a></li>
-                                    <li><a href="#" id="ALMinors25">2025 Minors Draft</a></li>
-                                    <li><a href="#" id="ALReserves25">2025 Reserves Draft</a></li>
                                     <li><a href="#" id="ALMinors26">2026 Minors Draft</a></li>
                                     <li><a href="#" id="ALMinors27">2027 Minors Draft</a></li>
+                                    <li><a href="#" id="ALMinors28">2028 Ninors Draft</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="MaxCategory">Category Maximum</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#" id="DataStudy">2024 Data Study</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="ALFAAB">AL FAAB Balances</a></li>
                                     <li><a href="#" id="ALFinances">AL Finances</a></li>
@@ -60,8 +55,6 @@
                                 <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 National <span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="Menu">
-                                    <li><a href="#" id="NLReserves24">2024 Reserves Draft</a></li>
-                                    <li><a href="#" id="NLReserves25">2025 Reserves Draft</a></li>
                                     <li><a href="#" id="NLReserves26">2026 Reserves Draft</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="NLFAAB">NL FAAB Balances</a></li>
@@ -165,6 +158,12 @@
                 document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors27();
+            };
+            document.getElementById("ALMinors28").onclick=function() {
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
+                document.getElementById("divVis").style.display = "block";
+                document.getElementById("dataVis").innerHTML=ALMinors28();
             };
             document.getElementById("ALFinances").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
