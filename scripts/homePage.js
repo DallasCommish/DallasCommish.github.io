@@ -350,6 +350,100 @@ function maxCategory2024() {
     return htmlCode;
 }
 
+function maxCategory2025() {
+    var teamList = ['Banoaster Republic', "David's 5 &amp; Dime", 'Flower Children', 'Hradek Hrams', 
+                    'Jak of Diamonds', 'Kelly S*M*A*S*H', "Kirk's Enterprise", 'Non-Zero Chance',
+                    'The Blossoms', 'The Patsy Killjoys', 'The Shohei Kid', 'Wichita TinMen'];
+
+    var BA = [6, 9, 6, 11, 4, 9, 12, 9, 11, 4, 3, 7];
+    var HR = [0.2718, 0.3308, 0.3049, 0.3401, 0.3, 0.3176, 0.3333, 0.392, 0.3484, 0.288, 0.2857, 0.3243];
+    var R = [26, 35, 30, 38, 20, 31, 41, 39, 46, 36, 19, 24];
+    var RBI = [28, 27, 26, 43, 26, 37, 40, 28, 38, 30, 23, 25];
+    var SB = [5, 10, 2, 1, 9, 1, 5, 9, 7, 7, 5, 4];
+    var ERA = [5.2, 5.625, 5.977, 4.554, 8.291, 2.189, 3.702, 2.238, 3.086, 5.579, 3.333, 4.814];
+    var K = [46, 25, 44, 30, 39, 48, 42, 68, 34, 40, 33, 39];
+    var S = [0, 0, 1, 0, 5, 0, 1, 3, 0, 3, 1, 1];
+    var W = [1, 0, 2, 2, 2, 4, 4, 5, 3, 0, 2, 1];
+    var WHIP = [1.5333, 1.4688, 1.4885, 1.3012, 1.9134, 1.027, 1.0645, 0.9613, 0.9214, 1.3388, 1.3704, 1.3488];
+                                                                                                                                                                
+    var maxBA = maximum(BA);
+    var maxHR = maximum(HR);
+    var maxR = maximum(R);
+    var maxRBI = maximum(RBI);
+    var maxSB = maximum(SB);
+    var minERA = minimum(ERA);
+    var maxK = maximum(K);
+    var maxS = maximum(S);
+    var maxW = maximum(W);
+    var minWHIP = minimum(WHIP);
+
+    var htmlCode = "<table id='MaxCategory' class='responsive'><thead>";
+    htmlCode += "<th colspan='11'>2025 Maximum Category</th></thead>";
+    htmlCode += "<tr><td class='colTitle'>Team Name</td><td class='colTitle'>BA</td>";
+    htmlCode += "<td class='colTitle'>HR</td><td class='colTitle'>RBI</td>";
+    htmlCode += "<td class='colTitle'>SB</td><td class='colTitle'>R</td>";
+    htmlCode += "<td class='colTitle'>W</td><td class='colTitle'>S</td>";
+    htmlCode += "<td class='colTitle'>ERA</td><td class='colTitle'>WHIP</td>";
+    htmlCode += "<td class='colTitle'>K</td></tr><tbody>";
+
+    for (var i = 0; i < 12; i++) {
+        htmlCode += "<tr><td class='team'>" + teamList[i] + "</td>";
+        if (BA[i] == maxBA) {
+            htmlCode += "<td class='pointsHL'>" + BA[i].toFixed(4) + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + BA[i].toFixed(4) + "</td>";
+        }
+        if (HR[i] == maxHR) {
+            htmlCode += "<td class='pointsHL'>" + HR[i] + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + HR[i] + "</td>";
+        }
+        if (RBI[i] == maxRBI) {
+            htmlCode += "<td class='pointsHL'>" + RBI[i] + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + RBI[i] + "</td>";
+        }
+        if (SB[i] == maxSB) {
+            htmlCode += "<td class='pointsHL'>" + SB[i] + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + SB[i] + "</td>";
+        }
+        if (R[i] == maxR) {
+            htmlCode += "<td class='pointsHL'>" + R[i] + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + R[i] + "</td>";
+        }
+        if (W[i] == maxW) {
+            htmlCode += "<td class='pointsHL'>" + W[i] + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + W[i] + "</td>";
+        }
+        if (S[i] == maxS) {
+            htmlCode += "<td class='pointsHL'>" + S[i] + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + S[i] + "</td>";
+        }
+        if (ERA[i] == minERA) {
+            htmlCode += "<td class='pointsHL'>" + ERA[i].toFixed(3) + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + ERA[i].toFixed(3) + "</td>";
+        }
+        if (WHIP[i] == minWHIP) {
+            htmlCode += "<td class='pointsHL'>" + WHIP[i].toFixed(4) + "</td>";
+        } else {
+            htmlCode += "<td class='points'>" + WHIP[i].toFixed(4) + "</td>";
+        }
+        if (K[i] == maxK) {
+            htmlCode += "<td class='pointsHL'>" + K[i] + "</td></tr>";
+        } else {
+            htmlCode += "<td class='points'>" + K[i] + "</td></tr>";
+        }
+    }
+    htmlCode += "</tbody></table>";
+    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 4/7/2025</p>';
+    return htmlCode;
+}
+
 function maximum(results) {
     var max = results[0];
     for (var i = 0; i < results.length; i++) {
