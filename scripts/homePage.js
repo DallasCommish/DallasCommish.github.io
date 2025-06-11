@@ -1823,6 +1823,87 @@ function ALMinors26() {
     return htmlCode;
 }
 
+function ALReserves26() {
+    var pick = [];
+    var superScript = [];
+    // first round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+    
+    // second round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+             "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+    
+    // third round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+    
+    // fourth round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // fifth round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // sixth round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // seventh round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    htmlCode = '<table class="responsive"><thead><th colspan="8">2026 American League Reserves Roster Draft (Un-Ordered)</th></thead>';
+    htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
+
+    for (i = 0; i <12; i++) {
+        htmlCode += '<tr><td class="points">';
+        htmlCode += (i + 1).toString();
+        htmlCode += '</td>';
+        for (j = 0; j < 7; j++) {
+            htmlCode += '<td class="team">';
+            htmlCode += pick[j * 12 + i];
+            if (superScript[j * 12 + i] != "0") {
+                htmlCode += '<sup>' + superScript[j * 12 + i] + '</sup>';
+            }
+            htmlCode += '</td>';
+        }
+        htmlCode += '</tr>';
+    }
+
+    htmlCode += '</table>';
+
+    // Include salaries for each round
+    htmlCode += '<br /><h3>Salaries by Round</h3>';
+    htmlCode += '<ul><li>$1.5 for Rounds 1 - 3</li>';
+    htmlCode += '<li>$1.0 for Rounds 4 - 5</li>';
+    htmlCode += '<li>$0.5 for Rounds 6 - 7</li></ul>';
+
+    // include the footnotes of the trade details
+    // htmlCode += '<br /><h3>Trade Details</h3>';
+    // htmlCode += '<ol>';
+    // 1
+    // htmlCode += "<li>8/1/2024: <strong>Greg</strong> trades <em>Yariel Rodriguez</em> and a 3rd round 2025 reserve pick ";
+    // htmlCode += "to <strong>Jon</strong> for a 2nd round 2025 reserve pick.</li>";
+    // htmlCode += '</ol>';
+    return htmlCode;
+}
+
 function NLReserves26() {
     var pick = [];
     var superScript = [];
@@ -2151,6 +2232,87 @@ function ALMinors27() {
     htmlCode += "<li>4/4/2025: <strong>Greg</strong> trades <em>Jazz Chisholm</em> and a ";
     htmlCode += "2028 1st round ML pick to <strong>Randall</strong> for <em>Cam Smith</em>, ";
     htmlCode += "<em>Juan Brito</em>, and a 2027 1st round ML pick.</li>";
+    htmlCode += '</ol>';
+    return htmlCode;
+}
+
+function ALReserves27() {
+    var pick = [];
+    var superScript = [];
+    // first round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+    
+    // second round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+             "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+    
+    // third round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+    
+    // fourth round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Jon");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","1");
+
+    // fifth round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // sixth round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    // seventh round
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","0","0","0");
+
+    htmlCode = '<table class="responsive"><thead><th colspan="8">2027 American League Reserves Roster Draft (Un-Ordered)</th></thead>';
+    htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
+
+    for (i = 0; i <12; i++) {
+        htmlCode += '<tr><td class="points">';
+        htmlCode += (i + 1).toString();
+        htmlCode += '</td>';
+        for (j = 0; j < 7; j++) {
+            htmlCode += '<td class="team">';
+            htmlCode += pick[j * 12 + i];
+            if (superScript[j * 12 + i] != "0") {
+                htmlCode += '<sup>' + superScript[j * 12 + i] + '</sup>';
+            }
+            htmlCode += '</td>';
+        }
+        htmlCode += '</tr>';
+    }
+
+    htmlCode += '</table>';
+
+    // Include salaries for each round
+    htmlCode += '<br /><h3>Salaries by Round</h3>';
+    htmlCode += '<ul><li>$1.5 for Rounds 1 - 3</li>';
+    htmlCode += '<li>$1.0 for Rounds 4 - 5</li>';
+    htmlCode += '<li>$0.5 for Rounds 6 - 7</li></ul>';
+
+    // include the footnotes of the trade details
+    htmlCode += '<br /><h3>Trade Details</h3>';
+    htmlCode += '<ol>';
+    // 1
+    htmlCode += "<li>6/9/2025: <strong>Greg</strong> trades <em>Kevin Newman</em> and a 4th round 2027 reserve pick ";
+    htmlCode += "to <strong>Jon</strong> for <em>Ryan Montcastle</em>.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }

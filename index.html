@@ -40,8 +40,10 @@
                                 American <span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="#" id="ALMinors26">2026 Minors Draft</a></li>
+                                    <li><a href="#" id="ALReserves26">2026 Reserves Draft</a></li>
                                     <li><a href="#" id="ALMinors27">2027 Minors Draft</a></li>
-                                    <li><a href="#" id="ALMinors28">2028 Ninors Draft</a></li>
+                                    <li><a href="#" id="ALReserves27">2027 Reserves Draft</a></li>
+                                    <li><a href="#" id="ALMinors28">2028 Minors Draft</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="MaxCategory">Category Maximum</a></li>
                                     <li class="divider"></li>
@@ -111,6 +113,12 @@
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors26();
             };
+            document.getElementById("ALReserves26").onclick=function() {
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
+                document.getElementById("divVis").style.display = "block";
+                document.getElementById("dataVis").innerHTML=ALReserves26();
+            };
             document.getElementById("NLReserves26").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
                 document.getElementById("divFAAB").style.display = "none";
@@ -122,6 +130,12 @@
                 document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors27();
+            };
+            document.getElementById("ALReserves27").onclick=function() {
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
+                document.getElementById("divVis").style.display = "block";
+                document.getElementById("dataVis").innerHTML=ALReserves27();
             };
             document.getElementById("ALMinors28").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
