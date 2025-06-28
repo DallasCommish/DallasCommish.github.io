@@ -2166,11 +2166,11 @@ function ALMinors27() {
     pick.push("Glenn", "Jeremy", "Greg", 
               "Chris", "Jordan", "Brent", 
               "Rich", "Kelly", "Marty", 
-              "Jon", "Brent", "Greg");
+              "Greg", "Brent", "Greg");
     superScript.push("0","0","0",
                      "0","0","1",
                      "0","0","0",
-                     "0","0","2");
+                     "3","0","2");
 
     // second round
     pick.push("Glenn", "Jeremy", "Greg", 
@@ -2232,6 +2232,9 @@ function ALMinors27() {
     htmlCode += "<li>4/4/2025: <strong>Greg</strong> trades <em>Jazz Chisholm</em> and a ";
     htmlCode += "2028 1st round ML pick to <strong>Randall</strong> for <em>Cam Smith</em>, ";
     htmlCode += "<em>Juan Brito</em>, and a 2027 1st round ML pick.</li>";
+    // 3
+    htmlCode += "<li>6/25/2025: <strong>Greg</strong> trades <em>Yusei Kikuchi</em> to ";
+    htmlCode += "<strong>Jon</strong> for <em>Spencer Jones</em> and a 2027 1st round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
