@@ -1839,9 +1839,9 @@ function ALReserves26() {
                      "0","0","0","0","0","0");
     
     // third round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
+    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Greg",
               "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
-    superScript.push("0","0","0","0","0","0",
+    superScript.push("0","0","0","0","0","1",
                      "0","0","0","0","0","0");
     
     // fourth round
@@ -1898,8 +1898,8 @@ function ALReserves26() {
     // htmlCode += '<br /><h3>Trade Details</h3>';
     // htmlCode += '<ol>';
     // 1
-    // htmlCode += "<li>8/1/2024: <strong>Greg</strong> trades <em>Yariel Rodriguez</em> and a 3rd round 2025 reserve pick ";
-    // htmlCode += "to <strong>Jon</strong> for a 2nd round 2025 reserve pick.</li>";
+    htmlCode += "<li>7/4/2025: <strong>Greg</strong> trades <em>Ramon Laureano</em> ";
+    htmlCode += "to <strong>Chris</strong> for a 3rd round 2026 reserve pick.</li>";
     // htmlCode += '</ol>';
     return htmlCode;
 }
