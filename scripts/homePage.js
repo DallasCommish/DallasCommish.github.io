@@ -365,7 +365,7 @@ function maxCategory2025() {
     var S = [4, 2, 5, 4, 5, 3, 7, 4, 6, 6, 3, 2];
     var W = [7, 5, 5, 4, 5, 4, 5, 5, 4, 5, 6, 6];
     var WHIP = [0.8936, 1.0763, 0.7692, 0.8966, 1.0084, 0.8351, 0.7615, 0.9375, 0.8889, 0.9375, 0.8333, 0.8163];
-                                                                                                                                                                                                                                                                    
+
     var maxOBP = maximum(OBP);
     var maxHR = maximum(HR);
     var maxR = maximum(R);
@@ -440,7 +440,7 @@ function maxCategory2025() {
         }
     }
     htmlCode += "</tbody></table>";
-    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 6/30/2025</p>';
+    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 7/7/2025</p>';
     return htmlCode;
 }
 
