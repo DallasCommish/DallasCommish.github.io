@@ -1911,11 +1911,11 @@ function NLReserves26() {
     pick.push("Jon", "Rich", "Marc", 
         "Matt R", "Doug", "Jeffrey", 
         "Ken", "David",
-        "Glenn", "Greg", "Matt A");
+        "Glenn", "Rich", "Matt A");
     superScript.push("0","0","0",
                "0","0","0",
                "0","0",
-               "0","0","0");
+               "0","1","0");
 
     // FYPD second round
     pick.push("Jon", "Rich", "Marc", 
@@ -1951,11 +1951,11 @@ function NLReserves26() {
     pick.push("Jon", "Rich", "Marc", 
               "Matt R", "Doug", "Jeffrey", 
               "Ken", "David",
-              "Glenn", "Greg", "Matt A");
+              "Glenn", "Rich", "Matt A");
     superScript.push("0","0","0",
                  "0","0","0",
                  "0","0",
-                 "0","0","0");
+                 "0","2","0");
 
     // post-auction second round
     pick.push("Jon", "Rich", "Marc", 
@@ -2153,6 +2153,11 @@ function NLReserves26() {
     // 1
     htmlCode += '<li>3/19/2025: <strong>Jon</strong> trades <em>Dedniel Nunez</em> ';
     htmlCode += 'to <strong>Matt A</strong> for a 2nd round pick in the 2026 FYPD.</li>';
+    // 2
+    htmlCode += "<li>8/17/2025: <strong>Rich</strong> trades <em>Ivan Herrera</em> and ";
+    htmlCode += "<em>Francisco Lindor</em> to <strong>Greg</strong> for <em>Cristian Mena</em>, ";
+    htmlCode += "<em>Robert Hassell</em>, <em>Josh Bell</em>, a 1st round 2026 FYPD pick, and ";
+    htmlCode += "a 1st round 2026 reserve roster pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 
