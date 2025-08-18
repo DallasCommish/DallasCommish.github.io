@@ -1915,7 +1915,7 @@ function NLReserves26() {
     superScript.push("0","0","0",
                "0","0","0",
                "0","0",
-               "0","1","0");
+               "0","2","0");
 
     // FYPD second round
     pick.push("Jon", "Rich", "Marc", 
