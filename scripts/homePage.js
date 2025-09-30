@@ -33,7 +33,7 @@ function showFinish2025() {
     htmlCode += "<thead>";
     htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
     htmlCode += "</thead>";
-    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>Greg</td></tr>";
     htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>&nbsp;</td></tr>";
