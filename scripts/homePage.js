@@ -1775,46 +1775,46 @@ function ALMinors26() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Glenn", "Jeremy", "Jordan", 
-              "Chris", "Jordan", "Greg", 
-              "Rich", "Kelly", "Brent", 
-              "Jon", "Brent", "Marty");
-    superScript.push("0","0","3",
-                     "0","0","2 and 9",
+    pick.push("Brent", "Jordan", "Rich", 
+              "Jordan", "Kelly", "Greg", 
+              "Jeremy", "Jon", "Brent", 
+              "Chris", "Marty", "Glenn");
+    superScript.push("0","0","0",
+                     "3","0","2 and 9",
                      "0","0","1",
-                     "0","0","4");
+                     "0","4","0");
 
     // second round
-    pick.push("Glenn", "Jeremy", "Kelly", 
-              "Chris", "Jeremy", "David M", 
-              "Rich", "Kelly", "Marty", 
-              "Jeremy", "Brent", "Brent");
-    superScript.push("0","0","7",
-                     "0","6","0",
-                     "0","0","0",
-                     "8","0","5");
+    pick.push("Brent", "Jeremy", "Rich", 
+              "Kelly", "Kelly", "David M", 
+              "Jeremy", "Jeremy", "Marty", 
+              "Chris", "Brent", "Glenn");
+    superScript.push("0","6","0",
+                     "7","0","0",
+                     "0","8","0",
+                     "0","5","0");
 
     // third round
-    pick.push("Glenn", "Jeremy", "Greg", 
-              "Chris", "Jordan", "David M", 
-              "Rich", "Kelly", "Marty", 
-              "Jon", "Brent", "Randall");
+    pick.push("Brent", "Jordan", "Rich", 
+              "Greg", "Kelly", "David M", 
+              "Jeremy", "Jon", "Marty", 
+              "Chris", "Randall", "Glenn");
     superScript.push("0","0","0",
                      "0","0","0",
                      "0","0","0",
                      "0","0","0");
 
     // fourth round
-    pick.push("Glenn", "Jordan", "Greg", 
-              "Chris", "Jordan", "David M", 
-              "Rich", "Kelly", "Marty", 
-              "Jon", "Brent", "Randall");
-    superScript.push("0","6","0",
+    pick.push("Brent", "Jordan", "Rich", 
+              "Greg", "Kelly", "David M", 
+              "Jordan", "Jon", "Marty", 
+              "Chris", "Randall", "Glenn");
+    superScript.push("0","0","0",
                      "0","0","0",
-                     "0","0","0",
+                     "6","0","0",
                      "0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2026 American League Minors Roster Draft (Unordered)</th></thead>';
+    htmlCode = '<table class="responsive"><thead><th colspan="5">2026 American League Minors Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
 
     for (i = 0; i <12; i++) {
@@ -1878,48 +1878,48 @@ function ALReserves26() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
-              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+              "Jeremy", "Jon", "Marty", "Chris", "Randall", "Glenn");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
     
     // second round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
-             "Kelly", "Jordan", "Jeremy", "Glenn", "Greg", "Greg");
+    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+              "Jeremy", "Jon", "Marty", "Chris", "Greg", "Glenn");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","2","0");
     
     // third round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Greg",
-              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
-    superScript.push("0","0","0","0","0","1",
-                     "0","0","0","0","0","0");
+    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+              "Jeremy", "Jon", "Marty", "Greg", "Randall", "Glenn");
+    superScript.push("0","0","0","0","0","0",
+                     "0","0","0","1","0","0");
     
     // fourth round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
-              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+              "Jeremy", "Jon", "Marty", "Chris", "Randall", "Glenn");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // fifth round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
-              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+              "Jeremy", "Jon", "Marty", "Chris", "Randall", "Glenn");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // sixth round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
-              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+              "Jeremy", "Jon", "Marty", "Chris", "Randall", "Glenn");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
     // seventh round
-    pick.push("Rich", "David", "Brent", "Jon", "Marty", "Chris",
-              "Kelly", "Jordan", "Jeremy", "Glenn", "Randall", "Greg");
+    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+              "Jeremy", "Jon", "Marty", "Chris", "Randall", "Glenn");
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2026 American League Reserves Roster Draft (Un-Ordered)</th></thead>';
+    htmlCode = '<table class="responsive"><thead><th colspan="8">2026 American League Reserves Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
 
     for (i = 0; i <12; i++) {
