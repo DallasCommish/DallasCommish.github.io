@@ -35,7 +35,7 @@ function showFinish2025() {
     htmlCode += "</thead>";
     htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>Greg</td></tr>";
     htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>Glenn</td></tr>";
-    htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>Ken</td></tr>";
     htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>&nbsp;</td></tr>";
@@ -3120,7 +3120,7 @@ function NLFinances() {
                     -49, -114.1];
 
     var winnings = [559.5, 0, 0,
-                    0, 0, 0,
+                    0, 167.85, 0,
                     0, 0, 0,
                     0, 279.75];
 
