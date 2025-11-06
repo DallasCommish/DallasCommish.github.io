@@ -42,7 +42,7 @@ function showFinish2025() {
     htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>Matt A</td></tr>";
     htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>Jon</td></tr>";
     htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>Marc</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>Rich</td></tr>";
     htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "</table>";
 
