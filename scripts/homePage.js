@@ -2138,7 +2138,7 @@ function NLReserves26() {
     htmlCode += '<ul><li>$10 and contract of ML for all rounds</li></ul><br />';
 
     // Post Auction Draft
-    htmlCode += '<table class="responsive"><thead><th colspan="8">2026 Un-ordered National League Reserves Roster Draft (Post-Auction)</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2026 Ordered National League Reserves Roster Draft (Post-Auction)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td>';
     htmlCode += '<td class="colTitle">Round 1</td>';
     htmlCode += '<td class="colTitle">Round 2</td>';
@@ -2173,7 +2173,7 @@ function NLReserves26() {
     htmlCode += '<li>$2 for rounds 5 through 7</li></ul><br />';
 
     // Online Draft
-    htmlCode += '<table class="responsive"><thead><th colspan="8">2026 Un-ordered National League Online Reserves Roster Draft</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2026 Ordered National League Online Reserves Roster Draft</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td>';
     htmlCode += '<td class="colTitle">Online Round 1</td>';
     htmlCode += '<td class="colTitle">Online Round 2</td>';
