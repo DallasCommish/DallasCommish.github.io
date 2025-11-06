@@ -41,7 +41,7 @@ function showFinish2025() {
     htmlCode += "<tr><td>$0</td><td>1<sup>st</sup></td><td>Matt R</td></tr>";
     htmlCode += "<tr><td>$0</td><td>2<sup>nd</sup></td><td>Matt A</td></tr>";
     htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>Jon</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>&nbsp;</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>Marc</td></tr>";
     htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>&nbsp;</td></tr>";
     htmlCode += "</table>";
@@ -3125,7 +3125,7 @@ function NLFinances() {
                     55.95, 279.75];
 
     var payment = [0, 0, 0,
-                   0, 0, 0,
+                   150, 0, 0,
                    0, 0, 0,
                    0, 0];
     htmlCode = '<table class="responsive"><thead><th colspan="8">2025 National League Finances</th></thead>';
