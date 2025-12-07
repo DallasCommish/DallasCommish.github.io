@@ -1797,11 +1797,11 @@ function ALMinors26() {
     // third round
     pick.push("Brent", "Jordan", "Rich", 
               "Greg", "Kelly", "David M", 
-              "Jeremy", "Jon", "Marty", 
+              "Jeremy", "Jon", "Greg", 
               "Chris", "Randall", "Glenn");
     superScript.push("0","0","0",
                      "0","0","0",
-                     "0","0","0",
+                     "0","0","10",
                      "0","0","0");
 
     // fourth round
@@ -1870,6 +1870,9 @@ function ALMinors26() {
     htmlCode += "<li>5/2/2025: <strong>Greg</strong> trades <em>Carlos Estevez</em> ";
     htmlCode += "to <strong>Marty</strong> for <em>Matt Wallner</em> and a 2026 1st round ";
     htmlCode += "ML pick.</li>";
+    // 10
+    htmlCode += "<li>10/3/2025: <strong>Marty</strong> trades a 2026 3rd round ML pick ";
+    htmlCode += "to <strong>Greg</strong> for a 2026 7th round reserve pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
@@ -1914,9 +1917,9 @@ function ALReserves26() {
                      "0","0","0","0","0","0");
 
     // seventh round
-    pick.push("Brent", "Jordan", "Rich", "Greg", "Kelly", "David",
+    pick.push("Brent", "Jordan", "Rich", "Marty", "Kelly", "David",
               "Jeremy", "Jon", "Marty", "Chris", "Randall", "Glenn");
-    superScript.push("0","0","0","0","0","0",
+    superScript.push("0","0","0","3","0","0",
                      "0","0","0","0","0","0");
 
     htmlCode = '<table class="responsive"><thead><th colspan="8">2026 American League Reserves Roster Draft (Ordered)</th></thead>';
@@ -1946,15 +1949,18 @@ function ALReserves26() {
     htmlCode += '<li>$0.5 for Rounds 6 - 7</li></ul>';
 
     // include the footnotes of the trade details
-    // htmlCode += '<br /><h3>Trade Details</h3>';
-    // htmlCode += '<ol>';
+    htmlCode += '<br /><h3>Trade Details</h3>';
+    htmlCode += '<ol>';
     // 1
     htmlCode += "<li>7/4/2025: <strong>Greg</strong> trades <em>Ramon Laureano</em> ";
     htmlCode += "to <strong>Chris</strong> for a 3rd round 2026 reserve pick.</li>";
     // 2
     htmlCode += "<li>8/24/2025: <strong>Greg</strong> trades <em>Ryan Mountcastle</em> to ";
     htmlCode += "<strong>Randall</strong> for <em>Joe Boyle</em> and a 2nd round 2026 reserve pick.</li>";
-    // htmlCode += '</ol>';
+    // 3
+    htmlCode += "<li>10/3/2025: <strong>Marty</strong> trades a 2026 3rd round ML pick ";
+    htmlCode += "to <strong>Greg</strong> for a 2026 7th round reserve pick.</li>";
+    htmlCode += '</ol>';
     return htmlCode;
 }
 
