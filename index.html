@@ -64,6 +64,7 @@
                                     <li><a href="#" id="NLFinances">NL Finances</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="NLboot">NL Rules</a></li>
+                                    <li><a href="#" id="NLsimple">Simplified Rules</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -173,6 +174,12 @@
                 document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divRules").style.display = "block";
                 document.getElementById("Rules").src="NLConstitutionBootstrap.html";
+            };
+            document.getElementById("NLsimple").onclick=function() {
+                document.getElementById("divVis").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
+                document.getElementById("divRules").style.display = "block";
+                document.getElementById("Rules").src="NLConstitutionSimplified.html";
             };
             document.getElementById("ALFAAB").onclick=function() {
                 document.getElementById("divVis").style.display = "none";
