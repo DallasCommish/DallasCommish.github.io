@@ -1968,11 +1968,11 @@ function NLReserves26() {
     var pick = [];
     var superScript = [];
     // FYPD first round
-    pick.push("Matt R", "Matt A", "Jon", 
+    pick.push("Greg", "Matt A", "Jon", 
         "Marc", "Rich", "Don", 
         "David", "Doug",
         "Ken", "Glenn", "Rich");
-    superScript.push("0","0","0",
+    superScript.push("3","0","0",
                "0","0","0",
                "0","0",
                "0","0","2");
@@ -2218,6 +2218,9 @@ function NLReserves26() {
     htmlCode += "<em>Francisco Lindor</em> to <strong>Greg</strong> for <em>Cristian Mena</em>, ";
     htmlCode += "<em>Robert Hassell</em>, <em>Josh Bell</em>, a 1st round 2026 FYPD pick, and ";
     htmlCode += "a 1st round 2026 reserve roster pick.</li>";
+    // 3
+    htmlCode += "<li>2/26/2026: <strong>Greg</strong> trades <em>Logan Webb</em> to ";
+    htmlCode += "<strong>Matt R</strong> for a 2026 1st round FYPD pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 
