@@ -746,11 +746,11 @@ function NLReserves27() {
     // FYPD first round
     pick.push("Jon", "Rich", "Marc", 
         "Matt R", "Doug", "Jeffrey", 
-        "Ken", "David",
+        "Ken", "Marc",
         "Glenn", "Jon", "Matt A");
     superScript.push("0","0","0",
                "0","0","0",
-               "0","0",
+               "0","2",
                "0","1","0");
 
     // FYPD second round
@@ -990,6 +990,9 @@ function NLReserves27() {
     htmlCode += '<li>8/31/2025: <strong>Jon</strong> trades <em>Gabriel Moreno</em> ';
     htmlCode += "to <strong>Greg</strong> for <em>Cal Quantrill</em> and a 2027 1st ";
     htmlCode += "round FYPD pick.</li>";
+    // 2
+    htmlCode += '<li>3/15/2026: <strong>Marc</strong> trades <em>Jung Hoo Lee</em> to ';
+    htmlCode += '<strong>David</strong> for <em>James Triantos</em> and a 2027 1st round FYPD pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 
@@ -1106,7 +1109,7 @@ function ALFinances() {
                     27.1, 0, 574.25];
 
     var payment = [0, 0, 0, 
-                   0, 0, 0, 
+                   0, 0, 300, 
                    0, 0, 0, 
                    0, 0, -200];
     htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Finances</th></thead>';
