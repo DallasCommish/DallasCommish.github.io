@@ -69,7 +69,7 @@ function ALMinors28() {
     htmlCode += "2028 1st round ML pick to <strong>Randall</strong> for <em>Cam Smith</em>, ";
     htmlCode += "<em>Juan Brito</em>, and a 2027 1st round ML pick.</li>";
     // 2
-    htmlCode += "<li>8/31/2025</li>: <strong>Jon</strong> trades <em>Framber Valdez</em> to ";
+    htmlCode += "<li>8/31/2025: <strong>Jon</strong> trades <em>Framber Valdez</em> to ";
     htmlCode += "<strong>Randall</strong> for a 2028 1st round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
