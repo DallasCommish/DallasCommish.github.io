@@ -7,7 +7,7 @@ function ALFaab2019() {
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Balance</td></tr>';
 
     for (let i = 0; i < 12; i++) {
-        htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + balance[i].toFixed(2) + '</td><tr>';
+        htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + balance[i].toFixed(2) + '</td></tr>';
     }
 
     htmlCode += '</table>';
@@ -19,11 +19,11 @@ function ALFaab2019() {
     htmlCode += '<option value="Hradek Hrams">Hradek Hrams</option>';
     htmlCode += '<option value="Jak of Diamonds">Jak of Diamonds</option>';
     htmlCode += '<option value="Kelly S*M*A*S*H">Kelly S*M*A*S*H</option>';
-    htmlCode += '<option value="Kirks Enterprise">Kirk&apos;s Enterprise</option>';
-    htmlCode += '<option value="Davids 5 Dime">David&apos;s 5 & Dime</option>';
+    htmlCode += '<option value="Kirk\'s Enterprise">Kirk&apos;s Enterprise</option>';
+    htmlCode += '<option value="David\'s 5 & Dime">David&apos;s 5 & Dime</option>';
     htmlCode += '<option value="The Blossoms">The Blossoms</option>';
     htmlCode += '<option value="The Patsy Killjoys">The Patsy Killjoys</option>';
-    htmlCode += '<option value="changin names">changin&apos; names</option>';
+    htmlCode += '<option value="changin\' names">changin&apos; names</option>';
     htmlCode += '<option value="Wichita TinMen">Wichita TinMen</option>';
     htmlCode += '<option value="The Shohei Kid">The Shohei Kid</option>';
     htmlCode += '</select></form>';
@@ -51,15 +51,24 @@ function NLFaab2019() {
     htmlCode += '<option value="A McNickle for Farm Fresh Gregs">A McNickle for Farm Fresh Gregs</option>';
     htmlCode += '<option value="Cheeseburgers in Paradise">Cheeseburgers in Paradise</option>';
     htmlCode += '<option value="Donner Party">Donner Party</option>';
-    htmlCode += '<option value="Leonard Peltiers Army">Leonard Peltier&apos;s Army</option>';
+    htmlCode += '<option value="Leonard Peltier\'s Army">Leonard Peltier&apos;s Army</option>';
     htmlCode += '<option value="Liberty Lunch">Liberty Lunch</option>';
     htmlCode += '<option value="Matty Bos">Matty Bos</option>';
     htmlCode += '<option value="Sons of Pitches">Sons of Pitches</option>';
-    htmlCode += '<option value="The Cream and The Clear">The Cream and The Clear</option>';
+    htmlCode += '<option value="The Cream and the Clear">The Cream and the Clear</option>';
     htmlCode += '<option value="Seattle Stackers">Seattle Stackers</option>';
-    htmlCode += '<option value="Wichita SoxMonkees">Wichita SoxMonkees</option>';
+    htmlCode += '<option value="Wichita Sox Monkees">Wichita Sox Monkees</option>';
     htmlCode += '</select></form>';
 
     return htmlCode;
+}
+
+function showTeam(teamName, league) {
+    // Legacy pages call this from inline onchange handlers. Keep this defined
+    // to avoid a runtime ReferenceError when older FAAB views are rendered.
+    return {
+        teamName: teamName,
+        league: league
+    };
 }
 

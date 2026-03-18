@@ -41,47 +41,47 @@ function maxCategory2025() {
         } else {
             htmlCode += "<td class='points'>" + OBP[i].toFixed(4) + "</td>";
         }
-        if (HR[i] == maxHR) {
+        if (HR[i] === maxHR) {
             htmlCode += "<td class='pointsHL'>" + HR[i] + "</td>";
         } else {
             htmlCode += "<td class='points'>" + HR[i] + "</td>";
         }
-        if (RBI[i] == maxRBI) {
+        if (RBI[i] === maxRBI) {
             htmlCode += "<td class='pointsHL'>" + RBI[i] + "</td>";
         } else {
             htmlCode += "<td class='points'>" + RBI[i] + "</td>";
         }
-        if (SB[i] == maxSB) {
+        if (SB[i] === maxSB) {
             htmlCode += "<td class='pointsHL'>" + SB[i] + "</td>";
         } else {
             htmlCode += "<td class='points'>" + SB[i] + "</td>";
         }
-        if (R[i] == maxR) {
+        if (R[i] === maxR) {
             htmlCode += "<td class='pointsHL'>" + R[i] + "</td>";
         } else {
             htmlCode += "<td class='points'>" + R[i] + "</td>";
         }
-        if (W[i] == maxW) {
+        if (W[i] === maxW) {
             htmlCode += "<td class='pointsHL'>" + W[i] + "</td>";
         } else {
             htmlCode += "<td class='points'>" + W[i] + "</td>";
         }
-        if (S[i] == maxS) {
+        if (S[i] === maxS) {
             htmlCode += "<td class='pointsHL'>" + S[i] + "</td>";
         } else {
             htmlCode += "<td class='points'>" + S[i] + "</td>";
         }
-        if (ERA[i] == minERA) {
+        if (ERA[i] === minERA) {
             htmlCode += "<td class='pointsHL'>" + ERA[i].toFixed(3) + "</td>";
         } else {
             htmlCode += "<td class='points'>" + ERA[i].toFixed(3) + "</td>";
         }
-        if (WHIP[i] == minWHIP) {
+        if (WHIP[i] === minWHIP) {
             htmlCode += "<td class='pointsHL'>" + WHIP[i].toFixed(4) + "</td>";
         } else {
             htmlCode += "<td class='points'>" + WHIP[i].toFixed(4) + "</td>";
         }
-        if (K[i] == maxK) {
+        if (K[i] === maxK) {
             htmlCode += "<td class='pointsHL'>" + K[i] + "</td></tr>";
         } else {
             htmlCode += "<td class='points'>" + K[i] + "</td></tr>";
@@ -140,7 +140,7 @@ function showFinish2025() {
     }
 
     htmlCode += "</tbody></table>";
-    htmlCode += "<p>The Blossoms wins the tie-breaker 6 - 4";
+    htmlCode += "<p>The Blossoms wins the tie-breaker 6 - 4</p>";
 
     htmlCode += "<table id='prizePair'>";
     htmlCode += "<caption>Final Prize Pair Selections</caption>";

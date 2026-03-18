@@ -41,7 +41,7 @@ function showFinish2024() {
     htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>Dread Pirate Roberts</td></tr>";
     htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>The Cream and the Clear</td></tr>";
     htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>Gobekli Tepe Fluffy Bunnies</td></tr>";
-    htmlCode += "</table>";
+    htmlCode += "</tbody></table>";
 
     return htmlCode;
   }
