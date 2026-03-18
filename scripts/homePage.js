@@ -36,7 +36,7 @@ function maxCategory2025() {
 
     for (var i = 0; i < 12; i++) {
         htmlCode += "<tr><td class='team'>" + teamList[i] + "</td>";
-        if (OBP[i] == maxOBP) {
+        if (OBP[i] === maxOBP) {
             htmlCode += "<td class='pointsHL'>" + OBP[i].toFixed(4) + "</td>";
         } else {
             htmlCode += "<td class='points'>" + OBP[i].toFixed(4) + "</td>";
@@ -155,17 +155,17 @@ function ALMinors26() {
                      "6","0","0",
                      "0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2026 American League Minors Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="5">2026 American League Minors Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (var i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
-            if (superScript[j * 12 + i] != "0") {
+            if (superScript[j * 12 + i] !== "0") {
                 htmlCode += '<sup>' + superScript[j * 12 + i] + '</sup>';
             }
             htmlCode += '</td>';
@@ -267,14 +267,14 @@ function ALReserves26() {
     superScript.push("0","0","0","3","0","0",
                      "0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2026 American League Reserves Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2026 American League Reserves Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for ( let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 7; j++) {
+        for (let j = 0; j < 7; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -463,15 +463,15 @@ function NLReserves26() {
                  "0","0","0");
 
     // First Year Player Draft
-     htmlCode = '<table class="responsive"><thead><th colspan="5">2026 Ordered National League FYPD</th></thead>';
+     let htmlCode = '<table class="responsive"><thead><th colspan="5">2026 Ordered National League FYPD</th></thead>';
      htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">FYPD Round 1</td><td class="colTitle">FYPD Round 2</td><td class="colTitle">FYPD Round 3</td><td class="colTitle">FYPD Round 4</td>';
 
     // Round 1 through 4
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -499,11 +499,11 @@ function NLReserves26() {
     htmlCode += '<td class="colTitle">Round 6</td>';
     htmlCode += '<td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 4; j < 11; j++) {
+        for (let j = 4; j < 11; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -518,7 +518,7 @@ function NLReserves26() {
 
     // Include salaries for each round
     htmlCode += '<br /><h3>Salaries by Round</h3>';
-    htmlCode += '<li>$15 for round 1</li>';
+    htmlCode += '<ul><li>$15 for round 1</li>';
     htmlCode += '<li>$10 for round 2</li>';
     htmlCode += '<li>$5 for rounds 3 and 4</li>';
     htmlCode += '<li>$2 for rounds 5 through 7</li></ul><br />';
@@ -531,11 +531,11 @@ function NLReserves26() {
     htmlCode += '<td class="colTitle">Online Round 3</td>';
     htmlCode += '<td class="colTitle">Online Round 4</td></tr>';
 
-    for (i = 0; i <11; i++) {
+    for (let i = 0; i <11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 11; j < 15; j++) {
+        for (let j = 11; j < 15; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -550,7 +550,7 @@ function NLReserves26() {
 
     // Include salaries for each round
     htmlCode += '<br /><h3>Salaries by Round</h3>';
-    htmlCode += '<li>$5 for all rounds</li></ul>';
+    htmlCode += '<ul><li>$5 for all rounds</li></ul>';
 
     // include the footnotes of the trade details
     htmlCode += '<br /><h3>Trade Details</h3>';
@@ -615,14 +615,14 @@ function ALMinors27() {
                      "0","0","0",
                      "0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2027 American League Minors Roster Draft (Unordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="5">2027 American League Minors Roster Draft (Unordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -704,14 +704,14 @@ function ALReserves27() {
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2027 American League Reserves Roster Draft (Un-Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2027 American League Reserves Roster Draft (Un-Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 7; j++) {
+        for (let j = 0; j < 7; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -894,15 +894,15 @@ function NLReserves27() {
                  "0","0","0");
 
     // First Year Player Draft
-     htmlCode = '<table class="responsive"><thead><th colspan="5">2027 Un-ordered National League FYPD</th></thead>';
+     let htmlCode = '<table class="responsive"><thead><th colspan="5">2027 Un-ordered National League FYPD</th></thead>';
      htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">FYPD Round 1</td><td class="colTitle">FYPD Round 2</td><td class="colTitle">FYPD Round 3</td><td class="colTitle">FYPD Round 4</td>';
 
     // Round 1 through 4
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -930,11 +930,11 @@ function NLReserves27() {
     htmlCode += '<td class="colTitle">Round 6</td>';
     htmlCode += '<td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 4; j < 11; j++) {
+        for (let j = 4; j < 11; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -962,11 +962,11 @@ function NLReserves27() {
     htmlCode += '<td class="colTitle">Online Round 3</td>';
     htmlCode += '<td class="colTitle">Online Round 4</td></tr>';
 
-    for (i = 0; i <11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 11; j < 15; j++) {
+        for (let j = 11; j < 15; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -1041,14 +1041,14 @@ function ALMinors28() {
                      "0","0","0",
                      "0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2028 American League Minors Roster Draft (Unordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="5">2028 American League Minors Roster Draft (Unordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -1112,19 +1112,19 @@ function ALFinances() {
                    0, 0, 300, 
                    0, 0, 0, 
                    0, 0, -200];
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Finances</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1171,14 +1171,14 @@ function ALFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1225,14 +1225,14 @@ function ALFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1279,14 +1279,14 @@ function ALFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1328,14 +1328,14 @@ function ALFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1366,14 +1366,14 @@ function ALFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1401,14 +1401,14 @@ function ALFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1435,14 +1435,14 @@ function ALFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1489,19 +1489,19 @@ function NLFinances() {
                    150, 0, 0,
                    0, 0, 0,
                    0, -200];
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2025 National League Finances</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2025 National League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1548,14 +1548,14 @@ function NLFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1602,14 +1602,14 @@ function NLFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1656,14 +1656,14 @@ function NLFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1710,14 +1710,14 @@ function NLFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1746,14 +1746,14 @@ function NLFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1781,14 +1781,14 @@ function NLFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1817,14 +1817,14 @@ function NLFinances() {
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
         htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
-        balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
         htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
     }
 
@@ -1853,14 +1853,14 @@ function ALMinors23() {
     pick.push("Kelly", "David I", "Greg", "Jon", "Randall", "Brent", "Marty", "Jeremy", "Jordan", "David M", "Rich", "Glenn");
     superScript.push("0","0","0","0","0","0","0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2023 American League Minors Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="5">2023 American League Minors Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -1964,14 +1964,14 @@ function ALReserves23() {
     superScript.push("0","0","0","0","4","0",
                      "0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2023 American League Reserves Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2023 American League Reserves Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 7; j++) {
+        for (let j = 0; j < 7; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -2094,15 +2094,15 @@ function NLReserves23() {
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // First Year Player Draft
-     htmlCode = '<table class="responsive"><thead><th colspan="5">2023 Ordered National League FYPD</th></thead>';
+     let htmlCode = '<table class="responsive"><thead><th colspan="5">2023 Ordered National League FYPD</th></thead>';
      htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">FYPD Round 1</td><td class="colTitle">FYPD Round 2</td><td class="colTitle">FYPD Round 3</td><td class="colTitle">FYPD Round 4</td>';
 
     // Round 1 through 4
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -2130,11 +2130,11 @@ function NLReserves23() {
     htmlCode += '<td class="colTitle">Round 6</td>';
     htmlCode += '<td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 4; j < 11; j++) {
+        for (let j = 4; j < 11; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -2162,11 +2162,11 @@ function NLReserves23() {
     htmlCode += '<td class="colTitle">Online Round 3</td>';
     htmlCode += '<td class="colTitle">Online Round 4</td></tr>';
 
-    for (i = 0; i <11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 11; j < 15; j++) {
+        for (let j = 11; j < 15; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -2244,14 +2244,14 @@ function ALMinors24() {
                      "0","0","0",
                      "0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2024 American League Minors Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="5">2024 American League Minors Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -2389,14 +2389,14 @@ function ALReserves24() {
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2024 American League Reserves Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2024 American League Reserves Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 7; j++) {
+        for (let j = 0; j < 7; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -2515,15 +2515,15 @@ function NLReserves24() {
     superScript.push("0","0","0","0","0","0","0","0","0","0","0");
 
     // First Year Player Draft
-     htmlCode = '<table class="responsive"><thead><th colspan="5">2024 Ordered National League FYPD</th></thead>';
+     let htmlCode = '<table class="responsive"><thead><th colspan="5">2024 Ordered National League FYPD</th></thead>';
      htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">FYPD Round 1</td><td class="colTitle">FYPD Round 2</td><td class="colTitle">FYPD Round 3</td><td class="colTitle">FYPD Round 4</td>';
 
     // Round 1 through 4
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -2551,11 +2551,11 @@ function NLReserves24() {
     htmlCode += '<td class="colTitle">Round 6</td>';
     htmlCode += '<td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 4; j < 11; j++) {
+        for (let j = 4; j < 11; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -2583,11 +2583,11 @@ function NLReserves24() {
     htmlCode += '<td class="colTitle">Online Round 3</td>';
     htmlCode += '<td class="colTitle">Online Round 4</td></tr>';
 
-    for (i = 0; i <11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 11; j < 15; j++) {
+        for (let j = 11; j < 15; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -2674,14 +2674,14 @@ function ALMinors25() {
                      "0","12","0",
                      "0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="5">2025 American League Minors Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="5">2025 American League Minors Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -2790,14 +2790,14 @@ function ALReserves25() {
     superScript.push("0","0","0","0","0","0",
                      "0","0","0","0","0","0");
 
-    htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Reserves Roster Draft (Ordered)</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Reserves Roster Draft (Ordered)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">Round 1</td><td class="colTitle">Round 2</td><td class="colTitle">Round 3</td><td class="colTitle">Round 4</td><td class="colTitle">Round 5</td><td class="colTitle">Round 6</td><td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i <12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 7; j++) {
+        for (let j = 0; j < 7; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 12 + i];
             if (superScript[j * 12 + i] != "0") {
@@ -2984,15 +2984,15 @@ superScript.push("0","0","0",
                  "0","0","0");
 
     // First Year Player Draft
-     htmlCode = '<table class="responsive"><thead><th colspan="5">2025 Ordered National League FYPD</th></thead>';
+     let htmlCode = '<table class="responsive"><thead><th colspan="5">2025 Ordered National League FYPD</th></thead>';
      htmlCode += '<tr><td class="colTitle">Slot</td><td class="colTitle">FYPD Round 1</td><td class="colTitle">FYPD Round 2</td><td class="colTitle">FYPD Round 3</td><td class="colTitle">FYPD Round 4</td>';
 
     // Round 1 through 4
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 0; j < 4; j++) {
+        for (let j = 0; j < 4; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -3020,11 +3020,11 @@ superScript.push("0","0","0",
     htmlCode += '<td class="colTitle">Round 6</td>';
     htmlCode += '<td class="colTitle">Round 7</td></tr>';
 
-    for (i = 0; i < 11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 4; j < 11; j++) {
+        for (let j = 4; j < 11; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -3052,11 +3052,11 @@ superScript.push("0","0","0",
     htmlCode += '<td class="colTitle">Online Round 3</td>';
     htmlCode += '<td class="colTitle">Online Round 4</td></tr>';
 
-    for (i = 0; i <11; i++) {
+    for (let i = 0; i < 11; i++) {
         htmlCode += '<tr><td class="points">';
         htmlCode += (i + 1).toString();
         htmlCode += '</td>';
-        for (j = 11; j < 15; j++) {
+        for (let j = 11; j < 15; j++) {
             htmlCode += '<td class="team">';
             htmlCode += pick[j * 11 + i];
             if (superScript[j * 11 + i] != "0") {
@@ -3245,10 +3245,10 @@ function ALFaab2019() {
 
     var balance = [99, 76, 5, 100, 36, 22, 22, 0, 3, 101, 0, 0];
 
-    htmlCode = '<table class="responsive"><thead><th colspan="2">2019 American League FAAB Balances</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="2">2019 American League FAAB Balances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + balance[i].toFixed(2) + '</td><tr>';
     }
 
@@ -3279,10 +3279,10 @@ function NLFaab2019() {
 
     var balance = [1, 12, 0, 24, 22, 13, 100, 91, 0, 9];
 
-    htmlCode = '<table class="responsive"><thead><th colspan="2">2019 National League FAAB Balances</th></thead>';
+    let htmlCode = '<table class="responsive"><thead><th colspan="2">2019 National League FAAB Balances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Balance</td></tr>';
 
-    for (i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
         htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + balance[i].toFixed(2) + '</td></tr>';
     }
 
