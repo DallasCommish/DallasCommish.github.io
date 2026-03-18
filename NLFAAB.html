@@ -3,14 +3,14 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, chrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/keepers.css">
+        <link rel="stylesheet" type="text/css" href="css/keepers.css">
 
-        <title>2024 NL FAAB</title>
+        <title>2026 NL FAAB</title>
     </head>
     <body>
         <br />
@@ -24,7 +24,7 @@
                     <table class="table table-hover">
                         <tr>
                             <th>Team</th>
-                            <td>Balance</td>
+                            <th>Balance</th>
                         </tr>
                         <tr>
                             <td>A McNickle for Farm Fresh Gregs</td>
@@ -51,7 +51,7 @@
                             <td>100</td>
                         </tr>
                         <tr>
-                            <td>TBA</td>
+                            <td>Third Encore</td>
                             <td>100</td>
                         </tr>
                         <tr>
@@ -59,7 +59,7 @@
                             <td>100</td>
                         </tr>
                         <tr>
-                            <td>Seattle Stackers</td>
+                            <td>Blaze of Glory</td>
                             <td>100</td>
                         </tr>
                         <tr>
@@ -113,7 +113,7 @@
                             </ul>
                         </li>
                         <li>
-                            <span class="caret">TBA</span>
+                            <span class="caret">Third Encore</span>
                             <ul class="nested">
                                 <li>$100 opening balance</li>
                             </ul>
@@ -125,7 +125,7 @@
                             </ul>
                         </li>
                         <li>
-                            <span class="caret">Seattle Stackers</span>
+                            <span class="caret">Blaze of Glory</span>
                             <ul class="nested">
                                 <li>$100 opening balance</li>
                             </ul>
@@ -147,9 +147,9 @@
             </div>
         </div>
         <script>
-            var toggler = document.getElementById("caret");
+            var toggler = document.getElementsByClassName("caret");
             var i;
-            for(i = 0; i < toggler.length; i++) {
+            for (i = 0; i < toggler.length; i++) {
                 toggler[i].addEventListener("click", function() {
                     this.parentElement.querySelector(".nested").classList.toggle("active");
                     this.classList.toggle("caret-down");
