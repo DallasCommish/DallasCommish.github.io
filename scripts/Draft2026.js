@@ -4,11 +4,11 @@ function ALMinors26() {
     // first round
     pick.push("Brent", "Jordan", "Rich", 
               "Jordan", "Kelly", "Greg", 
-              "Jeremy", "Jon", "Brent", 
+              "Jeremy", "Jon", "Jon", 
               "Chris", "Marty", "Glenn");
     superScript.push("0","0","0",
                      "3","0","2 and 9",
-                     "0","0","1",
+                     "0","0","1 and 12",
                      "0","4","0");
 
     // second round
@@ -104,6 +104,9 @@ function ALMinors26() {
     htmlCode += "<li>3/6/2026: <strong>Randall</strong> trades <em>David Bednar</em> and ";
     htmlCode += "<em>Max Fried</em> to <strong>Jeremy</strong> for <em>Evan Carter</em>, ";
     htmlCode += "<em>Jack Leiter</em>, and a 2026 2nd round ML pick.</li>";
+    // 12
+    htmlCode += "<li>3/20/2026: <strong>Jon</strong> trades <em>Jo Adell</em> to <strong>Brent</strong> for ";
+    htmlCode += "<em>Parker Messick</em> and a 2026 1st round ML pick.</li>";
     htmlCode += '</ol>';
     return htmlCode;
 }
