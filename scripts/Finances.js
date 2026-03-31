@@ -32,7 +32,7 @@ function ALFinances() {
                     27.1, 0, 574.25];
 
     var payment = [0, 0, 0, 
-                   0, 0, 300, 
+                   300, 0, 300, 
                    0, 0, 0, 
                    0, 0, -200];
     let htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Finances</th></thead>';
