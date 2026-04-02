@@ -431,6 +431,60 @@ function ALFinances() {
 }
 
 function NLFinances() {
+    // repeat the code for 2026
+    var teamList = ["A McNickle for Farm Fresh Gregs", "Donner Party", "Dread Pirate Roberts", 
+                    "Leonard Peltier's Army", "Liberty Lunch", "Matty Bos", 
+                    "Third Encore", "P-Funk All-Stars", "Blaze of Glory",
+                    "The Cream and the Clear", "Wichita Sox Monkees"];
+
+    var beginning = [506.16, 836.04, -436.12, 
+                     -1.66, 80.81, 151.13,
+                     0, -466.68, 119.98,
+                     -276.08, 668.58];
+
+    var paid = [0, 0, 0,
+                0, 0, 0,
+                0, 0, 0,
+                0, 0];
+
+    var draft = [-28.9, -28.4, -29.2,
+                 -29.4, -29.2, -28.3,
+                 -28.9, -29.2, -29.2,
+                 -29.4, -29.4];
+
+    var expenses = [0, 0, 0,
+                    0, 0, 0,
+                    0, 0, 0,
+                    0, 0];
+
+    var winnings = [0, 0, 0,
+                    0, 0, 0,
+                    0, 0, 0,
+                    0, 0];
+
+    var payment = [0, 0, 0,
+                   0, 0, 0,
+                   0, 0, 0,
+                   0, 0];
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2026 National League Finances</th></thead>';
+    htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
+    htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
+    htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
+
+    for (let i = 0; i < 11; i++) {
+        htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
+    }
+
+    htmlCode += '</table>';
+    htmlCode += "<br />";
+
     // repeat the code for 2025
     var teamList = ["A McNickle for Farm Fresh Gregs", "Donner Party", "Dread Pirate Roberts", 
                     "Leonard Peltier's Army", "Liberty Lunch", "Matty Bos", 
@@ -466,7 +520,7 @@ function NLFinances() {
                    150, 0, 0,
                    0, 0, 0,
                    0, -200];
-    let htmlCode = '<table class="responsive"><thead><th colspan="8">2025 National League Finances</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2025 National League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
