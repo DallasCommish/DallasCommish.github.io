@@ -1,5 +1,59 @@
 function ALFinances() {
     //construct the JS shell to hold the finance data
+    // repeat the code for 2026
+    var teamList = ["Banoaster Republic", "David's 5 & Dime", "Flower Children",
+                    "Hradek Hrams", "Jak of Diamonds", "Kelly S*M*A*S*H", 
+                    "Kirk's Enterprise", "Non-Zero Chance", "The Blossoms",
+                    "The Patsy Killjoys", "The Shohei Kid", "Wichita TinMen"];
+
+    var beginning = [-34.16, -69.49, 35.47,
+                     90.53, -121.81, 114.20,
+                     1430.69, -37.52, -62.78,
+                     38.9, 964.09, 729.88];
+
+    var paid = [0, 69.49, 0, 
+                0, 0, 0, 
+                0, 0, 0, 
+                0, 0, 0];
+
+    var draft = [-25.9, -25.7, -25.9,
+                 -26.0, -26.0, -25.9, 
+                 -25.8, -25.8, -26.0, 
+                 -25.6, -25.6, -26.0];
+
+    var expenses = [0, 0, 0, 
+                    0, 0, 0,
+                    0, 0, 0, 
+                    0, 0, 0];
+
+    var winnings = [0, 0, 0,
+                    0, 0, 0,
+                    0, 0, 0,
+                    0, 0, 0];
+
+    var payment = [0, 0, 0, 
+                   0, 0, 0, 
+                   0, 0, 0, 
+                   0, 0, 0];
+    let htmlCode = '<table class="responsive"><thead><th colspan="8">2026 American League Finances</th></thead>';
+    htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
+    htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
+    htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
+
+    for (let i = 0; i < 12; i++) {
+        htmlCode += '<tr><td>' + teamList[i] + '</td><td class="points">$' + beginning[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + paid[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + draft[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + expenses[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + winnings[i].toFixed(2) + '</td>';
+        htmlCode += '<td class="points">$' + payment[i].toFixed(2) + '</td>';
+        const balance = beginning[i] + paid[i] + draft[i] + expenses[i] + winnings[i] + payment[i];
+        htmlCode += '<td class="points">$' + balance.toFixed(2) + '</td></tr>';
+    }
+
+    htmlCode += '</table>';
+    htmlCode += "<br />";
+
     // repeat the code for 2025
     var teamList = ["Banoaster Republic", "David's 5 & Dime", "Flower Children",
                     "Hradek Hrams", "Jak of Diamonds", "Kelly S*M*A*S*H", 
@@ -35,7 +89,7 @@ function ALFinances() {
                    300, 0, 300, 
                    0, 0, 0, 
                    0, 0, -200];
-    let htmlCode = '<table class="responsive"><thead><th colspan="8">2025 American League Finances</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2025 American League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
     htmlCode += '<td class="colTitle">Paid</td><td class="colTitle">Draft</td><td class="colTitle">Expenses</td>';
     htmlCode += '<td class="colTitle">Winnings</td><td class="colTitle">Payment</td><td class="colTitle">Balance</td></tr>';
