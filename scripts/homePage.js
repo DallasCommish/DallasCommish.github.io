@@ -1,18 +1,48 @@
-function maxCategory2025() {
+/**
+ * Find the maximum value in an array
+ * @param {number[]} results - Array of numbers
+ * @returns {number} The maximum value
+ */
+function maximum(results) {
+    var max = results[0];
+    for (var i = 0; i < results.length; i++) {
+        if (results[i] > max) {
+            max = results[i];
+        }
+    }
+    return max;
+}
+
+/**
+ * Find the minimum value in an array
+ * @param {number[]} results - Array of numbers
+ * @returns {number} The minimum value
+ */
+function minimum(results) {
+    var min = results[0];
+    for (var i = 0; i < results.length; i++) {
+        if (results[i] < min) {
+            min = results[i];
+        }
+    }
+    return min;
+}
+
+function maxCategory() {
     var teamList = ['Banoaster Republic', "David's 5 &amp; Dime", 'Flower Children', 'Hradek Hrams', 
                     'Jak of Diamonds', 'Kelly S*M*A*S*H', "Kirk's Enterprise", 'Non-Zero Chance',
                     'The Blossoms', 'The Patsy Killjoys', 'The Shohei Kid', 'Wichita TinMen'];
 
-    var HR = [13, 9, 14, 22, 11, 14, 19, 15, 17, 22, 10, 19];
-    var OBP = [0.3667, 0.3556, 0.3929, 0.3569, 0.3445, 0.381, 0.3937, 0.392, 0.3502, 0.35, 0.3516, 0.3717];
-    var R = [45, 35, 47, 55, 34, 51, 56, 44, 46, 49, 33, 51];
-    var RBI = [52, 33, 41, 54, 38, 50, 52, 43, 48, 59, 34, 48];
-    var SB = [8, 10, 8, 11, 9, 10, 12, 9, 9, 8, 10, 9];
-    var ERA = [1.34, 1.696, 1.465, 1.862, 2.723, 1.517, 2.077, 1.845, 2.137, 2.301, 1.5, 1.237];
-    var K = [55, 66, 76, 55, 59, 61, 57, 68, 61, 61, 54, 75];
-    var S = [4, 2, 5, 4, 5, 3, 7, 4, 6, 6, 3, 4];
-    var W = [7, 6, 5, 4, 5, 4, 5, 5, 9, 6, 6, 6];
-    var WHIP = [0.8936, 0.942, 0.7692, 0.7778, 1.0084, 0.8351, 0.7615, 0.9375, 0.8889, 0.9375, 0.8333, 0.7129];
+    var HR = [7, 7, 5, 6, 8, 4, 5, 1, 9, 9, 8, 7];
+    var OBP = [0.3284, 0.3005, 0.2918, 0.3242, 0.3379, 0.2759, 0.2898, 0.2778, 0.3321, 0.332, 0.306, 0.3676];
+    var R = [25, 22, 28, 33, 26, 14, 33, 20, 34, 32, 28, 38];
+    var RBI = [33, 20, 22, 27, 26, 17, 28, 18, 37, 25, 29, 30];
+    var SB = [6, 5, 3, 1, 3, 2, 9, 7, 2, 0, 3, 7];
+    var ERA = [4.283, 4.312, 4.893, 5.457, 3.832, 3.405, 4.836, 3.6, 2.235, 1.562, 3.477, 7.105];
+    var K = [48, 44, 51, 36, 46, 39, 56, 38, 43, 42, 36, 24];
+    var S = [0, 0, 1, 0, 2, 1, 2, 0, 0, 2, 1, 2];
+    var W = [1, 4, 4, 2, 2, 3, 1, 2, 2, 5, 1, 1];
+    var WHIP = [1.531, 1.1458, 1.6309, 1.4681, 1.2581, 1.3514, 1.3433, 1.1714, 0.8483, 0.9421, 1.2273, 1.7763];
 
     var maxOBP = maximum(OBP);
     var maxHR = maximum(HR);
@@ -26,7 +56,7 @@ function maxCategory2025() {
     var minWHIP = minimum(WHIP);
 
     var htmlCode = "<table id='MaxCategory' class='responsive'><thead>";
-    htmlCode += "<th colspan='11'>2025 Maximum Category</th></thead>";
+    htmlCode += "<th colspan='11'>2026 Maximum Category</th></thead>";
     htmlCode += "<tr><td class='colTitle'>Team Name</td><td class='colTitle'>OBP</td>";
     htmlCode += "<td class='colTitle'>HR</td><td class='colTitle'>RBI</td>";
     htmlCode += "<td class='colTitle'>SB</td><td class='colTitle'>R</td>";
@@ -90,26 +120,6 @@ function maxCategory2025() {
     htmlCode += "</tbody></table>";
     htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 9/1/2025</p>';
     return htmlCode;
-}
-
-function maximum(results) {
-    var max = results[0];
-    for (var i = 0; i < results.length; i++) {
-        if (results[i] > max) {
-            max = results[i];
-        }
-    }
-    return max;
-}
-
-function minimum(results) {
-    var min = results[0];
-    for (var i = 0; i < results.length; i++) {
-        if (results[i] < min) {
-            min = results[i];
-        }
-    }
-    return min;
 }
 
 function showFinish2025() {
