@@ -171,7 +171,7 @@ function NLReserves27() {
     var superScript = [];
     // FYPD first round
     pick.push("Jon", "Rich", "Marc", 
-        "Matt R", "Doug", "Jeffrey", 
+        "Matt R", "Doug", "Don", 
         "Ken", "Marc",
         "Glenn", "Jon", "Matt A");
     superScript.push("0","0","0",
@@ -181,7 +181,7 @@ function NLReserves27() {
 
     // FYPD second round
     pick.push("Jon", "Rich", "Marc", 
-        "Matt R", "Doug", "Jeffrey", 
+        "Matt R", "Doug", "Don", 
         "Ken", "David",
         "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -191,7 +191,7 @@ function NLReserves27() {
 
     // FYPD third round
     pick.push("Jon", "Rich", "Marc", 
-        "Matt R", "Doug", "Jeffrey", 
+        "Matt R", "Doug", "Don", 
         "Ken", "David",
         "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -201,7 +201,7 @@ function NLReserves27() {
 
     // FYPD fourth round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -211,7 +211,7 @@ function NLReserves27() {
 
     // post-auction first round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -221,7 +221,7 @@ function NLReserves27() {
 
     // post-auction second round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -231,17 +231,17 @@ function NLReserves27() {
 
     // post-auction third round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Rich", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
-                 "0","0","0",
+                 "0","0","3",
                  "0","0",
                  "0","0","0");
 
     // post-auction fourth round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -251,7 +251,7 @@ function NLReserves27() {
 
     // post-auction fifth round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -261,7 +261,7 @@ function NLReserves27() {
 
     // post-auction sixth round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -271,7 +271,7 @@ function NLReserves27() {
 
     // post-auction seventh round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -280,18 +280,18 @@ function NLReserves27() {
                  "0","0","0");
 
     // online first round
-    pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+    pick.push("Jon", "Don", "Marc", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
-    superScript.push("0","0","0",
+    superScript.push("0","3","0",
                  "0","0","0",
                  "0","0",
                  "0","0","0");
 
     // online second round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -301,7 +301,7 @@ function NLReserves27() {
 
     // online third round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -311,7 +311,7 @@ function NLReserves27() {
 
     // online fourth round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Jeffrey", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
@@ -419,6 +419,9 @@ function NLReserves27() {
     // 2
     htmlCode += '<li>3/15/2026: <strong>Marc</strong> trades <em>Jung Hoo Lee</em> to ';
     htmlCode += '<strong>David</strong> for <em>James Triantos</em> and a 2027 1st round FYPD pick.</li>';
+    // 3
+    htmlCode += '<li>5/7/2026: <strong>Rich</strong> trades <em>Dansby Swanson</em> and a 2027 1st round ';
+    htmlCode += 'online pick to <strong>Don</strong> for <em>Zyhir Hope</em> and a 2027 3rd round pick</li>';
     htmlCode += '</ol>';
     return htmlCode;
 
