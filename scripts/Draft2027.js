@@ -221,11 +221,11 @@ function NLReserves27() {
 
     // post-auction second round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Don", 
+              "Matt R", "Doug", "Greg", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
-                 "0","0","0",
+                 "0","0","4",
                  "0","0",
                  "0","0","0");
 
@@ -422,6 +422,10 @@ function NLReserves27() {
     // 3
     htmlCode += '<li>5/7/2026: <strong>Rich</strong> trades <em>Dansby Swanson</em> and a 2027 1st round ';
     htmlCode += 'online pick to <strong>Don</strong> for <em>Zyhir Hope</em> and a 2027 3rd round pick</li>';
+    // 4
+    htmlCode += '<li>5/27/2026: <strong>Greg</strong> trades <em>Ronald Acuna</em>, <em>Brice Turnag</em>, ';
+    htmlCode += 'and <em>Spencer Horwitz</em> to <strong>Don</strong> for <em>Jackson Merrill</em>, ';
+    htmlCode += '<em>Sterlin Thompson</em>, and a 2027 2nd round reserve pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 
