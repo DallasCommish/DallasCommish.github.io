@@ -77,6 +77,7 @@
                                 <ul class="dropdown-menu" role="Menu">
                                     <li><a href="#" id="NLReserves26">2026 Reserves Draft</a></li>
                                     <li><a href="#" id="NLReserves27">2027 Reserves Draft</a></li>
+                                    <li><a href="#" id="NLMinors28">2028 Reserves Draft</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#" id="NLFAAB">NL FAAB Balances</a></li>
                                     <li><a href="#" id="NLFinances">NL Finances</a></li>
@@ -168,6 +169,12 @@
                 document.getElementById("divFAAB").style.display = "none";
                 document.getElementById("divVis").style.display = "block";
                 document.getElementById("dataVis").innerHTML=ALMinors28();
+            };
+            document.getElementById("NLReserves28").onclick=function() {
+                document.getElementById("divRules").style.display = "none";
+                document.getElementById("divFAAB").style.display = "none";
+                document.getElementById("divVis").style.display = "block";
+                document.getElementById("dataVis").innerHTML=NLReserves28();
             };
             document.getElementById("ALFinances").onclick=function() {
                 document.getElementById("divRules").style.display = "none";
