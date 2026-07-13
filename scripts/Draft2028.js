@@ -2,11 +2,11 @@ function ALMinors28() {
     var pick = [];
     var superScript = [];
     // first round
-    pick.push("Glenn", "Jeremy", "Jon", 
+    pick.push("Glenn", "Greg and Don", "Jon", 
               "Chris", "Jordan", "David", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
-    superScript.push("0","0","1 and 2",
+    superScript.push("0","3","1 and 2",
                      "0","0","0",
                      "0","0","0",
                      "0","0","0");
@@ -32,11 +32,11 @@ function ALMinors28() {
                      "0","0","0");
 
     // fourth round
-    pick.push("Glenn", "Jeremy", "Greg", 
+    pick.push("Glenn", "Jeremy", "Jeremy", 
               "Chris", "Jordan", "David M", 
               "Rich", "Kelly", "Marty", 
               "Jon", "Brent", "Randall");
-    superScript.push("0","0","0",
+    superScript.push("0","0","3",
                      "0","0","0",
                      "0","0","0",
                      "0","0","0");
@@ -72,6 +72,11 @@ function ALMinors28() {
     htmlCode += "<li>8/31/2025: <strong>Jon</strong> trades <em>Framber Valdez</em> to ";
     htmlCode += "<strong>Randall</strong> for a 2028 1st round ML pick.</li>";
     htmlCode += '</ol>';
+    // 3
+    htmlCode += '<li>7/10/2026: <strong>Jeremy</strong> trades <em>Slade Cecconi</em>, <em>Ben Rice</em>, ';
+    htmlCode += '<em>Nicky Lopez</em>, <em>Jose Siri</em>, and a 2028 1st round ML pick to <strong>Greg and Don</strong> ';
+    htmlCode += 'for <em>Julio Rodriguez</em>, <em>Cal Raleigh</em>, <em>Gavin Williams</em>, <em>Gunnar Henderson</em>, ';
+    htmlCode += ' and a 2028 4th round ML pick.</li>'
     return htmlCode;
 }
 
