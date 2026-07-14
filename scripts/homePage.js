@@ -33,13 +33,13 @@ function maxCategory() {
                     'Jak of Diamonds', 'Kelly S*M*A*S*H', "Kirk's Enterprise", 'Non-Zero Chance',
                     'The Blossoms', 'The Patsy Killjoys', 'The Shohei Kid', 'Wichita TinMen'];
 
-    var HR = [15.0, 8.0, 12.0, 14.0, 18.0, 13.0, 15.0, 16.0, 14.0, 12.0, 18.0, 10.0];
+    var HR = [18.0, 8.0, 12.0, 14.0, 18.0, 13.0, 15.0, 16.0, 14.0, 12.0, 18.0, 10.0];
     var OBP = [0.3722, 0.3952, 0.3858, 0.3639, 0.4096, 0.38, 0.3814, 0.375, 0.3608, 0.3612, 0.3794, 0.3676];
-    var R = [37.0, 31.0, 34.0, 50.0, 48.0, 31.0, 43.0, 42.0, 41.0, 36.0, 41.0, 38.0];
-    var RBI = [48.0, 29.0, 35.0, 45.0, 46.0, 34.0, 44.0, 41.0, 39.0, 38.0, 40.0, 35.0];
-    var SB = [11.0, 8.0, 7.0, 7.0, 9.0, 5.0, 12.0, 7.0, 6.0, 6.0, 10.0, 7.0];
-    var ERA = [1.667, 2.497, 2.16, 2.0, 2.395, 3.405, 3.135, 1.543, 2.235, 1.562, 1.862, 1.452];
-    var K = [52.0, 77.0, 63.0, 53.0, 66.0, 57.0, 69.0, 51.0, 68.0, 56.0, 65.0, 43.0];
+    var R = [40.0, 31.0, 34.0, 50.0, 48.0, 31.0, 43.0, 42.0, 41.0, 36.0, 41.0, 38.0];
+    var RBI = [48.0, 29.0, 35.0, 45.0, 46.0, 35.0, 44.0, 41.0, 39.0, 38.0, 40.0, 35.0];
+    var SB = [11.0, 8.0, 7.0, 7.0, 10.0, 6.0, 12.0, 7.0, 6.0, 6.0, 10.0, 7.0];
+    var ERA = [1.667, 2.497, 2.16, 2.0, 2.395, 3.34, 3.135, 1.543, 2.235, 1.562, 1.862, 1.452];
+    var K = [52.0, 77.0, 63.0, 53.0, 66.0, 57.0, 71.0, 51.0, 68.0, 56.0, 65.0, 43.0];
     var S = [3.0, 3.0, 5.0, 4.0, 4.0, 4.0, 5.0, 1.0, 3.0, 6.0, 2.0, 5.0];
     var W = [5.0, 5.0, 4.0, 6.0, 8.0, 4.0, 5.0, 6.0, 5.0, 6.0, 5.0, 5.0];
     var WHIP = [1.0, 1.0578, 0.855, 0.8571, 0.9194, 0.95, 1.089, 0.7391, 0.8483, 0.8913, 0.9517, 0.871];
@@ -118,7 +118,7 @@ function maxCategory() {
         }
     }
     htmlCode += "</tbody></table>";
-    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 7/6/2026</p>';
+    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 7/13/2026</p>';
     htmlCode += '<h1 class="maxcat-h1">MaxCat Change Log</h1>';
     htmlCode += '<p>League-wide category leaders after each weekly file is added.</p>';
     htmlCode += '<section class="week">';
@@ -276,6 +276,16 @@ function maxCategory() {
     htmlCode += '<thead><tr><th>Category</th><th>Previous Leader</th><th>Current Leader</th></tr></thead>';
     htmlCode += '<tbody>';
     htmlCode += '<tr><td>W</td><td>Hradek Hrams, Non-Zero Chance, The Patsy Killjoys at 6</td><td>Jak of Diamonds at 8</td></tr>';
+    htmlCode += '</tbody>';
+    htmlCode += '</table>';
+    htmlCode += '</section>';
+    htmlCode += '<section class="week">';
+    htmlCode += '<h2>Week 16</h2>';
+    htmlCode += '<div class="week-meta">After adding 16.csv</div>';
+    htmlCode += '<table>';
+    htmlCode += '<thead><tr><th>Category</th><th>Previous Leader</th><th>Current Leader</th></tr></thead>';
+    htmlCode += '<tbody>';
+    htmlCode += '<tr><td>HR</td><td>Jak of Diamonds, The Shohei Kid at 18</td><td>Banoaster Republic, Jak of Diamonds, The Shohei Kid at 18</td></tr>';
     htmlCode += '</tbody>';
     htmlCode += '</table>';
     htmlCode += '</section>';
