@@ -80,7 +80,7 @@ function ALMinors28() {
     return htmlCode;
 }
 
-function NLReserves27() {
+function NLReserves28() {
     var pick = [];
     var superScript = [];
     // FYPD first round
