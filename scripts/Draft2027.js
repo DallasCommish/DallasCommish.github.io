@@ -283,12 +283,12 @@ function NLReserves27() {
                  "0","0","0");
 
     // online first round
-    pick.push("Jon", "Don", "Marc", 
-              "Matt R", "Doug", "David", 
+    pick.push("Jon", "David", "Marc", 
+              "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
-    superScript.push("0","3","0",
-                 "0","0","5",
+    superScript.push("0","3 and 5","0",
+                 "0","0","0",
                  "0","0",
                  "0","0","0");
 
