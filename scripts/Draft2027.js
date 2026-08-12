@@ -244,11 +244,11 @@ function NLReserves27() {
 
     // post-auction fourth round
     pick.push("Jon", "Rich", "Marc", 
-              "Matt R", "Doug", "Don", 
+              "Matt R", "Doug", "Greg", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
     superScript.push("0","0","0",
-                 "0","0","0",
+                 "0","0","6",
                  "0","0",
                  "0","0","0");
 
@@ -433,6 +433,9 @@ function NLReserves27() {
     htmlCode += '<li>8/10/2026: <strong>David</strong> trades <em>Casey Mize</em> and <em>Shota Imanaga</em>';
     htmlCode += ' to <strong>Don</strong> for <em>Casey Schmitt</em>, <em>Spencer Horwitz</em>, and a ';
     htmlCode += '2027 1st round online reserve pick.</li>';
+    // 6
+    htmlCode += '<li>8/10/2026: <strong>Greg</strong> trades <em>Jordan Romano</em> to <strong>Don</strong> ';
+    htmlCode += 'for a 2027 4th round reserve pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 
