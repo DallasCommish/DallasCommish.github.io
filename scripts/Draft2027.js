@@ -213,11 +213,11 @@ function NLReserves27() {
                      "0","0","0");
 
     // post-auction first round
-    pick.push("Jon", "Rich", "Marc", 
+    pick.push("Marc", "Rich", "Marc", 
               "Matt R", "Doug", "Don", 
               "Ken", "David",
               "Glenn", "Greg", "Matt A");
-    superScript.push("0","0","0",
+    superScript.push("7","0","0",
                  "0","0","0",
                  "0","0",
                  "0","0","0");
@@ -349,7 +349,7 @@ function NLReserves27() {
     htmlCode += '<ul><li>$10 and contract of ML for all rounds</li></ul><br />';
 
     // Post Auction Draft
-    htmlCode += '<table class="responsive"><thead><th colspan="8">2026 Un-ordered National League Reserves Roster Draft (Post-Auction)</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2027 Un-ordered National League Reserves Roster Draft (Post-Auction)</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td>';
     htmlCode += '<td class="colTitle">Round 1</td>';
     htmlCode += '<td class="colTitle">Round 2</td>';
@@ -384,7 +384,7 @@ function NLReserves27() {
     htmlCode += '<li>$2 for rounds 5 through 7</li></ul><br />';
 
     // Online Draft
-    htmlCode += '<table class="responsive"><thead><th colspan="8">2026 Un-ordered National League Online Reserves Roster Draft</th></thead>';
+    htmlCode += '<table class="responsive"><thead><th colspan="8">2027 Un-ordered National League Online Reserves Roster Draft</th></thead>';
     htmlCode += '<tr><td class="colTitle">Slot</td>';
     htmlCode += '<td class="colTitle">Online Round 1</td>';
     htmlCode += '<td class="colTitle">Online Round 2</td>';
@@ -436,6 +436,10 @@ function NLReserves27() {
     // 6
     htmlCode += '<li>8/10/2026: <strong>Greg</strong> trades <em>Jordan Romano</em> to <strong>Don</strong> ';
     htmlCode += 'for a 2027 4th round reserve pick.</li>';
+    // 7
+    htmlCode += '<li>8/27/2026: <strong>Marc</strong> trades <em>Chris Sale</em>, <em>Austin Riley</em>, ';
+    htmlCode += 'and <em>Michael King</em> to <strong>Jon</strong> for <em>Josue De Paula</em>, ';
+    htmlCode += '<em>Abimelec Ortiz</em>, <em>Charles Davalan</em>, and a 2027 1st round post-auction pick.</li>';
     htmlCode += '</ol>';
     return htmlCode;
 
