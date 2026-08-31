@@ -35,7 +35,7 @@ function maxCategory() {
 
     var HR = [18.0, 8.0, 12.0, 14.0, 18.0, 13.0, 15.0, 16.0, 14.0, 12.0, 18.0, 11.0];
     var OBP = [0.3722, 0.3952, 0.3858, 0.3639, 0.4096, 0.38, 0.3814, 0.375, 0.3645, 0.3612, 0.3794, 0.3736];
-    var R = [41.0, 31.0, 34.0, 50.0, 48.0, 31.0, 43.0, 42.0, 41.0, 39.0, 41.0, 40.0];
+    var R = [41.0, 31.0, 34.0, 50.0, 48.0, 36.0, 43.0, 42.0, 41.0, 39.0, 41.0, 40.0];
     var RBI = [48.0, 29.0, 35.0, 45.0, 46.0, 35.0, 44.0, 41.0, 39.0, 38.0, 40.0, 36.0];
     var SB = [11.0, 8.0, 7.0, 7.0, 10.0, 6.0, 12.0, 7.0, 6.0, 6.0, 10.0, 8.0];
     var ERA = [1.296, 2.497, 2.16, 2.0, 2.325, 2.015, 2.7, 1.543, 2.235, 1.562, 1.785, 1.452];
@@ -118,7 +118,7 @@ function maxCategory() {
         }
     }
     htmlCode += "</tbody></table>";
-    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 8/17/2026</p>';
+    htmlCode += '<br /><br /><br /><p style="font-style: italic;">Last updated: 8/31/2026</p>';
     htmlCode += '<h1 class="maxcat-h1">MaxCat Change Log</h1>';
     htmlCode += '<p>League-wide category leaders after each weekly file is added.</p>';
     htmlCode += '<section class="week">';
@@ -325,6 +325,11 @@ function maxCategory() {
     htmlCode += '<tr><td>K</td><td>David&#x27;s 5 &amp; Dime at 77</td><td>The Blossoms at 78</td></tr>';
     htmlCode += '</tbody>';
     htmlCode += '</table>';
+    htmlCode += '</section>';
+    htmlCode += '<section class="week">';
+    htmlCode += '<h2>Week 23</h2>';
+    htmlCode += '<div class="week-meta">After adding 23.csv</div>';
+    htmlCode += '<p class="no-changes">No league leader changes.</p>';
     htmlCode += '</section>';
 
 
