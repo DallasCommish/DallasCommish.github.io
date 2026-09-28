@@ -386,7 +386,7 @@ function showFinish2026() {
     htmlCode += "<tr><td>$0</td><td>3<sup>rd</sup></td><td>TBA</td></tr>";
     htmlCode += "<tr><td>$0</td><td>4<sup>th</sup></td><td>TBA</td></tr>";
     htmlCode += "<tr><td>$0</td><td>5<sup>th</sup></td><td>TBA</td></tr>";
-    htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>Don</td></tr>";
+    htmlCode += "<tr><td>$0</td><td>6<sup>th</sup></td><td>TBA</td></tr>";
     htmlCode += "</table>";
 
     return htmlCode;
