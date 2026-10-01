@@ -377,7 +377,7 @@ function showFinish2026() {
     htmlCode += "<td>Prize Money</td><td>Draft Order</td><td>Owner</td>";
     htmlCode += "</thead>";
     htmlCode += "<tr><td>50%</td><td>11<sup>th</sup></td><td>Matt A</td></tr>";
-    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>TBA</td></tr>";
+    htmlCode += "<tr><td>25%</td><td>10<sup>th</sup></td><td>Jon</td></tr>";
     htmlCode += "<tr><td>15%</td><td>9<sup>th</sup></td><td>TBA</td></tr>";
     htmlCode += "<tr><td>10%</td><td>8<sup>th</sup></td><td>TBA</td></tr>";
     htmlCode += "<tr><td>$29.4</td><td>7<sup>th</sup></td><td>TBA</td></tr>";
