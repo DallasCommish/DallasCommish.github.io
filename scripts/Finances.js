@@ -459,7 +459,7 @@ function NLFinances() {
 
     var winnings = [0, 0, 0,
                     406.35, 162.54, 812.7,
-                    243.81, 0, 0,
+                    243.81, 0, 29.4,
                     0, 0];
 
     var payment = [0, 0, 0,
