@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donna Witte - Portfolio Summary - October 2026</title>
+    <style>
+
+        :root {
+            --primary: #1e3a5f;
+            --secondary: #2563eb;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+            --bg-light: #f9fafb;
+            --success: #16a34a;
+            --danger: #dc2626;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+        
+        h1 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-bottom: 0.25rem;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 1.35rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        h4 {
+            color: var(--text);
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header-meta {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .header-meta p {
+            margin: 0.25rem 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        
+        th, td {
+            padding: 0.75rem 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        th {
+            background: var(--bg-light);
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        tr:hover {
+            background: #fafbfc;
+        }
+        
+        .currency {
+            text-align: right;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .percent {
+            text-align: right;
+        }
+        
+        .positive {
+            color: var(--success);
+        }
+        
+        .negative {
+            color: var(--danger);
+        }
+        
+        .total-row {
+            font-weight: 600;
+            background: var(--bg-light);
+        }
+        
+        .total-row td {
+            border-top: 2px solid var(--border);
+        }
+        
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+        
+        .charts-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .divider {
+            border: none;
+            border-top: 2px solid var(--border);
+            margin: 2rem 0;
+        }
+        
+        .commentary-section {
+            background: #f8fafc;
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .commentary-section h2 {
+            margin-top: 0;
+        }
+        
+        .risk-table {
+            margin: 1rem 0;
+        }
+        
+        .risk-low { color: var(--success); font-weight: 500; }
+        .risk-moderate { color: #ca8a04; font-weight: 500; }
+        .risk-high { color: var(--danger); font-weight: 500; }
+        
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        
+        ol, ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.75rem;
+        }
+        
+        strong {
+            color: var(--primary);
+        }
+        
+        .summary-text {
+            line-height: 1.7;
+        }
+        
+        .summary-text p {
+            margin-bottom: 1rem;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                max-width: none;
+            }
+            
+            .chart-container, .charts-row {
+                background: white;
+                break-inside: avoid;
+            }
+            
+            .commentary-section {
+                background: white;
+            }
+            
+            h2 {
+                break-after: avoid;
+            }
+            
+            table {
+                break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .charts-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            table {
+                font-size: 0.85rem;
+            }
+            
+            th, td {
+                padding: 0.5rem 0.25rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    <header>
+        <h1>Donna Witte - Investment Portfolio Summary</h1>
+        <h2 style="border-bottom: none; margin-top: 0.5rem;">October 2026</h2>
+        <div class="header-meta">
+            <p><strong>Statement Period:</strong> Sep 26 - Oct 30, 2026</p>
+            <p><strong>Financial Advisor:</strong> Heather Hafner / James Hafner</p>
+            <p><strong>Custodian:</strong> Edward Jones Trust Company</p>
+        </div>
+    </header>
+    <hr class="divider">
+    
+    <section class="section">
+        <h2>Portfolio Overview</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th>Type</th>
+                    <th>Objective</th>
+                    <th class="currency">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td>TOD Select (280-22588-1-0)</td>
+                <td>TOD</td>
+                <td>Preservation of Principal</td>
+                <td class="currency">$313,275.44</td>
+            </tr>
+        
+            <tr>
+                <td>TOD Advisory (280-23999-1-1)</td>
+                <td>TOD</td>
+                <td>Balanced Growth and Income</td>
+                <td class="currency">$92,335.75</td>
+            </tr>
+        
+            <tr>
+                <td>IRA (280-60983-1-1)</td>
+                <td>IRA</td>
+                <td>Balanced Toward Income</td>
+                <td class="currency">$60,003.07</td>
+            </tr>
+        
+        <tr class="total-row">
+            <td><strong>Total Portfolio</strong></td>
+            <td></td>
+            <td></td>
+            <td class="currency"><strong>$465,614.26</strong></td>
+        </tr>
+    
+            </tbody>
+        </table>
+        <div class="chart-container">
+            <svg width="450" height="179" viewBox="0 0 450 179" xmlns="http://www.w3.org/2000/svg">
+<text x="225" y="24" text-anchor="middle" font-size="16" font-weight="600" fill="#1e3a5f">Account Values</text>
+<text x="95" y="63" text-anchor="end" font-size="12" fill="#374151">TOD Select</text>
+<rect x="100" y="45" width="230.0" height="28" fill="#2563eb" rx="4" />
+<text x="338.0" y="63" font-size="12" fill="#374151" font-weight="500">$313,275</text>
+<text x="95" y="101" text-anchor="end" font-size="12" fill="#374151">TOD Advisory</text>
+<rect x="100" y="83" width="67.79089513049603" height="28" fill="#16a34a" rx="4" />
+<text x="175.79089513049604" y="101" font-size="12" fill="#374151" font-weight="500">$92,336</text>
+<text x="95" y="139" text-anchor="end" font-size="12" fill="#374151">IRA</text>
+<rect x="100" y="121" width="44.05294618690824" height="28" fill="#dc2626" rx="4" />
+<text x="152.05294618690823" y="139" font-size="12" fill="#374151" font-weight="500">$60,003</text>
+</svg>
+        </div>
+    </section>
+    <hr class="divider">
+    
+    <section class="section">
+        <h2>Performance Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th class="percent">This Quarter</th>
+                    <th class="percent">Year-to-Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td>TOD Select</td>
+                <td class="percent positive">1.82%</td>
+                <td class="percent positive">6.50%</td>
+            </tr>
+        
+            <tr>
+                <td>TOD Advisory</td>
+                <td class="percent positive">1.57%</td>
+                <td class="percent positive">4.61%</td>
+            </tr>
+        
+            <tr>
+                <td>IRA</td>
+                <td class="percent positive">1.31%</td>
+                <td class="percent positive">1.92%</td>
+            </tr>
+        
+            </tbody>
+        </table>
+        <div class="chart-container">
+            <svg width="500" height="237" viewBox="0 0 500 237" xmlns="http://www.w3.org/2000/svg">
+<text x="250" y="24" text-anchor="middle" font-size="16" font-weight="600" fill="#1e3a5f">Performance Comparison</text>
+<rect x="150" y="38" width="12" height="12" fill="#2563eb" rx="2" />
+<text x="166" y="48" font-size="11" fill="#374151">This Quarter</text>
+<rect x="260" y="38" width="12" height="12" fill="#16a34a" rx="2" />
+<text x="276" y="48" font-size="11" fill="#374151">Year-to-Date</text>
+<text x="105" y="84" text-anchor="end" font-size="12" fill="#374151">TOD Select</text>
+<rect x="110" y="70" width="81.2" height="12" fill="#2563eb" rx="3" />
+<text x="196.2" y="80" font-size="10" fill="#374151">1.8%</text>
+<rect x="110" y="85" width="290.0" height="12" fill="#16a34a" rx="3" />
+<text x="405.0" y="95" font-size="10" fill="#374151">6.5%</text>
+<text x="105" y="133" text-anchor="end" font-size="12" fill="#374151">TOD Advisory</text>
+<rect x="110" y="119" width="70.04615384615384" height="12" fill="#2563eb" rx="3" />
+<text x="185.04615384615386" y="129" font-size="10" fill="#374151">1.6%</text>
+<rect x="110" y="134" width="205.67692307692306" height="12" fill="#16a34a" rx="3" />
+<text x="320.67692307692306" y="144" font-size="10" fill="#374151">4.6%</text>
+<text x="105" y="182" text-anchor="end" font-size="12" fill="#374151">IRA</text>
+<rect x="110" y="168" width="58.44615384615384" height="12" fill="#2563eb" rx="3" />
+<text x="173.44615384615383" y="178" font-size="10" fill="#374151">1.3%</text>
+<rect x="110" y="183" width="85.66153846153846" height="12" fill="#16a34a" rx="3" />
+<text x="200.66153846153844" y="193" font-size="10" fill="#374151">1.9%</text>
+</svg>
+        </div>
+    </section>
+    <hr class="divider">
+    
+    <section class="section">
+        <h2>Asset Allocation by Type</h2>
+        <h3>Total Portfolio</h3>
+        <div class="charts-row">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Asset Type</th>
+                            <th class="currency">Value</th>
+                            <th class="percent">% of Portfolio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr>
+                <td>Cash & Money Market</td>
+                <td class="currency">$3,239.53</td>
+                <td class="percent">0.7%</td>
+            </tr>
+        
+            <tr>
+                <td>Individual Stocks</td>
+                <td class="currency">$140,423.01</td>
+                <td class="percent">30.2%</td>
+            </tr>
+        
+            <tr>
+                <td>ETFs</td>
+                <td class="currency">$34,338.43</td>
+                <td class="percent">7.4%</td>
+            </tr>
+        
+            <tr>
+                <td>MF - Fixed Income</td>
+                <td class="currency">$95,549.75</td>
+                <td class="percent">20.5%</td>
+            </tr>
+        
+            <tr>
+                <td>MF - Equity</td>
+                <td class="currency">$192,123.91</td>
+                <td class="percent">41.3%</td>
+            </tr>
+        
+        <tr class="total-row">
+            <td><strong>Total</strong></td>
+            <td class="currency"><strong>$465,674.63</strong></td>
+            <td class="percent"><strong>100.0%</strong></td>
+        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+<text x="160" y="24" text-anchor="middle" font-size="16" font-weight="600" fill="#1e3a5f">Asset Allocation</text>
+<path d="M 160 140 L 160.0 40.0 A 100 100 0 0 1 164.3695931022574 40.095512332424704 Z" fill="#2563eb" />
+<path d="M 160 140 L 164.3695931022574 40.095512332424704 A 100 100 0 0 1 253.3195339426302 175.93695291382247 Z" fill="#16a34a" />
+<path d="M 160 140 L 253.3195339426302 175.93695291382247 A 100 100 0 0 1 227.42049555731228 213.85442964918514 Z" fill="#dc2626" />
+<path d="M 160 140 L 227.42049555731228 213.85442964918514 A 100 100 0 0 1 107.78825713599363 225.28736076994574 Z" fill="#ca8a04" />
+<path d="M 160 140 L 107.78825713599363 225.28736076994574 A 100 100 0 0 1 159.99999999999997 40.0 Z" fill="#9333ea" />
+<rect x="20" y="250" width="12" height="12" fill="#2563eb" rx="2" />
+<text x="36" y="260" font-size="11" fill="#374151">Cash & Money Marke... (0.7%)</text>
+<rect x="160" y="250" width="12" height="12" fill="#16a34a" rx="2" />
+<text x="176" y="260" font-size="11" fill="#374151">Individual Stocks (30.2%)</text>
+<rect x="20" y="272" width="12" height="12" fill="#dc2626" rx="2" />
+<text x="36" y="282" font-size="11" fill="#374151">ETFs (7.4%)</text>
+<rect x="160" y="272" width="12" height="12" fill="#ca8a04" rx="2" />
+<text x="176" y="282" font-size="11" fill="#374151">MF - Fixed Income (20.5%)</text>
+<rect x="20" y="294" width="12" height="12" fill="#9333ea" rx="2" />
+<text x="36" y="304" font-size="11" fill="#374151">MF - Equity (41.3%)</text>
+</svg>
+            </div>
+        </div>
+        <h3>By Account</h3>
+        
+            <h4>TOD Select ($313,275.44)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset Type</th>
+                        <th class="currency">Value</th>
+                        <th class="percent">% of Account</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Cash & Money Market</td>
+                        <td class="currency">$3,118.79</td>
+                        <td class="percent">1.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Individual Stocks</td>
+                        <td class="currency">$140,423.01</td>
+                        <td class="percent">44.8%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>ETFs</td>
+                        <td class="currency">$8,196.81</td>
+                        <td class="percent">2.6%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>MF - Fixed Income</td>
+                        <td class="currency">$19,947.64</td>
+                        <td class="percent">6.4%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>MF - Equity</td>
+                        <td class="currency">$141,589.19</td>
+                        <td class="percent">45.2%</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        
+            <h4>TOD Advisory ($92,335.75)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset Type</th>
+                        <th class="currency">Value</th>
+                        <th class="percent">% of Account</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Cash & Money Market</td>
+                        <td class="currency">$54.32</td>
+                        <td class="percent">0.1%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>ETFs</td>
+                        <td class="currency">$22,679.29</td>
+                        <td class="percent">24.6%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>MF - Fixed Income</td>
+                        <td class="currency">$42,211.21</td>
+                        <td class="percent">45.7%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>MF - Equity</td>
+                        <td class="currency">$27,418.09</td>
+                        <td class="percent">29.7%</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        
+            <h4>IRA ($60,003.07)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset Type</th>
+                        <th class="currency">Value</th>
+                        <th class="percent">% of Account</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Cash & Money Market</td>
+                        <td class="currency">$66.42</td>
+                        <td class="percent">0.1%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>ETFs</td>
+                        <td class="currency">$3,462.33</td>
+                        <td class="percent">5.8%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>MF - Fixed Income</td>
+                        <td class="currency">$33,390.90</td>
+                        <td class="percent">55.6%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>MF - Equity</td>
+                        <td class="currency">$23,116.63</td>
+                        <td class="percent">38.5%</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        
+    </section>
+    <hr class="divider">
+    
+    <section class="section">
+        <h2>Income-Generating Assets</h2>
+        <div class="charts-row">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th class="currency">Value</th>
+                            <th class="percent">% of Portfolio</th>
+                            <th class="currency">Est. Annual Income</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                <tr>
+                    <td>Money Market (3.13% yield)</td>
+                    <td class="currency">$3,239.53</td>
+                    <td class="percent">0.7%</td>
+                    <td class="currency">~$100.00</td>
+                </tr>
+            
+                <tr>
+                    <td>Bond Funds (4.50% yield)</td>
+                    <td class="currency">$97,591.44</td>
+                    <td class="percent">21.0%</td>
+                    <td class="currency">~$4,400.00</td>
+                </tr>
+            
+                <tr>
+                    <td>Municipal Bonds (3.50% yield)</td>
+                    <td class="currency">$42,211.21</td>
+                    <td class="percent">9.1%</td>
+                    <td class="currency">~$1,500.00</td>
+                </tr>
+            
+                <tr>
+                    <td>Dividend Stocks (2.50% yield)</td>
+                    <td class="currency">$140,423.01</td>
+                    <td class="percent">30.2%</td>
+                    <td class="currency">~$3,500.00</td>
+                </tr>
+            
+        <tr class="total-row">
+            <td><strong>Total Income-Generating</strong></td>
+            <td class="currency"><strong>$283,465.19</strong></td>
+            <td class="percent"><strong>60.9%</strong></td>
+            <td class="currency"><strong>~$9,500.00</strong></td>
+        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+<text x="160" y="24" text-anchor="middle" font-size="16" font-weight="600" fill="#1e3a5f">Income Sources</text>
+<path d="M 160 140 L 160.0 40.0 A 100 100 0 0 1 167.17445411585166 40.25769599543261 Z" fill="#2563eb" />
+<path d="M 160 140 L 167.17445411585166 40.25769599543261 A 100 100 0 0 1 238.74188555144988 201.64183206072292 Z" fill="#16a34a" />
+<path d="M 160 140 L 238.74188555144988 201.64183206072292 A 100 100 0 0 1 157.09762961514258 239.95787235705401 Z" fill="#dc2626" />
+<path d="M 160 140 L 157.09762961514258 239.95787235705401 A 100 100 0 0 1 159.99999999999997 40.0 Z" fill="#ca8a04" />
+<rect x="20" y="250" width="12" height="12" fill="#2563eb" rx="2" />
+<text x="36" y="260" font-size="11" fill="#374151">Money Market (1.1%)</text>
+<rect x="160" y="250" width="12" height="12" fill="#16a34a" rx="2" />
+<text x="176" y="260" font-size="11" fill="#374151">Bond Funds (34.4%)</text>
+<rect x="20" y="272" width="12" height="12" fill="#dc2626" rx="2" />
+<text x="36" y="282" font-size="11" fill="#374151">Municipal Bonds (14.9%)</text>
+<rect x="160" y="272" width="12" height="12" fill="#ca8a04" rx="2" />
+<text x="176" y="282" font-size="11" fill="#374151">Dividend Stocks (49.5%)</text>
+</svg>
+            </div>
+        </div>
+        <p><em>Estimated annual income of approximately $9,500.00 (2.0% portfolio yield)</em></p>
+    </section>
+    <hr class="divider">
+    <section class="commentary-section">
+<h2>Portfolio Commentary</h2>
+<h3>Alignment with Income Objective</h3>
+<p><strong>Strengths:</strong></p>
+<ol>
+<li><strong>Available liquidity:</strong> Cash and money market holdings total $3,239.53, approximately 0.7% of the $465,614.26 portfolio. This provides an accessible reserve, with $3,118.79 held in TOD Select.</li>
+<li><strong>Income-oriented holdings:</strong> Bond mutual funds appear in all three accounts: one in TOD Select, two in TOD Advisory, and three in the IRA. These holdings support an income-oriented structure, although their dollar allocations and income contributions were not supplied. Estimated annual portfolio income is approximately $9,500.</li>
+<li><strong>Individual-stock income potential:</strong> TOD Select holds $140,423.01 in individual stocks, including Abbott Laboratories and AbbVie. The stock allocation offers potential dividend income alongside growth, although dividend amounts and the portfolio’s dividend-paying proportion were not provided.</li>
+<li><strong>Opportunity for tax-aware coordination:</strong> The two TOD accounts and the IRA provide a structure for discussing tax-efficient placement of income-producing holdings. The supplied information does not establish whether current holdings are tax-efficient or identify their tax treatment.</li>
+</ol>
+<p><strong>Areas for Consideration:</strong></p>
+<ol>
+<li><strong>Match liquidity to spending needs:</strong> Review whether the $3,239.53 cash reserve adequately covers Donna’s expected withdrawals and near-term expenses. TOD Advisory and the IRA hold only $54.32 and $66.42 in cash, respectively.</li>
+<li><strong>Review preservation priorities:</strong> TOD Select represents 67.3% of total assets and has a preservation-of-principal objective. Its individual stocks represent 44.8% of that account and 30.2% of the total portfolio, before considering equity mutual funds or equity exposure within ETFs. Discuss whether this exposure remains consistent with Donna’s priorities at age 95.</li>
+<li><strong>Confirm income coverage and bond characteristics:</strong> Compare estimated annual income of $9,500 with actual spending needs, and review bond fund allocations, maturities, and credit quality. Fund counts alone do not establish the amount or stability of income available.</li>
+</ol>
+<h3>Risk Assessment</h3>
+<p>Risk levels below are preliminary discussion indicators based on the supplied account information; detailed fund holdings and spending requirements were not provided.</p>
+<table>
+<thead><tr><th scope="col">Risk Factor</th><th scope="col">Level</th><th scope="col">Notes</th></tr></thead>
+<tbody>
+<tr><td>Liquidity</td><td><span class="risk-moderate">Moderate</span></td><td>Cash and money market holdings total $3,239.53, or 0.7% of assets. Adequacy depends on withdrawal timing and expenses; additional withdrawals may require investment sales.</td></tr>
+<tr><td>Interest Rate</td><td><span class="risk-moderate">Moderate</span></td><td>All accounts hold bond mutual funds, whose values can fluctuate with interest rates. Dollar allocations and duration were not supplied, limiting assessment.</td></tr>
+<tr><td>Market Volatility</td><td><span class="risk-moderate">Moderate</span></td><td>Individual stocks account for at least 30.2% of total assets. Equity mutual funds and potentially ETFs add exposure that cannot be quantified from the supplied data.</td></tr>
+<tr><td>Credit Risk</td><td><span class="risk-moderate">Moderate</span></td><td>Bond fund credit quality and issuer exposures were not supplied. This provisional level should be reviewed against the underlying holdings.</td></tr>
+<tr><td>Inflation</td><td><span class="risk-moderate">Moderate</span></td><td>Preserving purchasing power remains relevant to ongoing expenses. Stocks offer potential growth, but the data do not establish whether income will keep pace with rising costs.</td></tr>
+</tbody>
+</table>
+<h3>Summary</h3>
+<div class="summary-text">
+<p>Donna’s $465,614.26 portfolio combines individual stocks, ETFs, mutual funds, and cash across three accounts. Key strengths include an accessible cash reserve, bond funds in every account, and estimated annual income of approximately $9,500. Reported quarterly returns were positive across all accounts: 1.8% for TOD Select, 1.6% for TOD Advisory, and 1.3% for the IRA; corresponding year-to-date returns were 6.5%, 4.6%, and 1.9%.</p>
+<p>Estimated income equals approximately 2.0% of portfolio value annually. This is an estimated income yield, not a guaranteed or established sustainable withdrawal rate. A sustainable withdrawal estimate cannot be determined from the supplied data without spending needs, taxes, fees, and fuller investment details.</p>
+<p>At age 95, Donna’s income and principal-preservation priorities make dependable access to funds especially important. The main discussion with Heather Hafner and James Hafner should be whether the cash reserve and overall equity exposure appropriately support her expected withdrawals while maintaining a comfortable level of principal risk.</p>
+</div>
+</section>
+<hr class="divider">
+    <section class="section">
+        <h2>Account Activity This Period</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th class="currency">Beginning</th>
+                    <th class="currency">Change</th>
+                    <th class="currency">Fees</th>
+                    <th class="currency">Ending</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td>TOD Select</td>
+                <td class="currency">$310,504.84</td>
+                <td class="currency positive">+$3,480.60</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$313,275.44</td>
+            </tr>
+        
+            <tr>
+                <td>TOD Advisory</td>
+                <td class="currency">$91,690.93</td>
+                <td class="currency positive">+$751.14</td>
+                <td class="currency">-$106.32</td>
+                <td class="currency">$92,335.75</td>
+            </tr>
+        
+            <tr>
+                <td>IRA</td>
+                <td class="currency">$60,603.71</td>
+                <td class="currency positive">+$259.18</td>
+                <td class="currency">-$70.95</td>
+                <td class="currency">$60,003.07</td>
+            </tr>
+        
+            </tbody>
+        </table>
+        <p><strong>TOD Advisory Realized Gains YTD:</strong> $8,232.63 ($183.87 short-term, $8,048.76 long-term)</p>
+    </section>
+    
+    <footer class="footer">
+        <p>Report generated from Edward Jones statement dated Oct 31, 2026</p>
+        <p>Generated on 2026-11-14 15:11</p>
+    </footer>
+    
+    </div>
+</body>
+</html>
