@@ -464,7 +464,7 @@ function NLFinances() {
 
     var payment = [0, 0, 0,
                    0, 0, 0,
-                   0, 0, 0,
+                   200, 0, 0,
                    0, 0];
     let htmlCode = '<table class="responsive"><thead><th colspan="8">2026 National League Finances</th></thead>';
     htmlCode += '<tr><td class="colTitle">Team</td><td class="colTitle">Carryover</td>';
